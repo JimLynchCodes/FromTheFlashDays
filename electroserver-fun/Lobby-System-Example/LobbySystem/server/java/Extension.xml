@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Extension>
+    <Name>LobbySystem</Name>
+    <EventHandlers>
+       <ExtensionLifecycleHandlers>
+            <ExtensionLifecycleHandler>
+                <Handle>GMSInitializer</Handle>
+                <Type>Java</Type>
+                <ServerLevel>1</ServerLevel>
+                <Path>com.electrotank.electroserver5.examples.gamemanager.GMSInitializer</Path>
+            </ExtensionLifecycleHandler>
+        </ExtensionLifecycleHandlers>
+    </EventHandlers>
+    <Plugins>
+        <Plugin>
+            <Handle>DiggingGamePlugin</Handle>
+            <Type>Java</Type>
+            <Path>com.electrotank.electroserver5.examples.digging.DiggingGamePlugin</Path>
+        </Plugin>
+    </Plugins>
+</Extension>
+
