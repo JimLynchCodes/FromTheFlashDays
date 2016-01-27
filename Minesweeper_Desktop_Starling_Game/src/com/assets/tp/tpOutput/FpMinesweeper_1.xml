@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:4f8f52cc074687d70e912fa8fc226e10$ -->
+<TextureAtlas imagePath="FpMinesweeper_1.png">
+    <SubTexture name="StartScreen" x="2" y="2" width="800" height="600"/>
+</TextureAtlas>
