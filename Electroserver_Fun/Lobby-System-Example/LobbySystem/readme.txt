@@ -1,0 +1,1 @@
+This example demonstrates the way a LobbySystem could work, using GameManager.  GMSInitializer will need to be a server level component.  

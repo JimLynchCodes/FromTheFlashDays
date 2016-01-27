@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+
+Project("{3836EC70-360B-ABA4-E6C7-C172895F37A1}") = "DBLogin", "DBLogin.csproj", "{7745C5FA-10BE-9429-5E7C-B378EE022DF4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7745C5FA-10BE-9429-5E7C-B378EE022DF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7745C5FA-10BE-9429-5E7C-B378EE022DF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7745C5FA-10BE-9429-5E7C-B378EE022DF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7745C5FA-10BE-9429-5E7C-B378EE022DF4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	
+EndGlobal

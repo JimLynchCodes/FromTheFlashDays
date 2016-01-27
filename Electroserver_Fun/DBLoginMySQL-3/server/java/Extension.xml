@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Extension>
+    <Name>DBLoginMySQL</Name>
+    <ManagedObjects>
+        <ManagedObject>
+            <Handle>ControllerFactory</Handle>
+            <Type>Java</Type>
+            <Path>com.electrotank.electroserver5.examples.dblogin.ControllerFactory</Path>
+        </ManagedObject>
+    </ManagedObjects>
+    <EventHandlers>
+        <LoginHandlers>
+            <LoginHandler>
+                <Handle>DBLoginHandler</Handle>
+                <Type>Java</Type>
+                <ServerLevel>1</ServerLevel>
+                <Path>com.electrotank.electroserver5.examples.dblogin.DBLoginHandler</Path>
+                <Variables>
+                    <Variable name="useTwoStepLogin" type="boolean">false
+                    </Variable>
+                    <Variable name="evictGhostUsers" type="boolean">true
+                    </Variable>
+                    <Variable name="allowRegistration" type="boolean">true
+                    </Variable>
+                </Variables>
+            </LoginHandler>
+        </LoginHandlers>
+    </EventHandlers>
+    <Plugins>
+        <Plugin>
+            <Handle>DatabasePlugin</Handle>
+            <Type>Java</Type>
+            <ServerLevel>1</ServerLevel>
+            <Path>com.electrotank.electroserver5.examples.dblogin.DatabasePlugin</Path>
+            <Variables>
+                <Variable name="useTwoStepLogin" type="boolean">false
+                </Variable>
+                <Variable name="allowRegistration" type="boolean">true
+                </Variable>
+            </Variables>
+        </Plugin>
+    </Plugins>
+</Extension>
+
