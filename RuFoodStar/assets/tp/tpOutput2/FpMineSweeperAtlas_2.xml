@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:fe6a95f78325c785015037729203c249$ -->
+<TextureAtlas imagePath="FpMineSweeperAtlas_2.png">
+    <SubTexture name="YouLosePanel" x="2" y="364" width="459" height="360"/>
+    <SubTexture name="YouWinPanel" x="2" y="2" width="459" height="360"/>
+</TextureAtlas>

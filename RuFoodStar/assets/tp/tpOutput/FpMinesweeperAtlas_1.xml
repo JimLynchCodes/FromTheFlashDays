@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:f58b2cae9262500ca1696420506f1878$ -->
+<TextureAtlas imagePath="FpMinesweeperAtlas_1.png">
+    <SubTexture name="BackHelpDownBtn" x="114" y="1993" width="100" height="50"/>
+    <SubTexture name="BackHelpUpBtn" x="12" y="1993" width="100" height="50"/>
+    <SubTexture name="BackToMenuBtnDown" x="1606" y="334" width="200" height="44"/>
+    <SubTexture name="BackToMenuBtnUp" x="1606" y="288" width="200" height="44"/>
+    <SubTexture name="Bomb" x="821" y="2012" width="22" height="23"/>
+    <SubTexture name="CellDown" x="784" y="1970" width="40" height="40"/>
+    <SubTexture name="CellUp" x="216" y="1991" width="49" height="48" frameX="0" frameY="0" frameWidth="51" frameHeight="52"/>
+    <SubTexture name="DifficultyPanel" x="2" y="819" width="523" height="409"/>
+    <SubTexture name="EasyBtnUp" x="1606" y="132" width="313" height="62" frameX="0" frameY="-22" frameWidth="313" frameHeight="84"/>
+    <SubTexture name="EasyGameScreen" x="804" y="2" width="800" height="600"/>
+    <SubTexture name="Flag" x="789" y="2012" width="20" height="26"/>
+    <SubTexture name="HardBtnUp" x="1606" y="67" width="313" height="63" frameX="0" frameY="0" frameWidth="313" frameHeight="71"/>
+    <SubTexture name="HelpBtnDown" x="1164" y="1500" width="119" height="119"/>
+    <SubTexture name="HelpBtnUp" x="1382" y="1449" width="119" height="119"/>
+    <SubTexture name="HowToPlayPanel" x="2" y="1230" width="522" height="409" frameX="-4" frameY="0" frameWidth="526" frameHeight="409"/>
+    <SubTexture name="MediumBtnUp" x="1606" y="2" width="313" height="63" frameX="0" frameY="-24" frameWidth="313" frameHeight="87"/>
+    <SubTexture name="PlayAgainBtnDown" x="1606" y="242" width="200" height="44"/>
+    <SubTexture name="PlayAgainBtnUp" x="1606" y="196" width="200" height="44"/>
+    <SubTexture name="RedBtnUp" x="1116" y="1373" width="119" height="119"/>
+    <SubTexture name="RetryBtnDown" x="367" y="1991" width="88" height="44"/>
+    <SubTexture name="RetryBtnUp" x="277" y="1991" width="88" height="44"/>
+    <SubTexture name="StartBtnDown" x="1120" y="1252" width="119" height="119"/>
+    <SubTexture name="StartBtnUp" x="1120" y="1131" width="119" height="119"/>
+    <SubTexture name="StartScreen" x="2" y="2" width="800" height="600"/>
+    <SubTexture name="red_firework/fireworkRed0004" x="1924" y="518" width="3" height="13" frameX="-105" frameY="-196" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0005" x="1919" y="518" width="3" height="17" frameX="-105" frameY="-186" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0006" x="841" y="1970" width="3" height="21" frameX="-105" frameY="-176" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0007" x="816" y="2012" width="3" height="25" frameX="-105" frameY="-166" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0008" x="779" y="2015" width="3" height="29" frameX="-105" frameY="-156" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0009" x="836" y="1970" width="3" height="35" frameX="-105" frameY="-144" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0010" x="831" y="1970" width="3" height="39" frameX="-105" frameY="-134" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0011" x="779" y="1970" width="3" height="43" frameX="-105" frameY="-124" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0012" x="267" y="1991" width="3" height="47" frameX="-105" frameY="-114" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0013" x="7" y="1993" width="3" height="51" frameX="-105" frameY="-104" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0014" x="774" y="1970" width="3" height="57" frameX="-105" frameY="-92" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0015" x="764" y="1970" width="3" height="61" frameX="-105" frameY="-82" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0016" x="759" y="1970" width="3" height="65" frameX="-105" frameY="-72" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0017" x="694" y="1970" width="3" height="69" frameX="-105" frameY="-62" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0018" x="603" y="1562" width="3" height="73" frameX="-105" frameY="-52" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0019" x="689" y="1970" width="3" height="71" frameX="-105" frameY="-51" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0020" x="749" y="1970" width="3" height="67" frameX="-105" frameY="-51" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0021" x="730" y="1970" width="17" height="67" frameX="-97" frameY="-48" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0022" x="699" y="1970" width="29" height="67" frameX="-91" frameY="-45" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0023" x="577" y="1976" width="39" height="69" frameX="-86" frameY="-40" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0024" x="1759" y="566" width="45" height="69" frameX="-83" frameY="-36" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0025" x="520" y="1976" width="55" height="69" frameX="-78" frameY="-33" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0026" x="457" y="1976" width="61" height="69" frameX="-75" frameY="-30" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0027" x="618" y="1970" width="69" height="71" frameX="-71" frameY="-27" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0028" x="526" y="1562" width="75" height="77" frameX="-68" frameY="-25" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0029" x="766" y="604" width="81" height="81" frameX="-65" frameY="-24" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0030" x="449" y="604" width="87" height="89" frameX="-62" frameY="-20" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0031" x="101" y="604" width="93" height="95" frameX="-59" frameY="-18" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0032" x="2" y="604" width="97" height="97" frameX="-57" frameY="-18" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0033" x="366" y="703" width="101" height="103" frameX="-55" frameY="-15" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0034" x="1806" y="531" width="105" height="107" frameX="-53" frameY="-13" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0035" x="1808" y="196" width="109" height="111" frameX="-51" frameY="-12" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0036" x="117" y="701" width="113" height="115" frameX="-49" frameY="-11" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0037" x="232" y="700" width="117" height="117" frameX="-47" frameY="-10" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0038" x="840" y="687" width="119" height="119" frameX="-46" frameY="-11" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0039" x="594" y="694" width="123" height="121" frameX="-44" frameY="-10" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0040" x="1921" y="130" width="125" height="125" frameX="-43" frameY="-9" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0041" x="1919" y="257" width="127" height="129" frameX="-42" frameY="-7" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0042" x="1525" y="1408" width="131" height="131" frameX="-40" frameY="-8" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0043" x="1025" y="1691" width="131" height="133" frameX="-41" frameY="-7" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0044" x="1029" y="1494" width="133" height="135" frameX="-40" frameY="-7" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0045" x="1842" y="1268" width="135" height="137" frameX="-38" frameY="-7" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0046" x="1241" y="1359" width="139" height="139" frameX="-35" frameY="-7" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0047" x="1536" y="1265" width="139" height="141" frameX="-35" frameY="-8" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0048" x="1842" y="1125" width="135" height="141" frameX="-40" frameY="-8" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0049" x="973" y="1290" width="141" height="145" frameX="-37" frameY="-6" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0050" x="884" y="1704" width="139" height="145" frameX="-38" frameY="-8" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0051" x="1393" y="1158" width="141" height="147" frameX="-37" frameY="-7" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0052" x="1558" y="1114" width="141" height="149" frameX="-36" frameY="-8" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0053" x="1797" y="974" width="141" height="149" frameX="-38" frameY="-8" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0054" x="1799" y="819" width="141" height="153" frameX="-37" frameY="-7" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0055" x="964" y="977" width="141" height="155" frameX="-37" frameY="-9" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0056" x="1509" y="703" width="143" height="151" frameX="-35" frameY="-10" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0057" x="1215" y="604" width="147" height="153" frameX="-31" frameY="-10" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0058" x="822" y="1388" width="149" height="155" frameX="-32" frameY="-9" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0059" x="824" y="1139" width="145" height="155" frameX="-33" frameY="-10" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0060" x="677" y="1229" width="145" height="157" frameX="-34" frameY="-9" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0061" x="674" y="819" width="145" height="159" frameX="-34" frameY="-10" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0062" x="1606" y="542" width="151" height="159" frameX="-34" frameY="-10" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0063" x="527" y="819" width="145" height="161" frameX="-34" frameY="-10" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0064" x="527" y="982" width="143" height="161" frameX="-35" frameY="-10" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0065" x="590" y="1641" width="149" height="163" frameX="-35" frameY="-10" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0066" x="441" y="1809" width="149" height="165" frameX="-34" frameY="-9" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0067" x="1759" y="640" width="149" height="167" frameX="-32" frameY="-9" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0068" x="151" y="1641" width="147" height="173" frameX="-32" frameY="-10" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0069" x="1119" y="819" width="149" height="153" frameX="-33" frameY="-11" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0070" x="296" y="1816" width="143" height="173" frameX="-32" frameY="-11" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0071" x="151" y="1816" width="143" height="173" frameX="-39" frameY="-10" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0072" x="1654" y="809" width="143" height="149" frameX="-32" frameY="-11" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0073" x="1270" y="910" width="143" height="147" frameX="-38" frameY="-10" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0074" x="819" y="980" width="143" height="157" frameX="-32" frameY="-10" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0075" x="1759" y="637" width="1" height="1" frameX="0" frameY="0" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0076" x="1759" y="637" width="1" height="1" frameX="0" frameY="0" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0077" x="1759" y="637" width="1" height="1" frameX="0" frameY="0" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0078" x="1759" y="637" width="1" height="1" frameX="0" frameY="0" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0079" x="1759" y="637" width="1" height="1" frameX="0" frameY="0" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0080" x="1759" y="637" width="1" height="1" frameX="0" frameY="0" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0081" x="1759" y="637" width="1" height="1" frameX="0" frameY="0" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0082" x="1759" y="637" width="1" height="1" frameX="0" frameY="0" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0083" x="1759" y="637" width="1" height="1" frameX="0" frameY="0" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0084" x="1759" y="637" width="1" height="1" frameX="0" frameY="0" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0085" x="1759" y="637" width="1" height="1" frameX="0" frameY="0" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0086" x="1759" y="637" width="1" height="1" frameX="0" frameY="0" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0087" x="1759" y="637" width="1" height="1" frameX="0" frameY="0" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0088" x="1759" y="637" width="1" height="1" frameX="0" frameY="0" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0089" x="1759" y="637" width="1" height="1" frameX="0" frameY="0" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="red_firework/fireworkRed0090" x="1759" y="637" width="1" height="1" frameX="0" frameY="0" frameWidth="211" frameHeight="211"/>
+    <SubTexture name="xBtnDown" x="1759" y="426" width="46" height="44"/>
+    <SubTexture name="xBtnUp" x="1759" y="380" width="46" height="44"/>
+    <SubTexture name="yellow_firework/fireworkYellow0001" x="845" y="1993" width="3" height="20" frameX="-104" frameY="-278" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0002" x="811" y="2012" width="3" height="26" frameX="-104" frameY="-262" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0003" x="784" y="2012" width="3" height="32" frameX="-104" frameY="-247" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0004" x="826" y="1970" width="3" height="40" frameX="-104" frameY="-230" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0005" x="272" y="1991" width="3" height="46" frameX="-104" frameY="-215" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0006" x="2" y="1993" width="3" height="52" frameX="-104" frameY="-199" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0007" x="769" y="1970" width="3" height="60" frameX="-104" frameY="-182" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0008" x="754" y="1970" width="3" height="66" frameX="-104" frameY="-167" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0009" x="608" y="1562" width="3" height="72" frameX="-104" frameY="-151" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0010" x="687" y="1144" width="3" height="80" frameX="-104" frameY="-134" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0011" x="690" y="604" width="3" height="86" frameX="-104" frameY="-119" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0012" x="387" y="604" width="3" height="94" frameX="-104" frameY="-102" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0013" x="746" y="1704" width="3" height="100" frameX="-104" frameY="-86" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0014" x="356" y="703" width="3" height="106" frameX="-104" frameY="-71" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0015" x="1914" y="421" width="3" height="114" frameX="-104" frameY="-54" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0016" x="351" y="703" width="3" height="108" frameX="-104" frameY="-55" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0017" x="361" y="703" width="3" height="104" frameX="-104" frameY="-54" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0018" x="741" y="1704" width="3" height="100" frameX="-104" frameY="-53" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0019" x="382" y="604" width="3" height="94" frameX="-104" frameY="-54" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0020" x="363" y="604" width="17" height="94" frameX="-97" frameY="-49" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0021" x="332" y="604" width="29" height="94" frameX="-91" frameY="-44" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0022" x="291" y="604" width="39" height="94" frameX="-86" frameY="-39" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0023" x="1759" y="472" width="45" height="92" frameX="-83" frameY="-36" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0024" x="392" y="604" width="55" height="90" frameX="-78" frameY="-33" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0025" x="627" y="604" width="61" height="88" frameX="-75" frameY="-30" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0026" x="695" y="604" width="69" height="84" frameX="-71" frameY="-28" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0027" x="610" y="1145" width="75" height="82" frameX="-68" frameY="-25" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0028" x="527" y="1145" width="81" height="82" frameX="-65" frameY="-24" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0029" x="538" y="604" width="87" height="88" frameX="-62" frameY="-21" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0030" x="196" y="604" width="93" height="94" frameX="-59" frameY="-19" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0031" x="751" y="1704" width="97" height="98" frameX="-57" frameY="-17" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0032" x="961" y="703" width="101" height="102" frameX="-55" frameY="-16" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0033" x="1807" y="421" width="105" height="108" frameX="-53" frameY="-13" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0034" x="1808" y="309" width="109" height="110" frameX="-51" frameY="-13" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0035" x="2" y="703" width="113" height="114" frameX="-49" frameY="-12" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0036" x="1810" y="1407" width="117" height="118" frameX="-47" frameY="-10" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0037" x="719" y="690" width="119" height="120" frameX="-46" frameY="-10" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0038" x="469" y="695" width="123" height="122" frameX="-44" frameY="-9" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0039" x="1921" y="2" width="125" height="126" frameX="-43" frameY="-8" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0040" x="1919" y="388" width="127" height="128" frameX="-43" frameY="-8" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0041" x="1677" y="1407" width="131" height="132" frameX="-40" frameY="-7" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0042" x="1025" y="1826" width="131" height="132" frameX="-41" frameY="-8" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0043" x="1913" y="537" width="133" height="136" frameX="-40" frameY="-7" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0044" x="1677" y="1269" width="135" height="136" frameX="-38" frameY="-8" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0045" x="1384" y="1307" width="139" height="140" frameX="-35" frameY="-6" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0046" x="1701" y="1125" width="139" height="142" frameX="-35" frameY="-7" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0047" x="1910" y="675" width="135" height="142" frameX="-40" frameY="-8" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0048" x="886" y="1545" width="141" height="144" frameX="-37" frameY="-7" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0049" x="884" y="1851" width="139" height="144" frameX="-38" frameY="-9" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0050" x="1241" y="1211" width="141" height="146" frameX="-37" frameY="-8" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0051" x="1250" y="1059" width="141" height="150" frameX="-36" frameY="-8" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0052" x="1415" y="1006" width="141" height="150" frameX="-38" frameY="-8" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0053" x="1654" y="960" width="141" height="152" frameX="-37" frameY="-8" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0054" x="1107" y="975" width="141" height="154" frameX="-37" frameY="-10" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0055" x="1364" y="604" width="143" height="152" frameX="-35" frameY="-9" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0056" x="971" y="1134" width="147" height="154" frameX="-31" frameY="-9" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0057" x="1064" y="604" width="149" height="154" frameX="-32" frameY="-10" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0058" x="821" y="819" width="145" height="156" frameX="-33" frameY="-9" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0059" x="741" y="1546" width="143" height="156" frameX="-36" frameY="-10" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0060" x="672" y="982" width="145" height="160" frameX="-34" frameY="-9" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0061" x="1606" y="380" width="151" height="160" frameX="-34" frameY="-9" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0062" x="592" y="1806" width="145" height="162" frameX="-34" frameY="-9" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0063" x="739" y="1806" width="143" height="162" frameX="-35" frameY="-10" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0064" x="526" y="1396" width="149" height="164" frameX="-35" frameY="-9" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0065" x="526" y="1230" width="149" height="164" frameX="-34" frameY="-10" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0066" x="439" y="1641" width="149" height="166" frameX="-32" frameY="-10" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0067" x="2" y="1817" width="147" height="174" frameX="-32" frameY="-9" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0068" x="968" y="819" width="149" height="154" frameX="-33" frameY="-10" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0069" x="2" y="1641" width="147" height="174" frameX="-32" frameY="-10" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0070" x="300" y="1641" width="137" height="172" frameX="-38" frameY="-11" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0071" x="1364" y="758" width="143" height="150" frameX="-32" frameY="-10" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0072" x="1509" y="856" width="143" height="148" frameX="-38" frameY="-10" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0073" x="677" y="1388" width="143" height="156" frameX="-32" frameY="-11" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0074" x="1759" y="637" width="1" height="1" frameX="0" frameY="0" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0075" x="1759" y="637" width="1" height="1" frameX="0" frameY="0" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0076" x="1759" y="637" width="1" height="1" frameX="0" frameY="0" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0077" x="1759" y="637" width="1" height="1" frameX="0" frameY="0" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0078" x="1759" y="637" width="1" height="1" frameX="0" frameY="0" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0079" x="1759" y="637" width="1" height="1" frameX="0" frameY="0" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0080" x="1759" y="637" width="1" height="1" frameX="0" frameY="0" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0081" x="1759" y="637" width="1" height="1" frameX="0" frameY="0" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0082" x="1759" y="637" width="1" height="1" frameX="0" frameY="0" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0083" x="1759" y="637" width="1" height="1" frameX="0" frameY="0" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0084" x="1759" y="637" width="1" height="1" frameX="0" frameY="0" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0085" x="1759" y="637" width="1" height="1" frameX="0" frameY="0" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0086" x="1759" y="637" width="1" height="1" frameX="0" frameY="0" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0087" x="1759" y="637" width="1" height="1" frameX="0" frameY="0" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0088" x="1759" y="637" width="1" height="1" frameX="0" frameY="0" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0089" x="1759" y="637" width="1" height="1" frameX="0" frameY="0" frameWidth="211" frameHeight="298"/>
+    <SubTexture name="yellow_firework/fireworkYellow0090" x="1759" y="637" width="1" height="1" frameX="0" frameY="0" frameWidth="211" frameHeight="298"/>
+</TextureAtlas>
