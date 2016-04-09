@@ -1,0 +1,13 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestGetFreeItemFromSet(clientModuleName:String, freeItemSetName:String) : void
+        Server Replies:
+         Server Event Name: GET_FREE_ITEM_SET_OK
+         Method signature :  onGetFreeItemSetOk(, List asset)
+         Server Event Name: GET_FREE_ITEM_SET_HAVE_ALL
+         Method signature :  onGetFreeItemSetHaveAll(, List asset)
+---------------------------------------------------------------
+   Client Method Name : requestGetAvailableCountFromUserItemSet(clientModuleName:String, freeItemSetName:String) : void
+        Server Replies:
+         Server Event Name: GET_AVAILABLE_COUNT_FROM_USER_ITEM_SET_OK
+         Method signature :  onGetAvailableCountFromUserItemSetOk(, int available)
+---------------------------------------------------------------

@@ -1,0 +1,86 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestUserRoomMain() : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestGetCurrentUserHomeList() : void
+        Server Replies:
+         Server Event Name: GET_CURRENT_USER_HOME_LIST
+         Method signature :  onGetCurrentUserHomeList(, List userHomeType)
+---------------------------------------------------------------
+   Client Method Name : requestGetCurrentUserHomeListPlus() : void
+        Server Replies:
+         Server Event Name: GET_CURRENT_USER_HOME_LIST_PLUS
+         Method signature :  onGetCurrentUserHomeListPlus(, List userHomeTypePlus)
+---------------------------------------------------------------
+   Client Method Name : requestMoveFurnitureToInventory(furnitureId:int) : void
+        Server Replies:
+         Server Event Name: MOVE_FURNITURE_TO_INVENTORY_OK
+         Method signature :  onMoveFurnitureToInventoryOk(, UserAsset furniture)
+---------------------------------------------------------------
+   Client Method Name : requestGetUserHomeFullData() : void
+        Server Replies:
+         Server Event Name: GET_USER_HOME_FULL_DATA_OK
+         Method signature :  onGetUserHomeFullDataOk(, User user, HomeType homeType, List userRoom)
+---------------------------------------------------------------
+   Client Method Name : requestGetUserHomeTypeFullData() : void
+        Server Replies:
+         Server Event Name: GET_USER_HOME_TYPE_FULL_DATA_OK
+         Method signature :  onGetUserHomeTypeFullDataOk(, User user, UserHome userHome, List userRoom)
+---------------------------------------------------------------
+   Client Method Name : requestGetUserHome() : void
+        Server Replies:
+         Server Event Name: GET_USER_HOME_OK
+         Method signature :  onGetUserHomeOk(, HomeType homeType, List userRoom)
+---------------------------------------------------------------
+   Client Method Name : requestGetUserHomeInventory() : void
+        Server Replies:
+         Server Event Name: GET_USER_HOME_INVENTORY_OK
+         Method signature :  onGetUserHomeInventoryOk(, UserCatalog userCatalog)
+---------------------------------------------------------------
+   Client Method Name : requestGetUserFurnitureInventory(catalogOption:String) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestSaveUserRoom(roomTypeId:int, userRoomXML:Object) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestJoinUserRoom(x:int, y:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestGetUserHomeMode() : void
+        Server Replies:
+         Server Event Name: GET_USER_HOME_MODE_OK
+         Method signature :  onGetUserHomeModeOk(, int homeMode)
+---------------------------------------------------------------
+   Client Method Name : requestSaveUserHomeMode(homeMode:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestRequestUserHomeList() : void
+        Server Replies:
+         Server Event Name: REQUEST_USER_HOME_LIST
+         Method signature :  onRequestUserHomeList(, List homeType)
+---------------------------------------------------------------
+   Client Method Name : requestRequestFullUserHomeList() : void
+        Server Replies:
+         Server Event Name: REQUEST_FULL_USER_HOME_LIST
+         Method signature :  onRequestFullUserHomeList(, List userHome)
+---------------------------------------------------------------
+   Client Method Name : requestCompareHomeType(homeTypeName:String) : void
+        Server Replies:
+         Server Event Name: COMPARE_HOME_TYPE
+         Method signature :  onCompareHomeType(, String result)
+---------------------------------------------------------------
+   Client Method Name : requestSetCurrentUserHome(homeTypeName:String) : void
+        Server Replies:
+         Server Event Name: SET_CURRENT_USER_HOME
+         Method signature :  onSetCurrentUserHome(, String result)
+---------------------------------------------------------------
+   Client Method Name : requestRequestResetRoomInventory(resetOption:String) : void
+        Server Replies:
+         Server Event Name: REQUEST_RESET_ROOM_INVENTORY
+         Method signature :  onRequestResetRoomInventory(, String result)
+---------------------------------------------------------------
+   Client Method Name : requestGetUserHomeSimpleRoomType(homeTypeName:String) : void
+        Server Replies:
+         Server Event Name: GET_USER_HOME_SIMPLE_ROOM_TYPE_OK
+         Method signature :  onGetUserHomeSimpleRoomTypeOk(, List simpleUserRoom)
+---------------------------------------------------------------

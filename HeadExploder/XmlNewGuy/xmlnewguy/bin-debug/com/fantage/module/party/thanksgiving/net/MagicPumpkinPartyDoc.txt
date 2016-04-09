@@ -1,0 +1,14 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestMagicPumpkinMain() : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestMagicPumpkinUserPose(tolerance:int) : void
+        Server Replies:
+         Server Event Name: MAGIC_PUMPKIN_PARTY_USER_POSE_LATE
+         Method signature :  onMagicPumpkinPartyUserPoseLate(, int tolerance)
+---------------------------------------------------------------
+   Client Method Name : requestMagicPumpkinUserStarClick(magicPumpkinStarId:int) : void
+        Server Replies:
+         Server Event Name: MAGIC_PUMPKIN_PARTY_STAR_CLICK_OK
+         Method signature :  onMagicPumpkinPartyClickOk(, int id, int amount)
+---------------------------------------------------------------

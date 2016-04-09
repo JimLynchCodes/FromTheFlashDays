@@ -1,0 +1,6 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestGetRareItemList(exclude:String) : void
+        Server Replies:
+         Server Event Name: GET_RARE_ITEM_LIST_OK
+         Method signature :  onGetRareItemListOk(, List asset)
+---------------------------------------------------------------

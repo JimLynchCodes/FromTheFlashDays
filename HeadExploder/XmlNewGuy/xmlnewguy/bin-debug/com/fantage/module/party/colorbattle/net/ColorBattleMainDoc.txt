@@ -1,0 +1,12 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestColorBattleMain() : void
+        Server Replies:
+         Server Event Name: STAR_REWARD
+         Method signature :  onStarReward(, int receivedStar, String winningTeamColor, int starsEarnedWinPremium, int starsEarnedWinNormal)
+         Server Event Name: COLOR_ALREADY_CHOSEN
+         Method signature :  onColorAlreadyChosen(, String color)
+         Server Event Name: INVALID_COLOR
+         Method signature :  onInvalidColor()
+         Server Event Name: COLOR_CHOOSE_OK
+         Method signature :  onColorChooseOk(, String color)
+---------------------------------------------------------------

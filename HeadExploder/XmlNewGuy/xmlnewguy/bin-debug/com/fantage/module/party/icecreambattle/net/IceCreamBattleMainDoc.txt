@@ -1,0 +1,15 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestIceCreamBattleMain() : void
+        Server Replies:
+         Server Event Name: STAR_REWARD
+         Method signature :  onRewardStar(, int receivedStar, String winningTeamColor, int starsEarnedWinPremium, int starsEarnedWinNormal, int starsEarnedWinPremiumWithPet, int starsEarnedWinNormalWithPet, String userHasPet, int userStarsEarned)
+         Server Event Name: MEDAL_REWARD
+         Method signature :  onRewardMedal(, int userWins, int medalLevel)
+         Server Event Name: INVALID_COLOR
+         Method signature :  onInvalidColor()
+         Server Event Name: COLOR_CHOOSE_OK
+         Method signature :  onColorChooseOk(, String color)
+---------------------------------------------------------------
+   Client Method Name : requestIceCreamBattleColorChoosen(color:String) : void
+        Server Replies:
+---------------------------------------------------------------

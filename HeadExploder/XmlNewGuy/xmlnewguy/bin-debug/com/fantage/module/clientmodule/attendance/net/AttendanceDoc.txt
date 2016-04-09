@@ -1,0 +1,14 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestCmodAttdUpdate(eventName:String) : void
+        Server Replies:
+         Server Event Name: CMOD_ATTD_UPDATE_OK
+         Method signature :  onCmodAttdUpdateOk(, String eventName)
+         Server Event Name: CMOD_ATTD_UPDATE_COMP
+         Method signature :  onCmodAttdUpdateComp(, String eventName)
+         Server Event Name: CMOD_ATTD_UPDATE_NONE
+         Method signature :  onCmodAttdUpdateNone(, String eventName)
+         Server Event Name: CMOD_ATTD_UPDATE_MEDAL
+         Method signature :  onCmodAttdUpdateMedal(, String eventName, UserMedal eventMedal)
+         Server Event Name: CMOD_ATTD_UPDATE_ASSET
+         Method signature :  onCmodAttdUpdateAsset(, String eventName, List eventAssetList)
+---------------------------------------------------------------

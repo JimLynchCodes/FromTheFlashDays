@@ -1,0 +1,6 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestFreeStar(itemCode:String, amount:int) : void
+        Server Replies:
+         Server Event Name: FREE_STAR_OK
+         Method signature :  onFreeStarOk(, String itemCode, int amount)
+---------------------------------------------------------------

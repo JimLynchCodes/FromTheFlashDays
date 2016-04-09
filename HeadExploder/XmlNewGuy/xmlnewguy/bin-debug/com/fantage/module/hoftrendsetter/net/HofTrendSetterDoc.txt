@@ -1,0 +1,42 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestHofTrendSetterMaxCheck() : void
+        Server Replies:
+         Server Event Name: HOF_TREND_SETTER_MAX_CHECK_OK
+         Method signature :  onHofTrendSetterMaxCheckOk(, int boyMax, int girlMax)
+---------------------------------------------------------------
+   Client Method Name : requestHofTrendSetterList() : void
+        Server Replies:
+         Server Event Name: HOF_TREND_SETTER_LIST_OK
+         Method signature :  onHofTrendSetterListOk(, List hofTrendSetterList)
+---------------------------------------------------------------
+   Client Method Name : requestHofTrendSetterUpdate() : void
+        Server Replies:
+         Server Event Name: HOF_TREND_SETTER_UPDATE_OK
+         Method signature :  onHofTrendSetterUpdateOk()
+---------------------------------------------------------------
+   Client Method Name : requestHofTrendSetterPrize() : void
+        Server Replies:
+         Server Event Name: HOF_TREND_SETTER_PRIZE_OK
+         Method signature :  onHofTrendSetterPrizeOk(, Asset prizeAsset)
+         Server Event Name: HOF_TREND_SETTER_PRIZE_NONE
+         Method signature :  onHofTrendSetterPrizeNone()
+---------------------------------------------------------------
+   Client Method Name : requestHofTrendSetterPrizePlus() : void
+        Server Replies:
+         Server Event Name: HOF_TREND_SETTER_PRIZE_PLULS_OK
+         Method signature :  onHofTrendSetterPrizePlusOk(, List prizeAsset)
+         Server Event Name: HOF_TREND_SETTER_PRIZE_PLUS_NONE
+         Method signature :  onHofTrendSetterPrizePlusNone()
+---------------------------------------------------------------
+   Client Method Name : requestHofTrendSetterMedal() : void
+        Server Replies:
+         Server Event Name: HOF_TREND_SETTER_MEDAL_OK
+         Method signature :  onHofTrendSetterMedalOk(, UserMedal prizeMedal)
+         Server Event Name: HOF_TREND_SETTER_MEDAL_NONE
+         Method signature :  onHofTrendSetterMedalNone()
+---------------------------------------------------------------
+   Client Method Name : requestHofTrendSetterItemList() : void
+        Server Replies:
+         Server Event Name: HOF_TREND_SETTER_ITEM_LIST_OK
+         Method signature :  onHofTrendSetterItemListOk(, List hofTrendSetterItemDataList)
+---------------------------------------------------------------

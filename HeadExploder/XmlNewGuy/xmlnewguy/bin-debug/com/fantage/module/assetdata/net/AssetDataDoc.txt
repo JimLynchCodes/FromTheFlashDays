@@ -1,0 +1,6 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestGetAssetData(assetName:String) : void
+        Server Replies:
+         Server Event Name: GET_ASSET_DATA_OK
+         Method signature :  onGetAssetDataOk(, Asset asset)
+---------------------------------------------------------------

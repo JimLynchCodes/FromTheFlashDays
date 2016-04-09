@@ -1,0 +1,4 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestMultiplayerPetSelected(petId:int) : void
+        Server Replies:
+---------------------------------------------------------------

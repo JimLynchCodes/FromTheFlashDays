@@ -1,0 +1,11 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestPettreatList() : void
+        Server Replies:
+         Server Event Name: PETTREAT_LIST_OK
+         Method signature :  onPettreatListOk(, int totalTreats, List pettreatDataList)
+---------------------------------------------------------------
+   Client Method Name : requestPettreatFound(petTreatId:int) : void
+        Server Replies:
+         Server Event Name: PETTREAT_FOUND_OK
+         Method signature :  onPettreatFoundOk(, int totalTreats, int needTreatsForNextLevel, int stars, int medalLevel, String medalUpdated)
+---------------------------------------------------------------

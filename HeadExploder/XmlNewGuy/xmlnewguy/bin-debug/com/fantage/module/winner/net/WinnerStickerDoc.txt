@@ -1,0 +1,17 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestGetWinnerCatalogList(partyTypeName:String) : void
+        Server Replies:
+         Server Event Name: GET_WINNSER_CATALOG_LIST
+         Method signature :  onGetWinnerCatalogList(, List winnerStickerList)
+         Server Event Name: GET_WINNER_CATALOG_PARTY_IS_OVER
+         Method signature :  onWinnerCatalogPartyIsOver()
+---------------------------------------------------------------
+   Client Method Name : requestBuyWinner(winnerName:String, winnerQuantity:int) : void
+        Server Replies:
+         Server Event Name: WINNER_BUY_OK
+         Method signature :  onWinnerBuyOk(, int winnerStickerQuantity, WinnerStickerAsset winnerStickerAsset)
+         Server Event Name: WINNER_BUY_PARTY_IS_OVER
+         Method signature :  onWinnerBuyPartyIsOver()
+         Server Event Name: WINNER_NOT_ENOUGH_FUNDS
+         Method signature :  onWinnerNotEnoughFunds(, int fundsRequired, int currentUserFunds)
+---------------------------------------------------------------

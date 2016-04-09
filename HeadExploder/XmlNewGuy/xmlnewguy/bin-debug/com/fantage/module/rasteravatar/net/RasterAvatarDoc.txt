@@ -1,0 +1,9 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestGetDefaultAvatarItemSet() : void
+        Server Replies:
+         Server Event Name: GET_DEFAULT_AVATAR_ITEM_SET_OK
+         Method signature :  onGetDefaultAvatarItemSetOk(, List userAsset)
+---------------------------------------------------------------
+   Client Method Name : requestRevertAvatar() : void
+        Server Replies:
+---------------------------------------------------------------

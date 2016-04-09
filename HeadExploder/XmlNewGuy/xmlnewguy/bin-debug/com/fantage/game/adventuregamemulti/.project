@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>adventuregamemulti</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>com.adobe.flexbuilder.project.flexbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.adobe.flexbuilder.project.apollobuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>com.adobe.flexbuilder.project.apollonature</nature>
+		<nature>com.adobe.flexbuilder.project.flexnature</nature>
+		<nature>com.adobe.flexbuilder.project.actionscriptnature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>[source path] extlib</name>
+			<type>2</type>
+			<location>D:/Test/fla/extlib</location>
+		</link>
+		<link>
+			<name>[source path] fishfish</name>
+			<type>2</type>
+			<location>D:/tmp/FishFish/FishFish/src/fishfish</location>
+		</link>
+		<link>
+			<name>[source path] libs</name>
+			<type>2</type>
+			<location>D:/work/libs</location>
+		</link>
+	</linkedResources>
+</projectDescription>

@@ -1,0 +1,20 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestPetwalkPetSet(petName:String) : void
+        Server Replies:
+         Server Event Name: PETWALK_PET_SET_OK
+         Method signature :  onPetwalkPetSetOk(, String petName, String totalTime)
+---------------------------------------------------------------
+   Client Method Name : requestPetwalkPetCheck(petName:String) : void
+        Server Replies:
+         Server Event Name: PETWALK_PET_CHECK_OK
+         Method signature :  onPetwalkPetCheckOk(, String petName, String totalTime)
+---------------------------------------------------------------
+   Client Method Name : requestPetwalkMedal() : void
+        Server Replies:
+         Server Event Name: PETWALK_MEDAL_OK
+         Method signature :  onPetwalkMedalOk(, UserMedal petWalkMedal)
+         Server Event Name: PETWALK_MEDAL_ALREADY_HAS_IT
+         Method signature :  onPetwalkMedalAlreadyHasIt()
+         Server Event Name: PETWALK_MEDAL_NONE
+         Method signature :  onPetwalkMedalNone()
+---------------------------------------------------------------

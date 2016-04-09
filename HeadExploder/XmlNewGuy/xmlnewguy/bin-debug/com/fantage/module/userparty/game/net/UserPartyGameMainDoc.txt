@@ -1,0 +1,55 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestUserPartyGameMain(state:String, type:String, value1:Number, value2:Number) : void
+        Server Replies:
+         Server Event Name: USER_PARTY_GAME_GET_NORMAL_ITEM
+         Method signature :  onGetNormalItem(, Asset getNormalItem)
+         Server Event Name: USER_PARTY_GAME_MAIN_STAR_ITEM
+         Method signature :  onGiveStarItem(, String userId, UserPartyGameClickableItem starItem)
+---------------------------------------------------------------
+   Client Method Name : requestGetUserPartyGameCatalogList(partyTypeName:String) : void
+        Server Replies:
+         Server Event Name: GET_USER_PARTY_GAME_CATALOG_LIST_OK
+         Method signature :  onGetUserPartyGameCatalogListOk(, List userPartyGameAssetList)
+         Server Event Name: GET_USER_PARTY_GAME_CATALOG_LIST_PARTY_IS_OVER
+         Method signature :  onGetUserPartyGameCatalogListPartyIsOver()
+         Server Event Name: GET_USER_PARTY_GAME_CATALOG_LIST_ANOTHER_GAME_IS_RUNNING
+         Method signature :  onGetUserPartyGameCatalogListAnotherGameIsRunning(, UserPartyGameType userPartyGameRunning)
+---------------------------------------------------------------
+   Client Method Name : requestBuyUserPartyGame(userPartyGameName:String) : void
+        Server Replies:
+         Server Event Name: USER_PARTY_GAME_BUY_OK
+         Method signature :  onGetUserPartyGameBuyOk(, Asset userPartyGame)
+         Server Event Name: USER_PARTY_GAME_BUY_PARTY_IS_OVER
+         Method signature :  onUserPartyGameBuyPartyIsOver()
+         Server Event Name: USER_PARTY_GAME_BUY_ANOTHER_GAME_IS_RUNNING
+         Method signature :  onUserPartyGameBuyAnotherGameIsRunning(, UserPartyGameType userPartyGameRunning)
+         Server Event Name: USER_PARTY_GAME_BUY_NOT_ENOUGH_FUNDS
+         Method signature :  onUserPartyGameBuyNotEnoughFunds(, int fundsRequired, int currentUserFunds)
+---------------------------------------------------------------
+   Client Method Name : requestUserPartyGameGetClickableItem(itemId:int) : void
+        Server Replies:
+         Server Event Name: USER_PARTY_GAME_GET_CLICKABLE_ITEM_OK
+         Method signature :  onGetItem(, String getClickableItem)
+---------------------------------------------------------------
+   Client Method Name : requestUserPartyGameCheck() : void
+        Server Replies:
+         Server Event Name: USER_PARTY_GAME_CHECK_OK
+         Method signature :  onStateCheck(, String state)
+         Server Event Name: USER_PARTY_GAME_CHECK_GAME_TYPE
+         Method signature :  onUserPartyGameCheckGameType(, UserPartyGameType userPartyGameType)
+---------------------------------------------------------------
+   Client Method Name : requestUserPartyGameStartRequest() : void
+        Server Replies:
+         Server Event Name: USER_PARTY_GAME_START_OK
+         Method signature :  onUserPartyGameStartOk(, String state)
+---------------------------------------------------------------
+   Client Method Name : requestUserPartyGameExitRequest() : void
+        Server Replies:
+         Server Event Name: USER_PARTY_GAME_EXIT_OK
+         Method signature :  onUserPartyGameExitOk(, String state)
+---------------------------------------------------------------
+   Client Method Name : requestUserPartyGamePlayerListRequest(userPartyGameName:String) : void
+        Server Replies:
+         Server Event Name: USER_PARTY_GAME_PLAYER_LIST_OK
+         Method signature :  onUserPartyGamePlayerListOk(, List userPartyGamePlayerList)
+---------------------------------------------------------------

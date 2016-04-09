@@ -1,0 +1,14 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestFreeStaticMedal(medalKey:String) : void
+        Server Replies:
+         Server Event Name: FREE_STATIC_MEDAL_OK
+         Method signature :  onFreeStaticMedalOk(, String medalKey, UserMedal userMedal)
+         Server Event Name: FREE_STATIC_MEDAL_UPDATED
+         Method signature :  onFreeStaticMedalUpdated(, String medalKey, UserMedal userMedal)
+         Server Event Name: FREE_STATIC_MEDAL_ALREADY_HAS_IT
+         Method signature :  onFreeStaticMedalAlreadyHasIt(, String medalKey)
+         Server Event Name: FREE_STATIC_MEDAL_NEED_PREMIUM_MEMBERSHIP
+         Method signature :  onFreeStaticMedalNeedPremiumMembership(, String medalKey)
+         Server Event Name: FREE_STATIC_MEDAL_NONE
+         Method signature :  onFreeStaticMedalNone(, String medalKey)
+---------------------------------------------------------------

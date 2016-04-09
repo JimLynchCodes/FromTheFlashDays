@@ -1,0 +1,21 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestMigration(nexonEuUserId:String, fantageUserId:String) : void
+        Server Replies:
+         Server Event Name: MIGRATION_OK
+         Method signature :  onMigrationOk(, int starAmt, int ecoinAmt, String pmDate)
+         Server Event Name: MIGRATION_FAIL_NO_MATCHING_USER
+         Method signature :  onMigrationFailNoMatchingUser(, String nexonEuUserId)
+         Server Event Name: MIGRATION_FAIL_NO_MATCHING_FANTAGE_USER
+         Method signature :  onMigrationFailNoMatchingFantageUser(, String fantageUserId)
+         Server Event Name: MIGRATION_FAIL_ALREDAY_MIGRATED_USER
+         Method signature :  onMigrationFailAlreadyMigratedUser(, String nexonEuUserId, String fantageUserId)
+---------------------------------------------------------------
+   Client Method Name : requestMigrationCheck(nexonEuUserId:String) : void
+        Server Replies:
+         Server Event Name: MIGRATION_CHECK_OK
+         Method signature :  onMigrationCheckOk(, String nexonEuUserId)
+         Server Event Name: MIGRATION_CHECK_FAIL_NO_MATCHING_USER
+         Method signature :  onMigrationCheckFailNoMatchingUser(, String nexonEuUserId)
+         Server Event Name: MIGRATION_CHECK_FAIL_ALREDAY_MIGRATED_USER
+         Method signature :  onMigrationCheckFailAlreadyMigratedUser(, String nexonEuUserId, String fantageUserId)
+---------------------------------------------------------------

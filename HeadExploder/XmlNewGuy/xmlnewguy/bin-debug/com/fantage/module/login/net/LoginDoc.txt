@@ -1,0 +1,79 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestSessionLoginStart() : void
+        Server Replies:
+         Server Event Name: LOGIN_START_OK
+         Method signature :  onLoginStartOk(, String hashKey)
+         Server Event Name: LOGIN_START_FAILED
+         Method signature :  onLoginStartFailed(, String reason)
+---------------------------------------------------------------
+   Client Method Name : requestSessionLoginUser(username:String, password:String, keyString:String, sessionKey:String) : void
+        Server Replies:
+         Server Event Name: LOGIN_USER_OK
+         Method signature :  onLoginUserOk(, User user)
+         Server Event Name: LOGIN_USER_FAIL
+         Method signature :  onLoginUserFail()
+         Server Event Name: LOGIN_USER_LOCKED
+         Method signature :  onLoginUserLocked(, int deactivationHour, int deactivationMinute)
+         Server Event Name: LOGIN_USER_ALREADY_LOGGED_IN
+         Method signature :  onLoginUserAlreadyLoggedIn()
+         Server Event Name: LOGIN_USER_NOT_ACTIVATED
+         Method signature :  onLoginUserNotActivated()
+         Server Event Name: LOGIN_TOO_MANY_FAILURES
+         Method signature :  onLoginTooManyFailures()
+---------------------------------------------------------------
+   Client Method Name : requestSessionLoginUserCheck(username:String, password:String, type:int, keyString:String) : void
+        Server Replies:
+         Server Event Name: LOGIN_USER_CHECK_OK
+         Method signature :  onLoginUserOk(, String sessionKey)
+         Server Event Name: LOGIN_USER_FAIL
+         Method signature :  onLoginUserFail()
+         Server Event Name: LOGIN_USER_LOCKED
+         Method signature :  onLoginUserLocked(, int deactivationHour, int deactivationMinute)
+         Server Event Name: LOGIN_USER_ALREADY_LOGGED_IN
+         Method signature :  onLoginUserAlreadyLoggedIn()
+         Server Event Name: LOGIN_USER_NOT_ACTIVATED
+         Method signature :  onLoginUserNotActivated()
+         Server Event Name: LOGIN_TOO_MANY_FAILURES
+         Method signature :  onLoginTooManyFailures()
+---------------------------------------------------------------
+   Client Method Name : requestLoginStart() : void
+        Server Replies:
+         Server Event Name: LOGIN_START_OK
+         Method signature :  onLoginStartOk(, String hashKey)
+         Server Event Name: LOGIN_START_FAILED
+         Method signature :  onLoginStartFailed(, String reason)
+---------------------------------------------------------------
+   Client Method Name : requestGetUserLoginKey() : void
+        Server Replies:
+         Server Event Name: GET_USER_LOGIN_KEY_OK
+         Method signature :  onGetUserLoginKeyOk(, String userLoginKey)
+         Server Event Name: GET_USER_LOGIN_KEY_FAIL
+         Method signature :  onGetUserLoginKeyFail()
+---------------------------------------------------------------
+   Client Method Name : requestLoginUserCheck(username:String, password:String) : void
+        Server Replies:
+         Server Event Name: LOGIN_USER_OK
+         Method signature :  onLoginUserOk(, User user)
+---------------------------------------------------------------
+   Client Method Name : requestLoginUser(username:String, password:String) : void
+        Server Replies:
+         Server Event Name: LOGIN_USER_OK
+         Method signature :  onLoginUserOk(, User user)
+         Server Event Name: LOGIN_USER_FAIL
+         Method signature :  onLoginUserFail()
+         Server Event Name: LOGIN_USER_LOCKED
+         Method signature :  onLoginUserLocked(, int deactivationHour, int deactivationMinute)
+         Server Event Name: LOGIN_USER_ALREADY_LOGGED_IN
+         Method signature :  onLoginUserAlreadyLoggedIn()
+         Server Event Name: LOGIN_USER_NOT_ACTIVATED
+         Method signature :  onLoginUserNotActivated()
+         Server Event Name: LOGIN_TOO_MANY_FAILURES
+         Method signature :  onLoginTooManyFailures()
+---------------------------------------------------------------
+   Client Method Name : requestLoginByCode(sessionKey:String) : void
+        Server Replies:
+         Server Event Name: LOGIN_BY_CODE_OK
+         Method signature :  onLoginByCodeOk(, String username)
+         Server Event Name: LOGIN_BY_CODE_FAIL
+         Method signature :  onLoginByCodeFail(, String code)
+---------------------------------------------------------------

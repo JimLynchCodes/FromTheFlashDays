@@ -1,0 +1,77 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestGetUserTask(userTaskId:String) : void
+        Server Replies:
+         Server Event Name: GET_USER_TASK_OK
+         Method signature :  onGetUserTaskOk(, UserTask userTask)
+---------------------------------------------------------------
+   Client Method Name : requestSwapUserTaskDataPosition(userTaskDataId:String, targetUserTaskDataId:String) : void
+        Server Replies:
+         Server Event Name: SWAP_USER_TASK_DATA_POSITION_OK
+         Method signature :  onSwapUserTaskDataPositionOk(, List userTaskData)
+---------------------------------------------------------------
+   Client Method Name : requestMoveUserTaskDataPosition(userTaskDataId:String, targetUserTaskDataId:String, amount:int) : void
+        Server Replies:
+         Server Event Name: MOVE_USER_TASK_DATA_POSITION_OK
+         Method signature :  onMoveUserTaskDataPositionOk(, UserTaskData userTaskData)
+---------------------------------------------------------------
+   Client Method Name : requestGetAllUserTaskDataList() : void
+        Server Replies:
+         Server Event Name: GET_USER_TASK_DATA_LIST_OK
+         Method signature :  onGetAllUserTaskDataListOk(, List userTaskData)
+---------------------------------------------------------------
+   Client Method Name : requestGetNextUserTaskData(taskName:String) : void
+        Server Replies:
+         Server Event Name: GET_NEXT_USER_TASK_DATA_OK
+         Method signature :  onGetNextUserTaskDataOk(, UserTaskData userTaskData)
+---------------------------------------------------------------
+   Client Method Name : requestActivateUserTask(taskName:String) : void
+        Server Replies:
+         Server Event Name: ACTIVATE_USER_TASK_OK
+         Method signature :  onActivateUserTaskOk(, UserTaskData userTaskData)
+---------------------------------------------------------------
+   Client Method Name : requestUserTaskDataViewed(userTaskDataId:String) : void
+        Server Replies:
+         Server Event Name: USER_TASK_DATA_VIEWED_OK
+         Method signature :  onUserTaskDataViewedOk(, UserTaskData userTaskData)
+---------------------------------------------------------------
+   Client Method Name : requestUserTaskReceiveReward(userTaskDataId:String) : void
+        Server Replies:
+         Server Event Name: USER_TASK_RECEIVE_REWARD_OK
+         Method signature :  onUserTaskReceiveRewardOk(, UserTaskData userTaskData)
+         Server Event Name: USER_TASK_RECEIVE_REWARD_FAIL
+         Method signature :  onUserTaskReceiveRewardFail(, UserTaskData userTaskData)
+---------------------------------------------------------------
+   Client Method Name : requestUserTaskMain() : void
+        Server Replies:
+         Server Event Name: USER_TASK_DATA_UPDATE_OK
+         Method signature :  onUserTaskDataUpdateOk(, UserTaskData userTaskData)
+         Server Event Name: SUB_USER_TASK_DATA_UPDATE_OK
+         Method signature :  onSubUserTaskDataUpdateOk(, SubUserTaskData subUserTaskData, UserTaskData userTaskData)
+---------------------------------------------------------------
+   Client Method Name : requestGetActiveUserTaskDataList() : void
+        Server Replies:
+         Server Event Name: GET_ACTIVE_USER_TASK_DATA_LIST_OK
+         Method signature :  onGetActiveUserTaskDataListOk(, List userTaskData)
+---------------------------------------------------------------
+   Client Method Name : requestGetMoreUserTaskDataList(existingUserTaskDataIdList:String, maxCount:int) : void
+        Server Replies:
+         Server Event Name: GET_MORE_ACTIVE_USER_TASK_DATA_LIST_OK
+         Method signature :  onGetMoreActiveUserTaskDataListOk(, List userTaskData)
+---------------------------------------------------------------
+   Client Method Name : requestIncrementSubUserTask(subUserTaskDataId:String) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestSaveUserTaskData(userTaskDataId:String, name:String, value:String) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestGetUserTaskData(userTaskDataId:String) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestCompleteUserSubTask(userSubTaskId:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestGetUserLoginInfo() : void
+        Server Replies:
+         Server Event Name: GET_USER_LOGIN_INFO_OK
+         Method signature :  onGetUserLoginInfoOk(, int lastLoginDays, int consecutiveLoginDays, int todalLoginDays)
+---------------------------------------------------------------

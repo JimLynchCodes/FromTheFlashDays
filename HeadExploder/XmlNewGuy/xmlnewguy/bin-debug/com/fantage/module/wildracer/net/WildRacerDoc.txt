@@ -1,0 +1,31 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestWildRacerStateMain() : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestWildRacerSpeedAdjustment() : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestWildRacerSendScore(score:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestWildRacerModifyLocation(type:String, speed:Number, x:Number, finished:String) : void
+        Server Replies:
+         Server Event Name: WILD_RACER_GAME_END
+         Method signature :  onWildRacerGameEnd(, String winnerId, String status, String reasonCode)
+---------------------------------------------------------------
+   Client Method Name : requestGetWildRacerMultiplayerSession() : void
+        Server Replies:
+         Server Event Name: GET_WILD_RACER_MULTIPLAYER_SESSION
+         Method signature :  onGetWildRacerMultiplayerSession(, WildRacerMultiplayerGameSession WildRacerMultiplayerSession)
+---------------------------------------------------------------
+   Client Method Name : requestEndWildRacer(score:int) : void
+        Server Replies:
+         Server Event Name: WILD_RACER_FINAL_SCORE
+         Method signature :  onWildRacerFinalScore(, String winnerId, String status, String reasonCode, int totalPoints, int bonusPoints, int starsReceived)
+---------------------------------------------------------------
+   Client Method Name : requestWildRacerUserJump(x:Number) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestWildRacerUserHitObstacle(obstacleId:String) : void
+        Server Replies:
+---------------------------------------------------------------

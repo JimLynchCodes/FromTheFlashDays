@@ -1,0 +1,18 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestJoinServerById(serverId:int, sessionKey:String) : void
+        Server Replies:
+         Server Event Name: SERVER_JOIN_OK
+         Method signature :  onServerJoinOk()
+         Server Event Name: SERVER_JOIN_FULL
+         Method signature :  onServerJoinFull()
+---------------------------------------------------------------
+   Client Method Name : requestServerList() : void
+        Server Replies:
+         Server Event Name: SERVER_LIST
+         Method signature :  onServerList(, List serverState)
+---------------------------------------------------------------
+   Client Method Name : requestRecommendServerList() : void
+        Server Replies:
+         Server Event Name: RECOMMEND_SERVER_LIST
+         Method signature :  onRecommendServerList(, List recommmendServer)
+---------------------------------------------------------------

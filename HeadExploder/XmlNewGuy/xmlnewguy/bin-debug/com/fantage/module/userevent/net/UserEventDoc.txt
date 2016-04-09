@@ -1,0 +1,15 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestFreeItemMain() : void
+        Server Replies:
+         Server Event Name: GET_FREE_ITEM_OK
+         Method signature :  onGetFreeItemOk(, Asset freeItem)
+         Server Event Name: ALREADY_HAVE_THAT_ITEM
+         Method signature :  onAlreadyHaveThatItem(, Asset freeItem)
+---------------------------------------------------------------
+   Client Method Name : requestUserMedalMain() : void
+        Server Replies:
+         Server Event Name: NEW_USER_MEDAL_OK
+         Method signature :  onNewUserMedalOk(, UserMedal userMedal)
+         Server Event Name: USER_MEDAL_UPGRADED_OK
+         Method signature :  onUserMedalUpgradedOk(, UserMedal userMedal)
+---------------------------------------------------------------

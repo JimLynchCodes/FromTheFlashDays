@@ -1,0 +1,27 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestAprilFoolsSetAvatar(avatarNode:Object) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestAprilFoolsSetAvatarNoTimeUpdate(avatarNode:Object) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestAprilFoolsResetAvatar() : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestAprilFoolsCheckTime() : void
+        Server Replies:
+         Server Event Name: APRIL_FOOLS_CHECK_TIME_OK
+         Method signature :  onAprilFoolsCheckTimeOk(, String strMiliTimeRemain)
+---------------------------------------------------------------
+   Client Method Name : requestAprilFoolsSelectItem(itemKey:String) : void
+        Server Replies:
+         Server Event Name: APRIL_FOOLS_SELECT_ITEM_OK
+         Method signature :  onAprilFoolsSelectItemOk(, Asset selectedAsset)
+---------------------------------------------------------------
+   Client Method Name : requestAprilFoolsSavePreviusFacePaintItem(itemKey:String) : void
+        Server Replies:
+         Server Event Name: APRIL_FOOLS_SAVE_PREVIOUS_FACE_PAINT_ITEM_OK
+         Method signature :  onAprilFoolsSavePreviusFacePaintItemOk(, Asset pfpAsset)
+         Server Event Name: APRIL_FOOLS_SAVE_PREVIOUS_FACE_PAINT_ITEM_NONE
+         Method signature :  onAprilFoolsSavePreviusFacePaintItemNone()
+---------------------------------------------------------------

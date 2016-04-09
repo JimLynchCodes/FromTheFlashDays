@@ -1,0 +1,22 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestStarGemFreebieWeekCheck() : void
+        Server Replies:
+         Server Event Name: STAR_GEM_FREEBIE_WEEK_CHECK_OK
+         Method signature :  onStarGemFreebieWeekCheckOk(, int star, String gemNormal, String gemEcoin, int bonusStar)
+         Server Event Name: STAR_GEM_FREEBIE_WEEK_CHECK_NONE
+         Method signature :  onStarGemFreebieWeekCheckNone()
+---------------------------------------------------------------
+   Client Method Name : requestStarGemFreebieWeekCheckTomorrow() : void
+        Server Replies:
+         Server Event Name: STAR_GEM_FREEBIE_WEEK_CHECK_TOMORROW_OK
+         Method signature :  onStarGemFreebieWeekCheckTomorrowOk(, int tmStar, String tmGemNormal, String tmGemEcoin, int tmBonusStar)
+         Server Event Name: STAR_GEM_FREEBIE_WEEK_CHECK_TOMORROW_NONE
+         Method signature :  onStarGemFreebieWeekCheckTomorrowNone()
+---------------------------------------------------------------
+   Client Method Name : requestStarGemFreebieWeekGet() : void
+        Server Replies:
+         Server Event Name: STAR_GEM_FREEBIE_WEEK_GET_OK
+         Method signature :  onStarGemFreebieWeekGetOk()
+         Server Event Name: STAR_GEM_FREEBIE_WEEK_GET_ALREADY_GOT_IT
+         Method signature :  onStarGemFreebieWeekGetAlreadyGotIt()
+---------------------------------------------------------------

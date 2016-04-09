@@ -1,0 +1,15 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestGetFreeItem(assetId:int) : void
+        Server Replies:
+         Server Event Name: GET_FREE_ITEM_OK
+         Method signature :  onGetFreeItemOk(, Asset asset)
+         Server Event Name: GET_FREE_ITEM_ALREADY_HAVE_IT
+         Method signature :  onGetFreeItemAlreadyHaveIt(, Asset asset)
+---------------------------------------------------------------
+   Client Method Name : requestGetFreeRoomUpgrade(assetId:int) : void
+        Server Replies:
+         Server Event Name: GET_FREE_ROOM_UPGRADE_OK
+         Method signature :  onGetFreeRoomUpgradeOk(, Asset asset)
+         Server Event Name: GET_FREE_ROOM_UPGRADE_ALREADY_HAVE_IT
+         Method signature :  onGetFreeRoomUpgradeAlreadyHaveIt(, Asset asset)
+---------------------------------------------------------------

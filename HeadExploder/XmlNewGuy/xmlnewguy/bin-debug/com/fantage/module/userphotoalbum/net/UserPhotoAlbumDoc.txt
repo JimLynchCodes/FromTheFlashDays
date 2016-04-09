@@ -1,0 +1,63 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestInitUserPhotoAlbum() : void
+        Server Replies:
+         Server Event Name: INIT_USER_PHOTO_ALBUM_OK
+         Method signature :  onInitUserPhotoAlbumOk()
+         Server Event Name: INIT_USER_PHOTO_ALBUM_FAIL
+         Method signature :  onInitUserPhotoAlbumFail()
+---------------------------------------------------------------
+   Client Method Name : requestAddUserPhotoToAlbum(resourceUrl:String) : void
+        Server Replies:
+         Server Event Name: ADD_PHOTO_TO_ALBUM_NOT_PREMIUM_MEMBER
+         Method signature :  onAddPhotoToAlbumNotPremiumMember()
+         Server Event Name: ADD_PHOTO_TO_ALBUM_OK
+         Method signature :  onAddPhotoToAlbumOk(, int current, int max)
+         Server Event Name: ADD_PHOTO_TO_ALBUM_FAIL_MAXED
+         Method signature :  onAddPhotoToAlbumFailMaxed(, int max)
+---------------------------------------------------------------
+   Client Method Name : requestAddUserComment(assetId:int, cannedCommentId:int, photoId:int) : void
+        Server Replies:
+         Server Event Name: ADD_USER_COMMENT_OK
+         Method signature :  onAddUserCommentOk(, UserPhotoComment userPhotoComment, UserPhoto userPhoto)
+         Server Event Name: ADD_USER_COMMENT_FAIL
+         Method signature :  onAddUserCommentFail()
+         Server Event Name: ADD_USER_COMMENT_ALREADY_COMMENTED
+         Method signature :  onAddUserCommentAlreadyCommented(, UserPhoto userPhoto)
+---------------------------------------------------------------
+   Client Method Name : requestGetCommentEmoticonList() : void
+        Server Replies:
+         Server Event Name: COMMENT_EMOTICON_LIST_OK
+         Method signature :  onCommentEmoticonListOk(, List asset)
+         Server Event Name: COMMENT_EMOTICON_LIST_FAIL
+         Method signature :  onCommentEmoticonListFail()
+---------------------------------------------------------------
+   Client Method Name : requestCannedCommentList() : void
+        Server Replies:
+         Server Event Name: CANNED_COMMENT_LIST_OK
+         Method signature :  onCannedCommentListOk(, List CannedComment)
+         Server Event Name: CANNED_COMMENT_LIST_FAIL
+         Method signature :  onCannedCommentListFail()
+---------------------------------------------------------------
+   Client Method Name : requestGetCurrentPhotoCount() : void
+        Server Replies:
+         Server Event Name: GET_CURRENT_PHOTO_COUNT_OK
+         Method signature :  onGetCurrentPhotoCountOk(, int current, int max)
+         Server Event Name: GET_CURRENT_PHOTO_COUNT_FAIL
+         Method signature :  onGetCurrentPhotoCountFail()
+---------------------------------------------------------------
+   Client Method Name : requestGetUserPhotoList(userId:String) : void
+        Server Replies:
+         Server Event Name: GET_USER_PHOTO_LIST_OK
+         Method signature :  onGetUserPhotoListOk(, String userId, List userPhotoList)
+         Server Event Name: GET_USER_PHOTO_LIST_FAIL_NOT_PREMIUM_MEMBER
+         Method signature :  onGetUserPhotoListFailNotPremiumMember(, String userId)
+         Server Event Name: GET_USER_PHOTO_LIST_FAIL
+         Method signature :  onGetUserPhotoListFail()
+---------------------------------------------------------------
+   Client Method Name : requestRemoveUserPhoto(id:int) : void
+        Server Replies:
+         Server Event Name: REMOVE_USER_PHOTO_OK
+         Method signature :  onRemoveUserPhotoOk(, List UserPhoto)
+         Server Event Name: REMOVE_USER_PHOTO_FAIL
+         Method signature :  onRemoveUserPhotoFail()
+---------------------------------------------------------------

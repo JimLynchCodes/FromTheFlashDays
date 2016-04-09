@@ -1,0 +1,10 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestGiveFreeEcoinCheck() : void
+        Server Replies:
+         Server Event Name: GIVE_FREE_ECOIN_OK
+         Method signature :  onGiveFreeEcoinOk()
+         Server Event Name: GIVE_FREE_ECOIN_NOT_PREMIUM_MEMBER
+         Method signature :  onGiveFreeEcoinNotPremiumMember()
+         Server Event Name: GIVE_FREE_ECOIN_ALREADY_HAVE_IT
+         Method signature :  onGiveFreeEcoinAlreadyHaveIt()
+---------------------------------------------------------------

@@ -1,0 +1,141 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestPetStatusCheckForBuyingMagicScroll(defaultMagicScrollAssetId:int) : void
+        Server Replies:
+         Server Event Name: PET_STATUS_CHECK_FOR_BUYING_MAGIC_SCROLL_OK
+         Method signature :  onPetStatusCheckForBuyingMagicScrollOk(, String userPetType, String userPetScrollType)
+---------------------------------------------------------------
+   Client Method Name : requestPetCheckBarn(targetUserId:String) : void
+        Server Replies:
+         Server Event Name: PET_CHECK_BARN_RESULT
+         Method signature :  onPetCheckBarnResult(, String targetUserId, String barnExist)
+---------------------------------------------------------------
+   Client Method Name : requestPetStartBarn() : void
+        Server Replies:
+         Server Event Name: PET_START_BARN_OK
+         Method signature :  onPetStartBarn()
+---------------------------------------------------------------
+   Client Method Name : requestPetWaitSet(userAssetId:String, light:int, temperature:int) : void
+        Server Replies:
+         Server Event Name: PET_WAIT_SET_OK
+         Method signature :  onPetWaitSetOk()
+         Server Event Name: PET_WAIT_SET_FAIL
+         Method signature :  onPetWaitSetFail(, String reason)
+---------------------------------------------------------------
+   Client Method Name : requestPetWaitSetByMagic(userAssetId:String) : void
+        Server Replies:
+         Server Event Name: PET_WAIT_SET_BY_MAGIC_OK
+         Method signature :  onPetWaitSetByMagicOk()
+---------------------------------------------------------------
+   Client Method Name : requestPetWaitStatus(targetUserId:String) : void
+        Server Replies:
+         Server Event Name: PET_WAIT_STATUS_OK
+         Method signature :  onPetWaitStatusOk(, String targetUserId, String isMagic, int light, int temperature, String isPetExist, String isPremium, Asset petEggAsset, List petEggStateList)
+         Server Event Name: PET_WAIT_STATUS_FAIL
+         Method signature :  onPetWaitStatusFail(, String targetUserId, String code)
+---------------------------------------------------------------
+   Client Method Name : requestPetWaitCheck(eggAssetName:String, light:int, temperature:int) : void
+        Server Replies:
+         Server Event Name: PET_WAIT_CHECK_OK
+         Method signature :  onPetWaitCheckOk(, String userHasIt, String isMagicCode, Pet pet)
+         Server Event Name: PET_WAIT_CHECK_FAIL
+         Method signature :  onPetWaitCheckFail()
+---------------------------------------------------------------
+   Client Method Name : requestPetWaitEnd() : void
+        Server Replies:
+         Server Event Name: PET_WAIT_END_OK
+         Method signature :  onPetWaitEndOk(, UserPet userPet)
+         Server Event Name: PET_WAIT_END_FAIL
+         Method signature :  onPetWaitEndFail(, String code)
+---------------------------------------------------------------
+   Client Method Name : requestPetWaitSuggestion(targetUserId:String, eggAssetName:String, light:int, temperature:int) : void
+        Server Replies:
+         Server Event Name: PET_WAIT_SUGGESTION_OK
+         Method signature :  onPetWaitSuggestionOk(, String targetUserId, String eggAssetName, int light, int temperature, String suggestDifferentEgg, int suggestLight, int suggestTemperature)
+         Server Event Name: PET_WAIT_SUGGESTION_FAIL
+         Method signature :  onPetWaitSuggestionFail(, String targetUserId, String failCode)
+---------------------------------------------------------------
+   Client Method Name : requestPetAcquiredDate(userPetId:String) : void
+        Server Replies:
+         Server Event Name: PET_ACQUIRED_DATE_OK
+         Method signature :  onPetAcuquiredDateOk(, String status)
+---------------------------------------------------------------
+   Client Method Name : requestPetUpdatePurchaseType(userPetId:String, purchaseType:int) : void
+        Server Replies:
+         Server Event Name: PET_UPDATE_PURCHASE_TYPE_OK
+         Method signature :  onPetUpdatePurchaseTypeOk()
+---------------------------------------------------------------
+   Client Method Name : requestPetWaitTrustSet() : void
+        Server Replies:
+         Server Event Name: PET_WAIT_TRUST_SET_OK
+         Method signature :  onPetWaitTrustSetOk(, String status)
+---------------------------------------------------------------
+   Client Method Name : requestPetWaitTrustUpdate() : void
+        Server Replies:
+         Server Event Name: PET_WAIT_TRUST_UPDATE_OK
+         Method signature :  onPetWaitTrustUpdateOk(, String status)
+---------------------------------------------------------------
+   Client Method Name : requestPetUserListBarn(targetUserId:String) : void
+        Server Replies:
+         Server Event Name: PET_USER_LIST_BARN_OK
+         Method signature :  onPetUserListBarnOk(, String targetUserId, int level, List userPetList, List userPetFamilyInfoList)
+---------------------------------------------------------------
+   Client Method Name : requestPetSetActiveBarn(userPetId:String, location:int) : void
+        Server Replies:
+         Server Event Name: PET_SET_ACTIVE_BARN_OK
+         Method signature :  onPetSetActiveBarnOk(, String userPetId, int location)
+         Server Event Name: PET_SET_ACTIVE_BARN_FAIL
+         Method signature :  onPetSetActiveBarnFail(, String userPetId, int location)
+         Server Event Name: PET_SET_ACTIVE_BARN_FAIL_PET_IS_NOT_EXIST
+         Method signature :  onPetSetActiveBarnFailPetIsNotExist(, String userPetId, int location)
+         Server Event Name: PET_SET_ACTIVE_BARN_FAIL_LOCATION_IS_FULL
+         Method signature :  onPetSetActiveBarnFailLocationIsFull(, String userPetId, int location)
+---------------------------------------------------------------
+   Client Method Name : requestPetResetWorldLocation() : void
+        Server Replies:
+         Server Event Name: PET_RESET_WORLD_LOC_OK
+         Method signature :  onPetResetWorldLocationOk(, String userPetId, int location)
+         Server Event Name: PET_RESET_WORLD_LOC_NONE
+         Method signature :  onPetResetWorldLocationNone()
+---------------------------------------------------------------
+   Client Method Name : requestPetSetRecallBarn(userPetId:String, location:int) : void
+        Server Replies:
+         Server Event Name: PET_SET_RECALL_BARN_OK
+         Method signature :  onPetSetRecallBarnOk(, String userPetIdList)
+---------------------------------------------------------------
+   Client Method Name : requestPetBarnListWorld() : void
+        Server Replies:
+         Server Event Name: PET_BARN_LIST_WORLD_OK
+         Method signature :  onPetBarnListWorldOk(, List userBarnList)
+---------------------------------------------------------------
+   Client Method Name : requestPetList() : void
+        Server Replies:
+         Server Event Name: PET_LIST_OK
+         Method signature :  onPetListOk(, List petList)
+---------------------------------------------------------------
+   Client Method Name : requestPetWaitTotalElapsedTime() : void
+        Server Replies:
+         Server Event Name: PET_WAIT_TOTAL_ELAPSED_TIME_OK
+         Method signature :  onpetWaitTotalElapsedTimeOk(, String elapsedTime)
+---------------------------------------------------------------
+   Client Method Name : requestUserPetUsageReward() : void
+        Server Replies:
+         Server Event Name: USER_PET_USAGE_REWARD_RECEIVED
+         Method signature :  onUserPetUsageRewardReceived(, Asset asset)
+---------------------------------------------------------------
+   Client Method Name : requestUserPetLevelUp(userPetId:String) : void
+        Server Replies:
+         Server Event Name: USER_PET_LEVEL_UP_OK
+         Method signature :  onUserPetLevelUpOk(, int medalLevel, UserPet userPet)
+---------------------------------------------------------------
+   Client Method Name : requestUserPetSchoolAttendance() : void
+        Server Replies:
+         Server Event Name: USER_PET_SCHOOL_ATTENDANCE_OK
+         Method signature :  onUserPetSchoolAttendanceOk(, PetSchoolAttendance petSchoolAttendance)
+         Server Event Name: USER_PET_SCHOOL_ATTENDANCE_DUPLICATED
+         Method signature :  onUserPetSchoolAttendanceDuplicated(, PetSchoolAttendance petSchoolAttendance)
+---------------------------------------------------------------
+   Client Method Name : requestUserPetSchoolAttendanceList() : void
+        Server Replies:
+         Server Event Name: USER_PET_SCHOOL_ATTENDANCE_LIST_OK
+         Method signature :  onUserPetSchoolAttendanceListOk(, List petSchoolAttendance)
+---------------------------------------------------------------

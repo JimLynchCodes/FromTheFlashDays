@@ -1,0 +1,223 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestShopMain() : void
+        Server Replies:
+         Server Event Name: BUY_ASSET_ALREADY_IN_INVENTORY
+         Method signature :  onBuyAssetAlreadyInInventory(, String assetId)
+         Server Event Name: BUY_ASSET_OK
+         Method signature :  onBuyAssetOk(, String assetId, int fundBalance)
+         Server Event Name: BUY_ASSET_DETAIL_OK
+         Method signature :  onBuyAssetDetailOk(, int fundBalance, UserAsset userAsset)
+         Server Event Name: BUY_BULK_ASSET_OK
+         Method signature :  onBuyBulkAssetOk(, String assetId, int quantity, int fundBalance)
+         Server Event Name: BUY_ASSET_SOLD_OUT
+         Method signature :  onBuyAssetSoldOut(, String assetId)
+         Server Event Name: BUY_ASSET_NOT_ENOUGH_FUNDS
+         Method signature :  onBuyAssetNotEnoughFunds(, String assetId)
+         Server Event Name: BUY_ASSET_USER_NOT_PREMIUM_MEMBER
+         Method signature :  onBuyAssetUserNotPremiumMember(, Asset asset)
+         Server Event Name: BUY_ASSET_NOT_ENOUGH_FUNDS_WITH_BALANCE
+         Method signature :  onBuyAssetNotEnoughFundsWithBalance(, String assetId, int balance)
+         Server Event Name: BUY_ASSET_FAILED_HIGHER_LEVEL_REQUIRED
+         Method signature :  onBuyAssetFailedHigherLevelRequired(, int assetId, int levelRequired, int currentLevel)
+         Server Event Name: BUY_ASSET_NOT_ENOUGH_FUNDS_WITH_BALANCE_QUANTITY
+         Method signature :  onBuyAssetNotEnoughFundsWithBalanceQuantity(, String assetId, int balance, int quantity)
+         Server Event Name: GREEN_STAR_BUY_ASSET_NOT_ENOUGH_FUNDS_WITH_BALANCE
+         Method signature :  onGreenStarBuyAssetNotEnoughFundsWithBalance(, String assetId, int starBalance, int starCashBalance)
+         Server Event Name: GREEN_STAR_BUY_ASSET_NOT_ENOUGH_FUNDS_WITH_BALANCE_QUANTITY
+         Method signature :  onGreenStarBuyAssetNotEnoughFundsWithBalanceQuantity(, String assetId, int starBalance, int starCashBalance, int quantity)
+         Server Event Name: GREEN_STAR_BUY_ASSET_ALREADY_IN_INVENTORY
+         Method signature :  onGreenStarBuyAssetAlreadyInInventory(, String assetId)
+         Server Event Name: GREEN_STAR_BUY_ASSET_OK
+         Method signature :  onGreenStarBuyAssetOk(, String assetId, int starBalance, int starCashBalance)
+         Server Event Name: GREEN_STAR_BUY_BULK_ASSET_OK
+         Method signature :  onGreenStarBuyBulkAssetOk(, String assetId, int quantity, int starBalance, int starCashBalance)
+         Server Event Name: GREEN_STAR_BUY_ASSET_SOLD_OUT
+         Method signature :  onGreenStarBuyAssetSoldOut(, String assetId)
+         Server Event Name: GREEN_STAR_BUY_ASSET_NOT_ENOUGH_FUNDS
+         Method signature :  onGreenStarBuyAssetNotEnoughFunds(, String assetId)
+         Server Event Name: BUY_MULTIPLE_ASSET_ALREADY_IN_INVENTORY
+         Method signature :  onBuyMultipleAssetAlreadyInInventory(, String csvAssetNames)
+         Server Event Name: BUY_MULTIPLE_ASSET_OK
+         Method signature :  onBuyMultipleAssetOk(, String csvAssetNames, int fundBalance)
+         Server Event Name: BUY_MULTIPLE_ASSET_SOLD_OUT
+         Method signature :  onBuyMultipleAssetSoldOut(, String csvAssetNames)
+         Server Event Name: BUY_MULTIPLE_ASSET_NOT_ENOUGH_FUNDS
+         Method signature :  onBuyMultipleAssetNotEnoughFunds(, String csvAssetNames)
+         Server Event Name: BUY_MULTIPLE_ASSET_USER_NOT_PREMIUM_MEMBER
+         Method signature :  onBuyMultipleAssetUserNotPremiumMember(, String csvAssetNames)
+         Server Event Name: BUY_MULTIPLE_ASSET_NOT_ENOUGH_FUNDS_WITH_BALANCE
+         Method signature :  onBuyMultipleAssetNotEnoughFundsWithBalance(, String csvAssetNames, int balance)
+         Server Event Name: GREEN_STAR_BUY_MULTIPLE_ASSET_NOT_ENOUGH_FUNDS_WITH_BALANCE
+         Method signature :  onGreenStarBuyMultipleAssetNotEnoughFundsWithBalance(, String csvAssetNames, int starBalance, int starCashBalance)
+         Server Event Name: GREEN_STAR_BUY_MULTIPLE_ASSET_ALREADY_IN_INVENTORY
+         Method signature :  onGreenStarBuyMultipleAssetAlreadyInInventory(, String csvAssetNames)
+         Server Event Name: GREEN_STAR_BUY_MULTIPLE_ASSET_OK
+         Method signature :  onGreenStarBuyMultipleAssetOk(, String csvAssetNames, int starBalance, int starCashBalance)
+         Server Event Name: GREEN_STAR_BUY_MULTIPLE_ASSET_SOLD_OUT
+         Method signature :  onGreenStarBuyMultipleAssetSoldOut(, String csvAssetNames)
+         Server Event Name: GREEN_STAR_BUY_MULTIPLE_ASSET_NOT_ENOUGH_FUNDS
+         Method signature :  onGreenStarBuyMultipleAssetNotEnoughFunds(, String csvAssetNames)
+---------------------------------------------------------------
+   Client Method Name : requestBuyFurniture(assetId:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestBuyFurnitureWithGreenStar(assetId:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestUpgradeHome(assetName:String) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestUpgradeHomeWithGreenStar(assetName:String) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestBuyPetFood(assetId:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestBuyPetFoodWithGreenStar(assetId:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestBuyPetEgg(assetId:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestBuyPetMagicScrollWithGreenStar(assetId:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestBuyGemWithGreenStar(assetId:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestBuyGemWithGreenStarByName(assetName:String) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestBuyMultipleAsset(csvAssetNames:String, presetPrice:int, discRate:String, discAmount:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestBuyMultipleAssetWithGreenStar(csvAssetNames:String, presetPrice:int, discRate:String, discAmount:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestBuyAsset(assetId:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestBuyLimitedAsset(assetId:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestBuyLimitedAssetByName(assetName:String) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestBuyAssetByNameWithGreenStar(assetName:String) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestCheckLevelLockedItem(assetName:String) : void
+        Server Replies:
+         Server Event Name: CHECK_LEVEL_LOCKED_ITEM_OK
+         Method signature :  onCheckLevelLockedItemOk(, int level, int userLevel, Asset asset)
+         Server Event Name: CHECK_LEVEL_LOCKED_ITEM_FAIL
+         Method signature :  onCheckLevelLockedItemFail(, int level, int userLevel, Asset asset)
+---------------------------------------------------------------
+   Client Method Name : requestGetPetLockedItem(assetName:String) : void
+        Server Replies:
+         Server Event Name: GET_PET_LOCKED_ITEM_OK
+         Method signature :  onGetPetLockedItemOk(, Asset asset)
+         Server Event Name: GET_PET_LOCKED_ITEM_NEED_PET
+         Method signature :  onGetPetLockedItemNeedPet(, String petAssetName)
+         Server Event Name: GET_PET_LOCKED_ITEM_NEED_PREMIUM_MEMBERSHIP
+         Method signature :  onGetPetLockedItemNeedPremiumMembership()
+         Server Event Name: GET_PET_LOCKED_ITEM_ALREADY_HAS_IT
+         Method signature :  onGetPetLockedItemAlreadyHasIt()
+---------------------------------------------------------------
+   Client Method Name : requestBuyLimitedAssetByNameWithGreenStar(assetName:String) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestBuyAssetWithGreenStar(assetId:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestBuyLimitedAssetWithGreenStar(assetId:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestBuyCreature(assetId:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestBuyCreatureWithGreenStar(assetId:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestUpgradeRoom(assetId:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestUpgradeRoomWithGreenStar(assetId:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestGetUserAssetInCatalog(catalogName:String) : void
+        Server Replies:
+         Server Event Name: GET_USER_ASSET_IN_CATALOG_OK
+         Method signature :  onGetUserAssetInCatalogOk(, List userAssetCatalogInfo)
+---------------------------------------------------------------
+   Client Method Name : requestGetCatalog(catalogName:String) : void
+        Server Replies:
+         Server Event Name: GET_CATALOG_OK
+         Method signature :  onGetCatalogOk(, Catalog catalog)
+---------------------------------------------------------------
+   Client Method Name : requestGetCatalogBulk(catalogName:String) : void
+        Server Replies:
+         Server Event Name: GET_CATALOG_BULK_OK
+         Method signature :  onGetCatalogBulkOk(, Catalog catalog, List catalogDiscountInfoList)
+---------------------------------------------------------------
+   Client Method Name : requestGetCatalogBulkDiscountInfo(catalogName:String, assetName:String) : void
+        Server Replies:
+         Server Event Name: GET_CATALOG_BULK_DISCOUNT_INFO_OK
+         Method signature :  onGetCatalogBulkDiscountInfoOk(, String catalogName, String assetName, List catalogDiscountInfoList)
+         Server Event Name: GET_CATALOG_BULK_DISCOUNT_INFO_NONE
+         Method signature :  onGetCatalogBulkDiscountInfoNone(, String catalogName, String assetName)
+---------------------------------------------------------------
+   Client Method Name : requestBuyBulkAsset(catalogName:String, assetName:String, quantity:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestBuyBulkAssetWithGreenStar(catalogName:String, assetName:String, quantity:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestBuyGameItem(assetName:String, quantity:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestBuyGameItemWithGreenStar(assetName:String, quantity:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestBuyRareAsset(assetOneId:int, assetTwoId:int, assetThreeId:int) : void
+        Server Replies:
+         Server Event Name: ITEM_FAILED_TO_TRANSMUTE
+         Method signature :  onItemFailedToTransmute(, int stars, String description)
+         Server Event Name: ITEM_TRANSMUTATION_SUCCESSFUL
+         Method signature :  onItemTransmutationSuccessful(, int rarity, Asset asset)
+---------------------------------------------------------------
+   Client Method Name : requestBuyAssetByName(assetName:String) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestChangeEye(eyeType:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestChangeSkinTone(skinTone:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestChangeEyeByName(assetName:String) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestChangeSkinToneByName(assetName:String) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestChangeEyeWithGreenStar(assetName:String) : void
+        Server Replies:
+         Server Event Name: CHANGE_EYE_WITH_GREEN_STAR_OK
+         Method signature :  onChangeEyeWithGreenStarOk(, int eyeType)
+---------------------------------------------------------------
+   Client Method Name : requestGetAssetInfo(assetName:String, assetId:int) : void
+        Server Replies:
+         Server Event Name: GET_ASSET_INFO_OK
+         Method signature :  onGetAssetInfoOk(, Asset asset)
+---------------------------------------------------------------
+   Client Method Name : requestChangeSkinToneWithGreenStar(assetName:String) : void
+        Server Replies:
+         Server Event Name: CHANGE_SKIN_TONE_WITH_GREEN_STAR_OK
+         Method signature :  onChangeSkinToneWithGreenStarOk(, int skinTone)
+---------------------------------------------------------------
+   Client Method Name : requestGetLimitedAssetQuantity(assetName:String) : void
+        Server Replies:
+         Server Event Name: GET_LIMITED_ASSET_QUANTITY
+         Method signature :  onGetLimitedAssetQuantity(, int quantity, Asset asset)
+---------------------------------------------------------------

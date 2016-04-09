@@ -1,0 +1,11 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestBuyLimitedAsset(assetName:String) : void
+        Server Replies:
+         Server Event Name: BUY_LIMITED_ASSET_OUT_OF_ITEMS
+         Method signature :  onBuyLimitedAssetOutOfItems(, int quantity)
+---------------------------------------------------------------
+   Client Method Name : requestGetLimitedAssetQuantity(assetName:String) : void
+        Server Replies:
+         Server Event Name: GET_LIMITED_ASSET_OK
+         Method signature :  onGetLimitedAssetOk(, int quantity)
+---------------------------------------------------------------

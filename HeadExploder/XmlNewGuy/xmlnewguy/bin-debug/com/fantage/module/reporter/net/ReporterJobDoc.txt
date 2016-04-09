@@ -1,0 +1,81 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestAddUserPhotoToAlbum(resourceUrl:String) : void
+        Server Replies:
+         Server Event Name: ADD_PHOTO_TO_ALBUM_NOT_PREMIUM_MEMBER
+         Method signature :  onAddPhotoToAlbumNotPremiumMember()
+         Server Event Name: ADD_PHOTO_TO_ALBUM_OK
+         Method signature :  onAddPhotoToAlbumOk(, int current, int max)
+         Server Event Name: ADD_PHOTO_TO_ALBUM_FAIL_MAXED
+         Method signature :  onAddPhotoToAlbumFailMaxed(, int max)
+---------------------------------------------------------------
+   Client Method Name : requestGetCurrentPhotoCount() : void
+        Server Replies:
+         Server Event Name: GET_CURRENT_PHOTO_COUNT_OK
+         Method signature :  onGetCurrentPhotoCountOk(, int current, int max)
+         Server Event Name: GET_CURRENT_PHOTO_COUNT_FAIL
+         Method signature :  onGetCurrentPhotoCountFail()
+---------------------------------------------------------------
+   Client Method Name : requestCheckReporterJobQualification() : void
+        Server Replies:
+         Server Event Name: REPORTER_JOB_CHECK_OK
+         Method signature :  onReporterJobCheckOk()
+         Server Event Name: REPORTER_JOB_CHECK_NO_OPENING
+         Method signature :  onReporterJobCheckNoOpening()
+         Server Event Name: REPORTER_JOB_CHECK_ALREADY_REPORTER
+         Method signature :  onReporterJobCheckAleadyReporter()
+         Server Event Name: REPORTER_JOB_CHECK_FAIL
+         Method signature :  onReporterJobCheckFail(, int daysRequired, String reason)
+---------------------------------------------------------------
+   Client Method Name : requestPassReporterTest() : void
+        Server Replies:
+         Server Event Name: PASS_REPORTER_TEST_OK
+         Method signature :  onPassReporterTestOk()
+---------------------------------------------------------------
+   Client Method Name : requestCheckReporterStatus() : void
+        Server Replies:
+         Server Event Name: USER_IS_REPORTER
+         Method signature :  onUserIsReporter()
+         Server Event Name: USER_IS_NOT_REPORTER
+         Method signature :  onUserIsNotReporter()
+---------------------------------------------------------------
+   Client Method Name : requestGetCometArchiveList() : void
+        Server Replies:
+         Server Event Name: GET_COMET_ARCHIVE_LIST
+         Method signature :  onGetCometArchiveList(, List comet)
+---------------------------------------------------------------
+   Client Method Name : requestCountReporterArticle() : void
+        Server Replies:
+         Server Event Name: COUNT_REPORTER_ARTICLE_OK
+         Method signature :  onCountReporterArticleOk(, int count)
+         Server Event Name: COUNT_REPORTER_ARTICLE_ERROR
+         Method signature :  onCountReporterArticleError()
+---------------------------------------------------------------
+   Client Method Name : requestReporterArticleCount(article:String) : void
+        Server Replies:
+         Server Event Name: REPORTER_ARTICLE_COUNT
+         Method signature :  onReporterArticleCountOk(, int count)
+---------------------------------------------------------------
+   Client Method Name : requestGetReporterThemeList() : void
+        Server Replies:
+         Server Event Name: GET_REPORTER_THEME_LIST_OK
+         Method signature :  onGetReporterThemeListOk(, List reporterTheme)
+---------------------------------------------------------------
+   Client Method Name : requestSubmitReporterArticle(where:String, theme:String, resourceURL:String, title:String, article:String) : void
+        Server Replies:
+         Server Event Name: SUBMIT_REPORTER_ARTICLE_OK
+         Method signature :  onSubmitReporterArticleOk(, int starsEarned, int submissionsLeft)
+         Server Event Name: SUBMIT_REPORTER_ARTICLE_MAX_SUBMITTED
+         Method signature :  onSubmitReporterArticleMaxSubmitted()
+         Server Event Name: SUBMIT_REPORTER_ARTICLE_ERROR
+         Method signature :  onSubmitReporterArticleError()
+---------------------------------------------------------------
+   Client Method Name : requestSetJobStatus(jobType:String, status:int) : void
+        Server Replies:
+         Server Event Name: SET_JOB_STATUS_OK
+         Method signature :  onSetJobStatusOk(, int status)
+---------------------------------------------------------------
+   Client Method Name : requestGetJobStatus(jobType:String) : void
+        Server Replies:
+         Server Event Name: GET_JOB_STATUS_OK
+         Method signature :  onGetJobStatusOk(, int count)
+---------------------------------------------------------------

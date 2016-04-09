@@ -1,0 +1,14 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestGameBullsEyeStart() : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestGameBullsEyeEnd() : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestGameBullsEyeItem(stage:int) : void
+        Server Replies:
+         Server Event Name: GAME_BULLSEYE_ITEM_OK
+         Method signature :  onGameBullsEyeItemOk(, String assetName)
+         Server Event Name: GAME_BULLSEYE_ITEM_FAIL
+         Method signature :  onGameBullsEyeItemFail(, String rc)
+---------------------------------------------------------------

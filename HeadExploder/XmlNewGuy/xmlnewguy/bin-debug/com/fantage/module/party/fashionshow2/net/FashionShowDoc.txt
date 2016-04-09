@@ -1,0 +1,57 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestFashionShowPoseMade(poseStars:int) : void
+        Server Replies:
+         Server Event Name: POSE_SCORE_OK
+         Method signature :  onPoseScore(, int stars, String username, String poseDescription)
+---------------------------------------------------------------
+   Client Method Name : requestFashionShowGiveStylePoint(username:String) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestFashionShowEvent() : void
+        Server Replies:
+         Server Event Name: DRESSUP_OUT_OF_TIME
+         Method signature :  onDressupOutOfTime()
+         Server Event Name: THEME_SCORE
+         Method signature :  onThemeScore(, FashionShowScore themeScore)
+         Server Event Name: END
+         Method signature :  onEndFashionShow()
+         Server Event Name: UPDATED
+         Method signature :  onScoreUpdated()
+         Server Event Name: SCORE_EARNED
+         Method signature :  onScoreEarned()
+         Server Event Name: USER_SCORE_TALLY
+         Method signature :  onUserScoreTally()
+         Server Event Name: MOVE_CAMERA_MAN
+         Method signature :  onMoveCameraMan()
+         Server Event Name: JUDGE_COMMENT
+         Method signature :  onJudgeComment()
+---------------------------------------------------------------
+   Client Method Name : requestFashionShowGetWinnerCandidateList() : void
+        Server Replies:
+         Server Event Name: FASHION_SHOW_GET_WINNER_CANDIDATE_LIST_OK
+         Method signature :  onFashionShowGetWinnerCandidateListOk(, List userList)
+---------------------------------------------------------------
+   Client Method Name : requestFashionShowSelectWinnerCandidate(winnerId:String) : void
+        Server Replies:
+         Server Event Name: FASHION_SHOW_SELECT_WINNER_CANDIDATE_OK
+         Method signature :  onFashionShowSelectWinnerCandidateOk(, User user)
+         Server Event Name: FASHION_SHOW_SELECT_WINNER_CANDIDATE_FAIL
+         Method signature :  onFashionShowSelectWinnerCandidateFail(, String reason, User user)
+---------------------------------------------------------------
+   Client Method Name : requestGetCurrentFashionShowParty(roomName:String) : void
+        Server Replies:
+         Server Event Name: GET_CURRENT_FASHION_SHOW_PARTY_OK
+         Method signature :  onGetCurrentFashionShowOK(, FashionShowParty fashionShowParty)
+---------------------------------------------------------------
+   Client Method Name : requestThemeSelection(themeSelected:String) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestStartFashionShow() : void
+        Server Replies:
+         Server Event Name: START_FASHION_SHOW_OK
+         Method signature :  onStartFashionShowOk()
+         Server Event Name: START_FASHION_SHOW_FAIL
+         Method signature :  onStartFashionShowFail(, String status)
+         Server Event Name: SELECT_THEME
+         Method signature :  onSelectTheme(, List themeList)
+---------------------------------------------------------------

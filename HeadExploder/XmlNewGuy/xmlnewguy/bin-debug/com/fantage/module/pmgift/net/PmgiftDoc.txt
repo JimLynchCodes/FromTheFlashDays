@@ -1,0 +1,15 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestPmgiftCheck() : void
+        Server Replies:
+         Server Event Name: PMGIFT_CHECK_OK
+         Method signature :  onPmgiftCheckOk(, Asset thisMonthGift, Asset lastMonthGift)
+---------------------------------------------------------------
+   Client Method Name : requestPmgiftGet(assetName:String) : void
+        Server Replies:
+         Server Event Name: PMGIFT_GET_OK
+         Method signature :  onPmgiftGetOk(, Asset giftAsset)
+         Server Event Name: PMGIFT_GET_INVALID_ASSET
+         Method signature :  onPmgiftGetInvalidAsset(, String assetName)
+         Server Event Name: PMGIFT_GET_ALREADY_HAS_IT
+         Method signature :  onPmgiftGetAleadyHasIt(, Asset giftAsset)
+---------------------------------------------------------------

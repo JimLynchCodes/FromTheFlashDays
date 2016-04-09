@@ -1,0 +1,13 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestGetRareItemList(maxItemsPerType:int) : void
+        Server Replies:
+         Server Event Name: GET_RARE_ITEM_LIST_OK
+         Method signature :  onGetRareItemListOk(, List asset)
+---------------------------------------------------------------
+   Client Method Name : requestBuyRareAssetByUserAsset(userAssetOneId:int, userAssetTwoId:int, userAssetThreeId:int) : void
+        Server Replies:
+         Server Event Name: ITEM_FAILED_TO_TRANSMUTE
+         Method signature :  onItemFailedToTransmute(, int stars, String description)
+         Server Event Name: ITEM_TRANSMUTATION_SUCCESSFUL
+         Method signature :  onItemTransmutationSuccessful(, int rarity, Asset asset)
+---------------------------------------------------------------

@@ -1,0 +1,16 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestUserGetAllFundBalance() : void
+        Server Replies:
+         Server Event Name: USER_GET_ALL_FUND_BALANCE
+         Method signature :  onUserGetAllFundBalance(, int starBalance, int starCashBalance)
+---------------------------------------------------------------
+   Client Method Name : requestUserGetStarBalance() : void
+        Server Replies:
+         Server Event Name: USER_GET_STAR_BALANCE
+         Method signature :  onUserGetStarBalance(, int starBalance)
+---------------------------------------------------------------
+   Client Method Name : requestUserGetStarCashBalance() : void
+        Server Replies:
+         Server Event Name: USER_GET_STAR_CASH_BALANCE
+         Method signature :  onUserGetStarCashBalance(, int starCashBalance)
+---------------------------------------------------------------

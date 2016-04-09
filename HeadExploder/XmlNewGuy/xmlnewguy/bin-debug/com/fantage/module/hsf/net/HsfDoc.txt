@@ -1,0 +1,51 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestHsfItemList(numItem:int, cData:String) : void
+        Server Replies:
+         Server Event Name: HSF_ITEM_LIST_OK
+         Method signature :  onHsfItemListOk(, String cData, List hsfItemList)
+---------------------------------------------------------------
+   Client Method Name : requestHsfItemPick(itemId:int) : void
+        Server Replies:
+         Server Event Name: HSF_ITEM_PICK_OK
+         Method signature :  onHsfItemPickOk(, int itemId)
+         Server Event Name: HSF_ITEM_PICK_FAIL
+         Method signature :  onHsfItemPickFail(, int itemId, String returnCode)
+---------------------------------------------------------------
+   Client Method Name : requestHsfItemSetPick(itemIdCsv:String) : void
+        Server Replies:
+         Server Event Name: HSF_ITEM_SET_PICK_RET
+         Method signature :  onHsfItemSetPickRet(, String itemIdSetOk, String itemIdSetFail, String returnCode)
+---------------------------------------------------------------
+   Client Method Name : requestHsfMedal() : void
+        Server Replies:
+         Server Event Name: HSF_MEDAL_OK
+         Method signature :  onHsfMedalOk(, UserMedal userMedal)
+         Server Event Name: HSF_MEDAL_LEVEL_UP
+         Method signature :  onHsfMedalLevelUp(, UserMedal userMedal)
+         Server Event Name: HSF_MEDAL_PREMIUM_MEMBER_ONLY
+         Method signature :  onHsfMedalPremiumMemberOnly()
+         Server Event Name: HSF_MEDAL_ALREADY_HAS_IT
+         Method signature :  onHsfMedalAlreadyHasIt()
+         Server Event Name: HSF_MEDAL_NONE
+         Method signature :  onHsfMedalNone()
+---------------------------------------------------------------
+   Client Method Name : requestHsfTeamMedal() : void
+        Server Replies:
+         Server Event Name: HSF_TEAM_MEDAL_OK
+         Method signature :  onHsfTeamMedalOk(, UserMedal userMedal)
+         Server Event Name: HSF_TEAM_MEDAL_LEVEL_UP
+         Method signature :  onHsfTeamMedalLevelUp(, UserMedal userMedal)
+         Server Event Name: HSF_TEAM_MEDAL_PREMIUM_MEMBER_ONLY
+         Method signature :  onHsfTeamMedalPremiumMemberOnly()
+         Server Event Name: HSF_TEAM_MEDAL_ALREADY_HAS_IT
+         Method signature :  onHsfTeamMedalAlreadyHasIt()
+         Server Event Name: HSF_TEAM_MEDAL_NONE
+         Method signature :  onHsfTeamMedalNone()
+---------------------------------------------------------------
+   Client Method Name : requestHsfTeamMedalInfo(targetUserId:String) : void
+        Server Replies:
+         Server Event Name: HSF_TEAM_MEDAL_INFO_OK
+         Method signature :  onHsfTeamMedalInfoOk(, UserMedal userMedal)
+         Server Event Name: HSF_TEAM_MEDAL_INFO_NONE
+         Method signature :  onHsfTeamMedalInfoNone()
+---------------------------------------------------------------

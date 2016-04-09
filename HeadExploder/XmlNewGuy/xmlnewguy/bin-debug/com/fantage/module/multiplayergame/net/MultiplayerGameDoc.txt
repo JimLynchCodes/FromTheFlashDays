@@ -1,0 +1,95 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestMultiplayerMain() : void
+        Server Replies:
+         Server Event Name: USER_LEFT_DURING_GAME
+         Method signature :  onUserLeft(, String userId)
+---------------------------------------------------------------
+   Client Method Name : requestMultiplayerGameChat(chatText:String) : void
+        Server Replies:
+         Server Event Name: ROOM_CHAT
+         Method signature :  onRoomChat(, String username, String chatText)
+         Server Event Name: BLOCKED_ROOM_CHAT
+         Method signature :  onBlockedRoomChat(, String username, String chatText)
+---------------------------------------------------------------
+   Client Method Name : requestMultiplayerGameSessionList(gameName:String) : void
+        Server Replies:
+         Server Event Name: MULTIPLAYER_GAME_SESSION_LIST_PK
+         Method signature :  onMultiplayerGameSessionListOk(, List gameSession)
+---------------------------------------------------------------
+   Client Method Name : requestMultiplayerJoinNextOpenInGame(gameName:String, initialPacket:Object) : void
+        Server Replies:
+         Server Event Name: MULTIPLAYER_JOIN_NEXT_OPEN_IN_GAME_OK
+         Method signature :  onMultiplayerJoinNextOpenInGameOk(, MultiplayerGameSession multiplayerGameSession, List user, List multiplayerGameData)
+---------------------------------------------------------------
+   Client Method Name : requestGetMultiplayerUser(gameName:String, gameSessionId:String, userId:String) : void
+        Server Replies:
+         Server Event Name: GET_MULTIPLAYER_OK
+         Method signature :  onGetMultiplayerOk(, String gameSessionId, MultiplayerGameData multiplayerGameData, XMLNode user)
+---------------------------------------------------------------
+   Client Method Name : requestMultiplayerJoinInGame(gameName:String, gameSessionId:String, initialPacket:Object) : void
+        Server Replies:
+         Server Event Name: MULTIPLAYER_JOIN_IN_GAME_OK
+         Method signature :  onMultiplayerJoinInGameOk(, String gameSessionId)
+         Server Event Name: MULTIPLAYER_JOIN_IN_GAME_DOES_NOT_EXIST
+         Method signature :  onMultiplayerJoinInGameDoesNotExist(, String gameSessionId)
+         Server Event Name: MULTIPLAYER_JOIN_IN_GAME_IS_NOT_OPEN
+         Method signature :  onMultiplayerJoinInGameIsNotOpen(, String gameSessionId)
+         Server Event Name: MULTIPLAYER_JOIN_IN_GAME_ALREADY_IN_GAME
+         Method signature :  onMultiplayerJoinInGameAlreadyInGame(, String gameSessionId)
+---------------------------------------------------------------
+   Client Method Name : requestGetMultiplayerGameSession(gameName:String, gameSessionId:String) : void
+        Server Replies:
+         Server Event Name: GET_MULTIPLAYER_GAME_SESSION_OK
+         Method signature :  onGetMultiplayerGameSessionOk(, MultiplayerGameSession multiplayerGameSession, List user, List multiplayerGameData)
+---------------------------------------------------------------
+   Client Method Name : requestMultiplayerLeaveInGame(gameSessionId:String, gameScore:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestPingServer(clientTime:int) : void
+        Server Replies:
+         Server Event Name: PING_OK
+         Method signature :  onPing(, int clientTime, int serverTime)
+---------------------------------------------------------------
+   Client Method Name : requestClientStateUpdate(state:String) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestGetUserGameRecord(gameId:int, userId:String) : void
+        Server Replies:
+         Server Event Name: GET_USER_GAME_RECORD_OK
+         Method signature :  onGetUserGameRecordOk(, UserGameRecord userGameRecord)
+         Server Event Name: GET_USER_GAME_RECORD_FAIL
+         Method signature :  onGetUserGameRecordFail(, String userId)
+---------------------------------------------------------------
+   Client Method Name : requestSendDataToAllPlayers(multiplayerGameDataXML:Object) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestAddUserScore(score:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestAddUserScoreRobot(score:int, robotId:String) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestGetGameTimer(score:int) : void
+        Server Replies:
+         Server Event Name: GET_GAME_TIMER
+         Method signature :  onGetGameTimer(, int currentTime, int totalTime)
+---------------------------------------------------------------
+   Client Method Name : requestUpdateUserAvatar(gameData:String, avatarNode:Object) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestUpdateGameEntityHealth(gameSessionId:String, entityName:String, amount:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestGetGameState(score:int) : void
+        Server Replies:
+         Server Event Name: GET_GAME_STATE_OK
+         Method signature :  onGetGameStateOk(, String state, int currentTime, int totalTime, int serverTime)
+---------------------------------------------------------------
+   Client Method Name : requestMergeGameState(state:String) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestFinalGameScoreList() : void
+        Server Replies:
+         Server Event Name: FINAL_GAME_SCORE_LIST
+         Method signature :  onFinalGameScoreList(, List finalGameScoreList)
+---------------------------------------------------------------

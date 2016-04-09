@@ -1,0 +1,17 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestMusicCampGetItem(assetName:String) : void
+        Server Replies:
+         Server Event Name: GET_ITEM_OK
+         Method signature :  onGetItemOk(, Asset asset)
+         Server Event Name: GET_ITEM_ALREADY_HAVE_IT
+         Method signature :  onGetItemAlreadyHaveIt(, Asset asset)
+         Server Event Name: PREMIUM_MEMBERSHIP_REQUIRED
+         Method signature :  onPremiumMembershipRequired(, Asset asset)
+---------------------------------------------------------------
+   Client Method Name : requestMusiccampMedal() : void
+        Server Replies:
+         Server Event Name: MUSICCAMP_MEDAL_OK
+         Method signature :  onMusiccampMedalOk()
+         Server Event Name: MUSICCAMP_MEDAL_FAIL
+         Method signature :  onMusiccampMedalFail()
+---------------------------------------------------------------

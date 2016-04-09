@@ -1,0 +1,11 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestBlogNewMessageExist() : void
+        Server Replies:
+         Server Event Name: BLOG_NEW_MESSAGE_NUMBER
+         Method signature :  onBlogNewMessageNumber(, String NewMessageNumber)
+---------------------------------------------------------------
+   Client Method Name : requestBlogNewReadAlert() : void
+        Server Replies:
+         Server Event Name: BLOG_NEW_READ_UPDATE_OK
+         Method signature :  onBlogCheckStatus()
+---------------------------------------------------------------

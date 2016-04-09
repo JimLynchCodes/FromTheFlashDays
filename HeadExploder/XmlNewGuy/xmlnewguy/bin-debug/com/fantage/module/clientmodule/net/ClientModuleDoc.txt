@@ -1,0 +1,30 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestGetClientModuleList() : void
+        Server Replies:
+         Server Event Name: GET_CLIENT_MODULE_LIST_OK
+         Method signature :  onGetClientModuleListOk(, List clientModuleList)
+---------------------------------------------------------------
+   Client Method Name : requestStartClientModule(clientModuleName:String) : void
+        Server Replies:
+         Server Event Name: START_CLIENT_MODULE_OK
+         Method signature :  onStartClientModuleOk(, ClientModuleUserData clientModuleUserData)
+         Server Event Name: START_CLIENT_MODULE_FAIL
+         Method signature :  onStartClientModuleFail()
+         Server Event Name: START_CLIENT_MODULE_MAX_REACHED
+         Method signature :  onStartClientModuleMaxReached()
+---------------------------------------------------------------
+   Client Method Name : requestEndClientModule(clientModuleName:String) : void
+        Server Replies:
+         Server Event Name: END_CLIENT_MODULE_USER_DATA_OK
+         Method signature :  onEndClientModule(, ClientModuleUserData clientModuleUserData)
+---------------------------------------------------------------
+   Client Method Name : requestGetClientModuleUserData(clientModuleName:String) : void
+        Server Replies:
+         Server Event Name: GET_CLIENT_MODULE_USER_DATA_OK
+         Method signature :  onGetClientModuleUserDataOk(, ClientModuleUserData clientModuleUserData)
+---------------------------------------------------------------
+   Client Method Name : requestSaveClientModuleUserData(clientModuleName:String, clientModuleUserData:Object) : void
+        Server Replies:
+         Server Event Name: SAVE_CLIENT_MODULE_USER_DATA_OK
+         Method signature :  onSaveClientModuleUserDataOk(, ClientModuleUserData clientModuleUserData)
+---------------------------------------------------------------

@@ -1,0 +1,15 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestGetInviteFriendsGetAsset() : void
+        Server Replies:
+         Server Event Name: GET_INVITE_FRIENDS_GET_ASSET_OK
+         Method signature :  onGetInviteFriendsGetAssetOk(, List prize)
+---------------------------------------------------------------
+   Client Method Name : requestInviteFriendsCheck() : void
+        Server Replies:
+         Server Event Name: INVITE_FRIENDS_CHECK_NOT_STARTED
+         Method signature :  onInviteFriendsNotStarted(, List prize)
+         Server Event Name: INVITE_FRIENDS_PENDING
+         Method signature :  onInviteFriendsPending(, int timeSpent, int timeLeft)
+         Server Event Name: INVITE_FRIENDS_COMPLETED
+         Method signature :  onInviteFriendsCompleted(, List prize)
+---------------------------------------------------------------

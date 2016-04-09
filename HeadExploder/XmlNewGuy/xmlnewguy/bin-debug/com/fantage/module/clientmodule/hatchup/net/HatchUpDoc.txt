@@ -1,0 +1,30 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestHatchUpStart(moduleName:String) : void
+        Server Replies:
+         Server Event Name: START_MODULE_OK
+         Method signature :  onStartModuleOk(, String clientModuleName)
+         Server Event Name: START_MODULE_FAIL
+         Method signature :  onStartModuleFail(, String clientModuleName, String failMessage)
+---------------------------------------------------------------
+   Client Method Name : requestHatchUpCheckState(moduleName:String) : void
+        Server Replies:
+         Server Event Name: CHECK_MODULE_OK
+         Method signature :  onCheckModuleOk(, String clientModuleName, Map dataMap)
+         Server Event Name: CHECK_MODULE_FAIL
+         Method signature :  onCheckModuleFail(, String clientModuleName, String failMessage)
+---------------------------------------------------------------
+   Client Method Name : requestHatchUpEventDo(moduleName:String) : void
+        Server Replies:
+         Server Event Name: HATCH_UP_OK
+         Method signature :  onHatchUpOk(, String clientModuleName, String resultMessage)
+---------------------------------------------------------------
+   Client Method Name : requestHatchUpEventProcess(moduleName:String) : void
+        Server Replies:
+         Server Event Name: HATCH_UP_EVENT_PROCESS_OK
+         Method signature :  onHatchUpEventProcessOk(, String clientModuleName, String resultMessage, Map dataMap)
+---------------------------------------------------------------
+   Client Method Name : requestHatchUpGiveItem(moduleName:String) : void
+        Server Replies:
+         Server Event Name: HATCH_UP_GIVE_ITEM_OK
+         Method signature :  onHatchUpGiveItemOk(, String clientModuleName, String resultMessage, List assetList)
+---------------------------------------------------------------

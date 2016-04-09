@@ -1,0 +1,6 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestGetIModList() : void
+        Server Replies:
+         Server Event Name: GET_IMOD_LIST_OK
+         Method signature :  onGetIModListOk(, List imodList)
+---------------------------------------------------------------

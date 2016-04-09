@@ -1,0 +1,21 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestPetShopMagicCatalog() : void
+        Server Replies:
+         Server Event Name: PET_SHOP_MAGIC_CATALOG_OK
+         Method signature :  onPetShopMagicCatalogOk(, List petShopMagicDataList)
+---------------------------------------------------------------
+   Client Method Name : requestPetShopMagicCatalogPlus(assetType:String) : void
+        Server Replies:
+         Server Event Name: PET_SHOP_MAGIC_CATALOG_PLUS_OK
+         Method signature :  onPetShopMagicCatalogPlusOk(, List petShopMagicaDataList)
+---------------------------------------------------------------
+   Client Method Name : requestPetShopFoodCatalog() : void
+        Server Replies:
+         Server Event Name: PET_SHOP_FOOD_CATALOG_OK
+         Method signature :  onPetShopFoodCatalogOk(, List petFoodList)
+---------------------------------------------------------------
+   Client Method Name : requestPetShopEggCatalog() : void
+        Server Replies:
+         Server Event Name: PET_SHOP_EGG_CATALOG_OK
+         Method signature :  onPetShopEggCatalogOk(, List petEggList)
+---------------------------------------------------------------

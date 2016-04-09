@@ -1,0 +1,8 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestGameItemGet(gameCode:String, itemAssetName:String, amount:int, purchaseType:int) : void
+        Server Replies:
+         Server Event Name: GAME_ITEM_GET_OK
+         Method signature :  onGameItemGetOk()
+         Server Event Name: GAME_ITEM_GET_FAIL
+         Method signature :  onGameItemGetFail(, String rc)
+---------------------------------------------------------------

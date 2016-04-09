@@ -1,0 +1,30 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestRegisterCheckUsername(username:String, emailAddress:String) : void
+        Server Replies:
+         Server Event Name: USERNAME_CHECK_OK
+         Method signature :  onRegisterCheckUsernameOk()
+         Server Event Name: USERNAME_ALREADY_EXISTS
+         Method signature :  onRegisterCheckUsernameAlreadyExists()
+         Server Event Name: USERNAME_INVALID
+         Method signature :  onRegisterCheckUsernameInvalid()
+         Server Event Name: EMAIL_ALREADY_USED
+         Method signature :  onRegisterCheckEmailAlreadyUsed(, int maxEmailAllowed)
+         Server Event Name: SUGGEST_USERNAME
+         Method signature :  onRegisterSuggestUsername(, String username)
+---------------------------------------------------------------
+   Client Method Name : requestRegisterStart() : void
+        Server Replies:
+         Server Event Name: REGISTER_START_FAILED
+         Method signature :  onRegisterStartFailed(, String failCode)
+---------------------------------------------------------------
+   Client Method Name : requestRegisterUserSessionKey(username:String, password:String, dobMonth:int, dobDay:int, dobYear:int, language:String, emailAddress:String, gender:String, chatMode:String, userInvitationDataId:String, avatarNode:Object, siteReferrer:Object) : void
+        Server Replies:
+         Server Event Name: REGISTER_USER_INVALID
+         Method signature :  onRegisterUserInvalid()
+         Server Event Name: REGISTER_USER_ALREADY_EXISTS
+         Method signature :  onRegisterUserAlreadyExists()
+         Server Event Name: REGISTER_USER_OK_SESSION_KEY
+         Method signature :  onRegisterUserOkSessionKey(, String loginSessionKey)
+         Server Event Name: REGISTER_USER_OK_ACTIVATION
+         Method signature :  onRegisterUserOkActication()
+---------------------------------------------------------------

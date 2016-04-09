@@ -1,0 +1,32 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestBusStopCheckStatus() : void
+        Server Replies:
+         Server Event Name: BUS_STOP_CHECK_STATUS_OK
+         Method signature :  onBusStopCheckStatusOk(, String place, String status)
+---------------------------------------------------------------
+   Client Method Name : requestBusStopUpdateStatus() : void
+        Server Replies:
+         Server Event Name: BUS_STOP_UPDATE_STATUS_OK
+         Method signature :  onBusStopUpdateStatusOk()
+---------------------------------------------------------------
+   Client Method Name : requestSetAttendance(eventTitle:String) : void
+        Server Replies:
+         Server Event Name: SET_ATTENDANCE_OK
+         Method signature :  onSetAttendanceOk()
+         Server Event Name: SET_ATTENDANCE_ITEM_OK
+         Method signature :  onSetAttendanceItemOk(, Asset asset)
+---------------------------------------------------------------
+   Client Method Name : requestBtsCheckMedal() : void
+        Server Replies:
+         Server Event Name: BTS_CHECK_MEDAL_ALREADY_HAS_IT
+         Method signature :  onBtsCheckMedalAlreadyHasIt()
+         Server Event Name: BTS_CHECK_MEDAL_DISQUALIFIED
+         Method signature :  onBtsCheckMedalDisqualified()
+         Server Event Name: BTS_CHECK_MEDAL_OK
+         Method signature :  onBtsCheckMedalOk(, UserMedal userMedal)
+---------------------------------------------------------------
+   Client Method Name : requestBtsCheckCurrentDate() : void
+        Server Replies:
+         Server Event Name: BTS_CHECK_CURRENT_DATE_OK
+         Method signature :  onBtsCheckCurrentDateOk(, String currentDate)
+---------------------------------------------------------------

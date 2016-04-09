@@ -1,0 +1,432 @@
+//=======================================================
+//find the cub (crying) get fish
+//=======================================================
+
+replyQ1
+!"Wahhh wah *gulp* *cough* wah"
+*"Whats wrong little guy?", replyQ1R1
+*"Quiet down, will ya?", replyClose
+
+replyQ1R1
+!"I am so hungry, I haven't eaten in days"
+*"Thats horrible, let me find you something.", replyQ1R2
+*"Sorry to hear, but I can't  help you.", replyClose
+
+replyQ1R2
+!"Oh thank you, it has been so long since I have eaten anything."
+*"I think I can find you some apples and cake and stuff.", replyQ1R3
+*"What do you want to eat?", replyQ1R4
+*"Actually, I'm busy, sorry.", replyClose
+
+replyQ1R3
+!"Oh I can't eat that stuff, I can only eat fish."
+*"Okay I'll find you some fish, how much do you need?", replyQ1R5
+*"You are too picky.", replyClose
+
+replyQ1R4
+!"My parents use to get me fresh fish, its my favorite."
+*"Okay I'll find you some fish, how much do you need?", replyQ1R5
+
+replyQ1R5
+!"If you could get me 20 fish, it will last me a good long time."
+*"Okay 20 fish, I'll get right on that.", replyQ1R6
+*"Thats too much work, sorry kid.", replyClose
+
+replyQ1R6
+state==Q1ACCEPTED
+NPCNotification(2)
+!"You can find fresh fish by the river, the bright BoBo fish are the best."
+*"Okay I"ll be back with your fish!", replyClose
+
+replyQ1Waiting
+!"Im so hungry, please hurry, the fish can be found outside the Creature Arena"
+*"Okay I"ll be back with your fish!", replyClose
+
+getfish()
+state==Q1Completed
+NPCNotification(3)
+
+replyQ1Completed
+!"Thank you so much, I surely would have starved on my own."
+*"Glad to help!", replyQ2Init
+
+replyQ2Init
+state==Q2Init
+NPCNotification(1)
+
+
+//=======================================================
+//thanks, find my parents
+//=======================================================
+
+replyQ2
+!"Can you do me one more favor?"
+*"Sure, what can I do to help", replyQ2R1
+*"I just helped you!", replyClose
+
+replyQ2R1
+!"Can you find my parents?"
+*"What happened to them?", replyQ2R2
+*"Just sit tight and I'm sure they'll find you.", replyClose
+
+replyQ2R2
+!"I last saw them by the mountains before I realised I was lost."
+*"I'll find your parents, dont worry.", replyQ2R3
+*"Maybe you should let them find you.", replyClose
+
+replyQ2R3
+state==Q2ACCEPTED
+NPCNotification(2)
+!"Thanks, they should be easy to find, they are really big and leave big tracks."
+*"I'm on it!", replyClose
+
+replyQ2Waiting
+!"Have you found my parents yet?  I last saw them by the mountains."
+*"I'm on it!", replyClose
+
+addObject(bear tracks, castle)
+
+//=======================================================
+//find bears in cage
+//=======================================================
+
+NPCNotification(3)
+
+replyQ3
+!"Help!  Get me out of here!"
+*"What happened to you?", replyQ3R1
+*"Are you the baby bear's parents?", replyQ3R2
+*"I'm already helping another bear, I'll get back to you.", replyClose
+
+replyQ3R1
+!"we were trapped by am evil hunter, please. help us get out"
+*"The door is locked, how can I get you out?", replyQ3R4
+
+replyQ3R2
+!"Yes, please get us out of here so we can go to our son!"
+*"The door is locked, how can I get you out?", replyQ3R4
+
+replyQ3R4
+!"There are four locks on the cage, so you need four keys."
+*"Where can I find the keys?", replyQ3R5
+*"This is too much work!", replyClose
+
+replyQ3R5
+state==Q3ACCEPTED
+!"The hunter gave the keys to four of his friends, find them and get the keys."
+*"Where is the first key?", replyQ3R6
+*"Where is the seconds?", replyQ3R7
+*"Where is the third?", replyQ3R8
+*"Where is the fourth?", replyQ3R9
+
+replyQ3R6
+!"The first key went to a shady looking fellow, we would be scary if he wasn't eating pink ice cream."
+*"Okay I'll find it!", replyClose
+*"Where can I find the other keys?", replyQ3R5b
+
+replyQ3R7
+!"The second key went to a pirate!"
+*"Okay I'll find it!", replyClose
+*"Where can I find the other keys?", replyQ3R5b
+
+replyQ3R8
+!"The third key went to a werid person dressed in black who didn't talk."
+*"Okay I'll find it!", replyClose
+*"Where can I find the other keys?", replyQ3R5b
+
+replyQ3R9
+!"The fourth key went to a gypsy, and she smelled like giant mushrooms."
+*"Okay I'll find it!", replyClose
+*"Where can I find the other keys?", replyQ3R5b
+
+replyQ3R5b
+!"The hunter gave the keys to four of his friends, find them and get the keys."
+*"Where is the first key?", replyQ3R6
+*"Where is the seconds?", replyQ3R7
+*"Where is the third?", replyQ3R8
+*"Where is the fourth?", replyQ3R9
+
+
+//=======================================================
+//look for combination
+//4 locks, 4 keys
+//=======================================================
+
+//4 npcs, interact with gives peice
+//-3 card montey( win 5 in a row he gives you key)
+//-rock paper scissor extreme!
+//-mimic game!
+//-dice game, 
+
+//=======================================================
+//Shady Character
+//=======================================================
+
+replyShady1
+!"Pst, hey, want to try your luck in a fun game?"
+*"Do you know anything about a key?", replyShady1R1
+
+replyShady1R1
+!"Who wants to know?"
+*"I need the key to free the bears!", replyShady1R2
+*"No one, but do you have it?", replyShady1R2
+
+replyShady1R2
+!"I have it, tell you what, you look like an honest kid, you beat me in a little game and you can have the key."
+*"Tell me about this game...", reply replyShady1R3
+*"Let's play!", shadyChallenge
+*"This looks fishy, I'll pass.", replyClose
+
+replyShady1R3
+!"You guess what ball the cup is hiding under, if you can guess right 3 times in a row, I'll give you the key."
+*"Is there a catch?", replyShady1R4
+*"Okay, lets play.", shadyChallenge
+
+replyShady1R4
+!"You can win big i nthis game, but the cost to play is 5 StarZ!"
+*"Okay, I'll give it a shot.", shadyChallenge
+*"I'm not paying that!", replyClose
+
+shadyChallenge
+questData.shady=="ACCEPTED"
+launchGame(3CM)//3CM = Three Card Montey
+//if win
+shadyWin
+//if lose
+shadyLose
+
+shadyWin
+!"Wow, I have never been beat before, here you go kid, you earned this."
+questData.shady=="COMPLETED"
+*"Thanks!", shadyWin2
+
+shadyWin2
+questPopup("You receive the first key!")
+
+replyShadyWaiting
+!"So, you want to try again, only 5 StarZ, you can win big, only 5 Starz to play"
+*"Lets go!", shadyChallenge
+*"I have given up!", replyClose
+
+shadyLose
+!"Eh he he, come back and try again any time, just 5 StarZ to play."
+*"Lets go!", shadyChallenge
+*"I have given up!", replyClose
+
+//=======================================================
+//Pirate
+//=======================================================
+
+replyPirate1
+!"Arr matey, if ye be after my treasure I'll be making ya walk the plank!"
+*"I have come for a key!", replyPirate1R1
+*"I can't swim so I'll go", replyClose
+
+replyPirate1R1
+!"My shinies, never, be gone or I'll be sending ya ta see Davey Jones."
+*"I challenge you to one-on-one combat for the key!", replyPirate1R2
+*"I can't swim so I'll go", replyClose
+
+replyPirate1R2
+!"And what if I win, they key is already mine."
+*"I'll wager 25 shinies, err, StarZ.", replyPirate1R3
+*"I'll pass, keep your key", replyClose
+
+replyPirate1R3
+!"Its a deal, if You beat me, you can have my key, but if I win, I'll be taking 25 starz from ya.
+*"It is a deal, lets go!", pirateChallenge
+*"I'll pass, keep your key", replyClose
+
+pirateChallenge
+questData.pirate=="ACCEPTED"
+launchGame(RPSE)//RPSE = Rock Paper Scissors Extreme
+//if win
+pirateWin
+//if lose
+pirateLose
+
+pirateWin
+!"Arr, ya got me, here is the key!"
+questData.pirate=="COMPLETED"
+*"Woot!", pirateWin2
+
+pirateWin2
+questPopup("You receive the second key!")
+
+replyPirateWaiting
+!"If ye want to try your luck again for my key, a small wager of 25 StarZ be needed."
+*"Lets go!", pirateChallenge
+*"I have given up!", replyClose
+
+pirateLose
+!"Ye be no match for me, but I'll play again if ye be feeling lucky."
+*"Lets go!", pirateChallenge
+*"I have given up!", replyClose
+
+//=======================================================
+//MIME/Jester
+//=======================================================
+
+replyMime
+!"..."
+*"A key, tell me you have it!", replyMime1
+*"Um, okay, nevermind.", replyClose
+
+replyMimeR1
+!"..."
+*"Give me the key!", replyMime2
+*"Forget it.", replyClose
+
+replyMime2
+!"..."
+*"The cage key, I need it!", replyMime3
+*"... To you too.", replyClose
+
+replyMime3
+!"..."
+*"I can't stand you, fine, I'll play your game.", mimeChallenge
+*"Enough of you.", replyClose
+
+mimeChallenge
+questData.mime=="ACCEPTED"
+launchGame(Mime)
+//if win
+mimeWin
+//if lose
+mimeLose
+
+mimeWin
+!"..."
+questData.mime=="COMPLETED"
+*"Yeah yeah, give me the key.", mimeWin2
+
+mimeWin2
+questPopup("You receive the third key!")
+
+replyMimeWaiting
+!"..."
+*"Lets go again!", mimeChallenge
+*"I'm tired of you.", replyClose
+
+mimeLose
+!"..."
+*"Lets go!", mimeChallenge
+*"I'm tired if you.", replyClose
+
+//=======================================================
+//Gypsy
+//=======================================================
+
+replyGypsy
+!"I saw you coming, I'm here to help you, but you must prove yourself."
+*"How do I do that?", replyGypsy1
+
+replyGypsy1
+!"A simple task really, I have layed out 12 cards, if your character is true, you will find the right one."
+*"I need to save thsoe bears, bring on the test!", gypsyChallenge
+*"I dont have time for your games!", replyClose
+
+gypstChallenge
+questData.gypsy=="ACCEPTED"
+launchGame(12C)//12C = 12 Card Guessing Game
+//if win
+gypsyWin
+//if lose
+gypsyLose
+
+gypsyWin
+!"I knew you could do it."
+questData.gypsy=="COMPLETED"
+*"Thanks!", gypsyWin2
+
+gypsyWin2
+questPopup("You receive the fouth key!")
+
+replyGypsyWaiting
+!"Have you cleared your conscious, when your mind is ready, you will be able to find the key."
+*"I'm ready to try again", gypsyChallenge
+*"I must collect my thoughts.", replyClose
+
+gypsyLose
+!"Clear your conscious and come back, when you are at peace, you will be able to find the key."
+*"I shall be back.", replyClose
+
+//=======================================================
+//open lock, start to escape
+//=======================================================
+
+
+
+onLockClick {
+if (
+(questData.gypsy=="COMPLETED")||
+(questData.mime=="COMPLETED")||
+(questData.shady=="COMPLETED")||
+(questData.pirate=="COMPLETED")
+)
+
+{
+//preload animation movie clip
+//popup animation movie clip
+//movie:bear retrapped, hunter takes bears to top of the mountain
+state==Q4COMPLETED
+}
+
+else
+//popup you still need the X key
+}
+
+//=======================================================
+//yeti help, helecopter knocks over yeti's snowman in movie clip
+//=======================================================
+
+replyYeti
+NPCNotification(1)
+!"Hunter kill snowman, hunter bad!"
+*"Lets team up, i'm after him too!", replyYeti1
+
+replyYeti1
+!"You tell yeti when ready, we up mountain."
+*"Lets get him!", yetiSequence
+*"I need some time.", replyClose
+
+yetiSequence
+//preload yeti movie clip
+//popup animation movie clip
+//movie of yeti tkaing you up the mountain
+//changeroom mountaintop
+
+//=======================================================
+//top of mountain
+//=======================================================
+
+replyQ6
+!"This bear is mine, I caught it, you can't have it."
+*"It needs to be with its kid!", replyQ6R1
+
+replyQ6R1
+!"What do you do?"
+*"Throw a snowball", Q6Sequence1
+*"Yeti tackle",
+
+Q6Sequence1
+//play snowball sequence
+//thorw snowball, miss, hunter laughs
+
+Q6Sequence3
+//yeti tackles hunter, hunter goes off the cliff
+//i will not be defeated, rises up, robo hunter
+//start final game
+
+//knock the hunter out of the sky to free the bears once and for all
+
+
+
+//=======================================================
+//end//bear cub makes it way up the mountain
+//=======================================================
+
+Q7
+!"Thank you so much for all your help, we are forever greatful, as a token of our appreciation,
+take this badge, you can use it to call baby here to play with you."
+getobject(badge)

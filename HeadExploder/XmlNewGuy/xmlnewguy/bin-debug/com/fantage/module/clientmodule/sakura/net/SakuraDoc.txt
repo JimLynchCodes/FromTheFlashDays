@@ -1,0 +1,31 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestTalkToNpc(moduleName:String) : void
+        Server Replies:
+         Server Event Name: START_MODULE_OK
+         Method signature :  onStartModuleOk(, ClientModuleUserData clientModuleUserData)
+         Server Event Name: START_MODULE_FAIL
+         Method signature :  onStartModuleFail()
+         Server Event Name: SAKURA_EVENT_STATUS
+         Method signature :  onEventStatus(, int eventStatus)
+---------------------------------------------------------------
+   Client Method Name : requestGiveReward(moduleName:String) : void
+        Server Replies:
+         Server Event Name: GIVE_REWARD_OK
+         Method signature :  onGiveRewardOk(, List rewardItem)
+         Server Event Name: GIVE_REWARD_FAIL
+         Method signature :  onGiveRewardFail()
+---------------------------------------------------------------
+   Client Method Name : requestPetalList(moduleName:String) : void
+        Server Replies:
+         Server Event Name: PETAL_LIST_OK
+         Method signature :  onPetalListOk(, SakuraData sakuraData)
+         Server Event Name: PETAL_LIST_FAIL
+         Method signature :  onPetalListFail()
+---------------------------------------------------------------
+   Client Method Name : requestGivePetal(moduleName:String, gameName:String) : void
+        Server Replies:
+         Server Event Name: GIVE_PETAL_OK
+         Method signature :  onGivePetalOk(, String gameName, int amount, ClientModuleUserData clientModuleUserData)
+         Server Event Name: GET_PETAL_FAIL
+         Method signature :  onGetPetalFail()
+---------------------------------------------------------------

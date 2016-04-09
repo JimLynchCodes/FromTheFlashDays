@@ -1,0 +1,45 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestUserAssetCheck(userId:String, assetName:String) : void
+        Server Replies:
+         Server Event Name: USER_ASSET_CHECK_OK
+         Method signature :  onUserAssetCheckOk(, String assetExist)
+---------------------------------------------------------------
+   Client Method Name : requestGetAssetData(assetName:String) : void
+        Server Replies:
+         Server Event Name: GET_ASSET_DATA_OK
+         Method signature :  onGetAssetDataOk(, Asset asset)
+         Server Event Name: GET_ASSET_DATA_NOT_EXIST
+         Method signature :  onGetAssetDataNotExist()
+---------------------------------------------------------------
+   Client Method Name : requestGetUserLevel(userId:String) : void
+        Server Replies:
+         Server Event Name: GET_USER_LEVEL_OK
+         Method signature :  onGetUserLevelOk(, int userLevel)
+---------------------------------------------------------------
+   Client Method Name : requestGetPhpServerTime() : void
+        Server Replies:
+         Server Event Name: GET_PHP_SERVER_TIME_OK
+         Method signature :  onGetPhpServerTime(, String serverTime)
+---------------------------------------------------------------
+   Client Method Name : requestGetUserData(userId:String, name:String) : void
+        Server Replies:
+         Server Event Name: GET_USER_DATA_OK
+         Method signature :  onGetUserData(, String value, String displayValue)
+---------------------------------------------------------------
+   Client Method Name : requestUserAvatar(targetUserId:String) : void
+        Server Replies:
+         Server Event Name: USER_AVATAR_OK
+         Method signature :  onUserAvatarOk(, User user)
+---------------------------------------------------------------
+   Client Method Name : requestUserHomeOpenType(targetUserId:String) : void
+        Server Replies:
+         Server Event Name: USER_HOME_OPEN_TYPE_OK
+         Method signature :  onUserHomeOpenTypeOk(, String targetUserId, String homeOpenType)
+---------------------------------------------------------------
+   Client Method Name : requestEventCountDown(eventTitle:String) : void
+        Server Replies:
+         Server Event Name: EVENT_COUNT_DOWN_OK
+         Method signature :  onEventCountDownOk(, String eventTitle, String expired, int day, int hour, int minute, int second)
+         Server Event Name: EVENT_COUNT_DOWN_FAIL
+         Method signature :  onEventCountDownFail(, String eventTitle)
+---------------------------------------------------------------

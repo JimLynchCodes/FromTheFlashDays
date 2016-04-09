@@ -1,0 +1,110 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestHofEventVisitHome(targetUserId:String) : void
+        Server Replies:
+         Server Event Name: HOF_EVENT_VISIT_HOME_OK
+         Method signature :  onHofEventVisitHomeOk(, String targetUserId, String visitors, String totalRatingScore, String voters, int prevRating)
+---------------------------------------------------------------
+   Client Method Name : requestHofEventVoteHome(targetUserId:String, rating:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestHofMvpList() : void
+        Server Replies:
+         Server Event Name: HOF_MVP_LIST_OK
+         Method signature :  onHofMvpListOk(, List hofMvpList)
+---------------------------------------------------------------
+   Client Method Name : requestHofRookieList() : void
+        Server Replies:
+         Server Event Name: HOF_ROOKIE_LIST_OK
+         Method signature :  onHofRookieListOk(, List hofRookieList)
+---------------------------------------------------------------
+   Client Method Name : requestHofBestGamerList() : void
+        Server Replies:
+         Server Event Name: HOF_BEST_GAMER_LIST_OK
+         Method signature :  onHofBestGamerListOk(, List hofBestGamerList)
+---------------------------------------------------------------
+   Client Method Name : requestHofPrevWeekCheck() : void
+        Server Replies:
+         Server Event Name: HOF_PREV_WEEK_CHECK_OK
+         Method signature :  onHofPrevWeekCheckOk(, int year, int week)
+---------------------------------------------------------------
+   Client Method Name : requestHofHighLevelDataList(level:int, year:int, week:int) : void
+        Server Replies:
+         Server Event Name: HOF_HIGH_LEVEL_DATA_OK
+         Method signature :  onHofHighLevelDataOk(, int level, int year, int week, List hofStateList)
+---------------------------------------------------------------
+   Client Method Name : requestHofCurrentHighList() : void
+        Server Replies:
+         Server Event Name: HOF_CURRENT_HIGH_LIST_OK
+         Method signature :  onHofCurrentHighListOk(, String serverName, int rank, int userLevel, List hofStateList)
+---------------------------------------------------------------
+   Client Method Name : requestHofSuperstarMedal() : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestHofHomeMessageList() : void
+        Server Replies:
+         Server Event Name: HOF_HOME_MESSAGE_LIST_OK
+         Method signature :  onHofHomeMessageListOk(, List hofHomeMessageInfoList)
+---------------------------------------------------------------
+   Client Method Name : requestHofHomeMessageSetRead(homeMessageId:String) : void
+        Server Replies:
+         Server Event Name: HOF_HOME_MESSAGE_SET_READ_OK
+         Method signature :  onHofHomeMessageSetReadOk()
+---------------------------------------------------------------
+   Client Method Name : requestHofHomeMessageSetDelete(homeMessageId:String) : void
+        Server Replies:
+         Server Event Name: HOF_HOME_MESSAGE_SET_DELETE_OK
+         Method signature :  onHofHomeMessageSetDeleteOk()
+---------------------------------------------------------------
+   Client Method Name : requestHofHomeMessageReport(homeMessageId:String) : void
+        Server Replies:
+         Server Event Name: HOF_HOME_MESSAGE_REPORT_OK
+         Method signature :  onHofHomeMessageReportOk()
+---------------------------------------------------------------
+   Client Method Name : requestHofHomeMessageWritableCheck(sendUserId:String, receiveUserId:String) : void
+        Server Replies:
+         Server Event Name: HOF_HOME_MESSAGE_WRITABLE_CHECK_OK
+         Method signature :  onHofHomeMessageWritableCheckOk(, String sendUserId, String receiveUserId)
+         Server Event Name: HOF_HOME_MESSAGE_WRITABLE_CHECK_FAIL
+         Method signature :  onHofHomeMessageWritableCheckFail(, String sendUserId, String receiveUserId, String reasonCode)
+---------------------------------------------------------------
+   Client Method Name : requestHofHomeMessageSend(sendUserId:String, receiveUserId:String, contentText:String) : void
+        Server Replies:
+         Server Event Name: HOF_HOME_MESSAGE_SEND_OK
+         Method signature :  onHofHomeMessageSendOk(, String sendUserId, String receiveUserId)
+         Server Event Name: HOF_HOME_MESSAGE_SEND_FAIL
+         Method signature :  onHofHomeMessageSendFail(, String sendUserId, String receiveUserId, String reasonCode)
+---------------------------------------------------------------
+   Client Method Name : requestHofRewardCheck() : void
+        Server Replies:
+         Server Event Name: HOF_REWARD_CHECK_OK
+         Method signature :  onHofRewardCheckOk(, List hofRewardDataList)
+         Server Event Name: HOF_REWARD_CHECK_NONE
+         Method signature :  onHofRewardCheckNone()
+---------------------------------------------------------------
+   Client Method Name : requestHofHomeMessageCheck() : void
+        Server Replies:
+         Server Event Name: HOF_HOME_MESSAGE_CHECK_OK
+         Method signature :  onHofHomeMessageCheckOk(, int messageCounter)
+---------------------------------------------------------------
+   Client Method Name : requestHofPatchReward() : void
+        Server Replies:
+         Server Event Name: HOF_PATCH_REWARD_OK
+         Method signature :  onHofPatchRewardOk()
+         Server Event Name: HOF_PATCH_REWARD_NONE
+         Method signature :  onHofPatchRewardNone()
+---------------------------------------------------------------
+   Client Method Name : requestHofEventCheck() : void
+        Server Replies:
+         Server Event Name: HOF_EVENT_CHECK_OK
+         Method signature :  onHofEventCheckOk(, String eventName)
+---------------------------------------------------------------
+   Client Method Name : requestHofMostVisitedHomeList() : void
+        Server Replies:
+         Server Event Name: HOF_MOST_VISITED_HOME_LIST_OK
+         Method signature :  onHofMostVisitedHomeListOk(, int year, int week, List hofMostVistedHomesList)
+---------------------------------------------------------------
+   Client Method Name : requestHofBestRankedHomeList() : void
+        Server Replies:
+         Server Event Name: HOF_BEST_RANKED_HOME_LIST_OK
+         Method signature :  onHofBestRankedHomeListOk(, int year, int week, List hofBestRankedHomesList)
+---------------------------------------------------------------

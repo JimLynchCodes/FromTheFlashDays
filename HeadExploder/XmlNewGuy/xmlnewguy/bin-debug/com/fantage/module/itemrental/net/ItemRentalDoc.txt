@@ -1,0 +1,46 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestRentItem(assetId:int, mode:String) : void
+        Server Replies:
+         Server Event Name: RENT_ITEM_OK
+         Method signature :  onRentItemOk(, int ticketCount, UserAsset userAsset)
+         Server Event Name: RENT_INVENTORY_LIST_OK
+         Method signature :  onRentItemInventorylistOk(, List asset)
+         Server Event Name: RENT_ITEM_NO_TICKET
+         Method signature :  onRentItemNoTicket(, int ticketCount)
+         Server Event Name: RENT_ITEM_ALREADY_IN_INVENTORY
+         Method signature :  onAlreadyInInventory(, Asset asset)
+---------------------------------------------------------------
+   Client Method Name : requestGetTicketCount() : void
+        Server Replies:
+         Server Event Name: GET_TICKET_COUNT_OK
+         Method signature :  onGetTicketCountOk(, int ticketCount)
+---------------------------------------------------------------
+   Client Method Name : requestRemoveRentalItems(assetId:int) : void
+        Server Replies:
+         Server Event Name: REMOVE_RENTAL_ITEM_OK
+         Method signature :  onRemoveRentalItemOk(, User user)
+         Server Event Name: REMOVE_RENTAL_ITEM_FAIL
+         Method signature :  onRemoveRentalItemFail()
+---------------------------------------------------------------
+   Client Method Name : requestBuyRentalTicket(quantity:int) : void
+        Server Replies:
+         Server Event Name: BUY_RENTAL_TICKET_OK
+         Method signature :  onBuyRentalTicketOk(, int currentFunds, int ticketCount)
+         Server Event Name: BUY_RENTAL_TICKET_NOT_ENOUGH_FUNDS
+         Method signature :  onBuyRentalTicketNotEnoughtFunds(, int currentFunds)
+---------------------------------------------------------------
+   Client Method Name : requestGetDefaultRentItemList(rentalCatalogName:String) : void
+        Server Replies:
+         Server Event Name: GET_DEFAULT_RENT_ITEM_LIST
+         Method signature :  onGetDefaultRentItemListOk(, List asset)
+---------------------------------------------------------------
+   Client Method Name : requestGetThemedRentItemList(rentalCatalogName:String, themeNameList:String, maxCount:int) : void
+        Server Replies:
+         Server Event Name: GET_THEMED_RENT_ITEM_LIST
+         Method signature :  onGetThemedRentItemListOk(, List asset)
+---------------------------------------------------------------
+   Client Method Name : requestGetRentalItemList(rentalCatalogName:String) : void
+        Server Replies:
+         Server Event Name: GET_RENTAL_ITEM_LIST_OK
+         Method signature :  onGetRentalItemOk(, List userAsset)
+---------------------------------------------------------------

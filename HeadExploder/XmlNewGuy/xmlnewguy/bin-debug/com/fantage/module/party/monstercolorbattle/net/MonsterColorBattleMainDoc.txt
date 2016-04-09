@@ -1,0 +1,17 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestMonsterColorBattleMain() : void
+        Server Replies:
+         Server Event Name: STAR_REWARD
+         Method signature :  onStarReward(, int receivedStar, String winningTeamColor, int starsEarnedWinPremium, int starsEarnedWinNormal)
+         Server Event Name: STAR_REWARD_PET
+         Method signature :  onStarRewardPet(, int receivedStar, String winningTeamColor, int starsEarnedWinPremium, int starsEarnedWinNormal, int starsEarnedWinPremiumWithPet, int starsEarnedWinNormalWithPet, String userHasPet, int userStarsEarned)
+         Server Event Name: COLOR_ALREADY_CHOSEN
+         Method signature :  onColorAlreadyChosen(, String color)
+         Server Event Name: INVALID_COLOR
+         Method signature :  onInvalidColor()
+         Server Event Name: COLOR_CHOOSE_OK
+         Method signature :  onColorChooseOk(, String color)
+---------------------------------------------------------------
+   Client Method Name : requestMonsterColorBattleColorChosen(color:String) : void
+        Server Replies:
+---------------------------------------------------------------

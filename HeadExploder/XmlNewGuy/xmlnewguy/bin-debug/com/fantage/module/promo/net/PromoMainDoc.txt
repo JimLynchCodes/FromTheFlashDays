@@ -1,0 +1,4 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestGivePromoAction(userId:String) : void
+        Server Replies:
+---------------------------------------------------------------

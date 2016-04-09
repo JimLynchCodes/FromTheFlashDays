@@ -1,0 +1,37 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestLoginCheckDateEvent() : void
+        Server Replies:
+         Server Event Name: LOGIN_CHECK_DATE_EVENT_OK
+         Method signature :  onLoginCheckDateEventOk(, String eventType, String itemType, String itemQuantity, Asset asset)
+         Server Event Name: LOGIN_CHECK_DATE_EVENT_NONE
+         Method signature :  onLoginCheckDateEventNone()
+---------------------------------------------------------------
+   Client Method Name : requestLoginCheckPremiumMemberGetStars() : void
+        Server Replies:
+         Server Event Name: LOGIN_CHECK_PREMIUM_MEMBER_GET_STARS_OK
+         Method signature :  onLoginCheckPremiumMemberGetStarsOk(, String itemType, String itemQuantity, String startDate)
+         Server Event Name: LOGIN_CHECK_PREMIUM_MEMBER_GET_STARS_NONE
+         Method signature :  onLoginCheckPremiumMemberGetStarsNone()
+---------------------------------------------------------------
+   Client Method Name : requestGetNpcGuideStatus() : void
+        Server Replies:
+         Server Event Name: GET_NPC_GUIDE_STATUS_OK
+         Method signature :  onGetNpcGuideStatusOk(, String value)
+---------------------------------------------------------------
+   Client Method Name : requestUpdateNpcGuideStatus(value:String) : void
+        Server Replies:
+         Server Event Name: UPDATE_NPC_GUIDE_STATUS_OK
+         Method signature :  onUpdateNpcGuideStatusOk()
+---------------------------------------------------------------
+   Client Method Name : requestLoginCheckMedalUpdate() : void
+        Server Replies:
+         Server Event Name: LOGIN_CHECK_MEDAL_UPDATE_OK
+         Method signature :  onLoginCheckMedalUpdateOk()
+---------------------------------------------------------------
+   Client Method Name : requestLoginCheckPremiumMembershipExpireInfo() : void
+        Server Replies:
+         Server Event Name: LOGIN_CHECK_PREMIUM_MEMBERSHIP_EXPIRE_INFO_OK
+         Method signature :  onLoginCheckPremiumMembershipExpireInfoOk(, int expireLeftDate, String expireDateStr)
+         Server Event Name: LOGIN_CHECK_PREMIUM_MEMBERSHIP_EXPIRE_INFO_NONE
+         Method signature :  onLoginCheckPremiumMembershipExpireInfoNone()
+---------------------------------------------------------------

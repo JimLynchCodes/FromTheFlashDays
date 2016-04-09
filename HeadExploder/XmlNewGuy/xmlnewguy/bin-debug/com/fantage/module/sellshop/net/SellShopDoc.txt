@@ -1,0 +1,49 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestSellShopSchedule() : void
+        Server Replies:
+         Server Event Name: SELL_SHOP_SCHEDULE_OK
+         Method signature :  onSellShopScheduleOk(, List sellShopScheduleData)
+---------------------------------------------------------------
+   Client Method Name : requestSellShopCurrentCategory() : void
+        Server Replies:
+         Server Event Name: SELL_SHOP_CURRENT_CATEGORY_OK
+         Method signature :  onSellShopCurrentCategoryOk(, List sellShopScheduleData)
+---------------------------------------------------------------
+   Client Method Name : requestSellShopSellItemList(catalogName:String) : void
+        Server Replies:
+         Server Event Name: SELL_SHOP_SELL_USER_ASSET_LIST_OK
+         Method signature :  onSellShopSellUserAssetListOk(, List userAsset)
+         Server Event Name: SELL_SHOP_SELL_HOME_LIST_OK
+         Method signature :  onSellShopSellHomeListOk(, List sellShopUserHomeData)
+---------------------------------------------------------------
+   Client Method Name : requestSellShopSellAssetReward(itemType:String, itemId:String) : void
+        Server Replies:
+         Server Event Name: SELL_SHOP_SELL_ASSET_REWARD_OK
+         Method signature :  onSellShopSellAssetRewardOk(, SellShopRewardData sellShopRewardData)
+         Server Event Name: SELL_SHOP_SELL_ASSET_REWARD_FAIL
+         Method signature :  onSellShopSellAssetRewardFail(, String errorMsg, SellShopItemData sellShopItemData)
+---------------------------------------------------------------
+   Client Method Name : requestSellShopSellAsset(itemType:String, itemId:String) : void
+        Server Replies:
+         Server Event Name: SELL_SHOP_SELL_ASSET_OK
+         Method signature :  onSellShopSellAssetOk(, SellShopItemData sellShopItemData)
+         Server Event Name: SELL_SHOP_SELL_ASSET_FAIL
+         Method signature :  onSellShopSellAssetFail()
+---------------------------------------------------------------
+   Client Method Name : requestSellShopBetAssetRewardList(itemType:String, itemId:String) : void
+        Server Replies:
+         Server Event Name: SELL_SHOP_BET_ASSET_REWARD_LIST_OK
+         Method signature :  onSellShopBetAssetRewardListOk(, List sellShopBetRewardData)
+         Server Event Name: SELL_SHOP_BET_ASSET_REWARD_LIST_FAIL
+         Method signature :  onSellShopBetAssetRewardListFail(, String errorMsg, SellShopItemData sellShopItemData)
+---------------------------------------------------------------
+   Client Method Name : requestSellShopBetAsset(itemType:String, itemId:String) : void
+        Server Replies:
+         Server Event Name: SELL_SHOP_BET_ASSET_OK
+         Method signature :  onSellShopBetAssetOk(, SellShopRewardData sellShopRewardData, SellShopItemData sellShopItemData)
+---------------------------------------------------------------
+   Client Method Name : requestSellShopSoldItemHistory() : void
+        Server Replies:
+         Server Event Name: SELL_SHOP_SOLD_ITEM_HISTORY_OK
+         Method signature :  onSellShopSoldItemHistoryOk(, List sellShopSoldItemDataList)
+---------------------------------------------------------------

@@ -1,0 +1,70 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestGetServerList() : void
+        Server Replies:
+         Server Event Name: GET_SERVER_LIST_OK
+         Method signature :  onGetServerListOk(, List serverInstance)
+---------------------------------------------------------------
+   Client Method Name : requestReloadAssetObject(assetName:String) : void
+        Server Replies:
+         Server Event Name: RELOAD_ASSET_OK
+         Method signature :  onReloadAssetOk(, Asset asset)
+---------------------------------------------------------------
+   Client Method Name : requestReloadFashionShowTag() : void
+        Server Replies:
+         Server Event Name: RELOAD_FASHION_SHOW_TAG_OK
+         Method signature :  onReloadFashionShowTagOk()
+---------------------------------------------------------------
+   Client Method Name : requestReloadClientModuleList() : void
+        Server Replies:
+         Server Event Name: RELOAD_CLIENT_MODULE_LIST_OK
+         Method signature :  onReloadClientModuleListOk(, List clientModuleList)
+---------------------------------------------------------------
+   Client Method Name : requestReloadCatalogFull(catalogName:String) : void
+        Server Replies:
+         Server Event Name: RELOAD_CATALOG_OK
+         Method signature :  onReloadCatalogOk(, String catalogName, Catalog catalog)
+         Server Event Name: RELOAD_CATALOG_FAIL
+         Method signature :  onReloadCatalogFail(, String catalogName)
+---------------------------------------------------------------
+   Client Method Name : requestReloadFashionShowRobots() : void
+        Server Replies:
+         Server Event Name: RELOAD_FASHION_SHOW_ROBOTS_OK
+         Method signature :  onReloadFashionShowRobotsOk()
+---------------------------------------------------------------
+   Client Method Name : requestAddReferenceRobot(referenceUserId:String, type:int, entryId:int) : void
+        Server Replies:
+         Server Event Name: ADD_FASHION_SHOW_ROBOT_OK
+         Method signature :  onAddFashionShowRobotOk(, String addedUserId)
+         Server Event Name: ADD_FASHION_SHOW_ROBOT_FAIL
+         Method signature :  onAddFashionShowRobotFail()
+---------------------------------------------------------------
+   Client Method Name : requestNotifyServerShutDown() : void
+        Server Replies:
+         Server Event Name: SERVER_SHUTDOWN
+         Method signature :  onServerShutdown()
+---------------------------------------------------------------
+   Client Method Name : requestShutdownSequence() : void
+        Server Replies:
+         Server Event Name: SHUTDOWN_SEQUENCE_OK
+         Method signature :  onShutdownSequenceOk()
+---------------------------------------------------------------
+   Client Method Name : requestPing() : void
+        Server Replies:
+         Server Event Name: PING_OK
+         Method signature :  onPingOk()
+---------------------------------------------------------------
+   Client Method Name : requestDBPing() : void
+        Server Replies:
+         Server Event Name: DB_PING_OK
+         Method signature :  onDBPingOk()
+---------------------------------------------------------------
+   Client Method Name : requestClearHibernateCache() : void
+        Server Replies:
+         Server Event Name: CLEAR_HIBERNATE_CACHE_OK
+         Method signature :  onClearHibernateCacheOk()
+---------------------------------------------------------------
+   Client Method Name : requestClearNamedHibernateCache(cacheName:String) : void
+        Server Replies:
+         Server Event Name: CLEAR_NAMED_HIBERNATE_CACHE_OK
+         Method signature :  onClearNamedHibernateCacheOk()
+---------------------------------------------------------------

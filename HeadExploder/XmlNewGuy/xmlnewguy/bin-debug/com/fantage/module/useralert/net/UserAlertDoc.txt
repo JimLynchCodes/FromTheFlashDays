@@ -1,0 +1,11 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestUserAlertCheckUpdate(alertKey:String) : void
+        Server Replies:
+         Server Event Name: USER_ALERT_CHECK_UPDATE_OK
+         Method signature :  onUserAlertCheckUpdateOk(, String ResultValue)
+---------------------------------------------------------------
+   Client Method Name : requestUserAlertSetUpdate(alertKey:String, setValue:String) : void
+        Server Replies:
+         Server Event Name: USER_ALERT_SET_UPDATE_OK
+         Method signature :  onUserAlertSetUpdateOk()
+---------------------------------------------------------------

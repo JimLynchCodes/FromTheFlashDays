@@ -1,0 +1,35 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestDailyEventMain() : void
+        Server Replies:
+         Server Event Name: DAILY_EVENT_MAIN_RECEIVE_BONUS
+         Method signature :  onDailyEventMainReceiveBonus(, List dailyEventBonusList)
+         Server Event Name: DAILY_EVENT_MAIN_NONE
+         Method signature :  onDailyEventMainNone()
+---------------------------------------------------------------
+   Client Method Name : requestDailyEventMainEx() : void
+        Server Replies:
+         Server Event Name: DAILY_EVENT_MAIN_EX_RECEIVE_BONUS
+         Method signature :  onDailyEventMainExReceiveBonus(, int consecutiveDaysLogin, List dailyEventBonusExList)
+         Server Event Name: DAILY_EVENT_MAIN_EX_NONE
+         Method signature :  onDailyEventMainExNone(, int consecutiveDaysLogin)
+---------------------------------------------------------------
+   Client Method Name : requestDailyEventReporter() : void
+        Server Replies:
+         Server Event Name: DAILY_EVENT_REPORTER_FAIL
+         Method signature :  onDailyEventReporterFail()
+---------------------------------------------------------------
+   Client Method Name : requestDailyEventHostParty() : void
+        Server Replies:
+         Server Event Name: DAILY_EVENT_HOST_PARTY_FAIL
+         Method signature :  onDailyEventHostPartyFail()
+---------------------------------------------------------------
+   Client Method Name : requestDailyEventParcitipateParty() : void
+        Server Replies:
+         Server Event Name: DAILY_EVENT_PARTICIPATE_PARTY_FAIL
+         Method signature :  onDailyEventParticipatePartyFail()
+---------------------------------------------------------------
+   Client Method Name : requestDailyEventFashionshow() : void
+        Server Replies:
+         Server Event Name: DAILY_EVENT_FASHIONSHOW_FAIL
+         Method signature :  onDailyEventFashionshowFail()
+---------------------------------------------------------------

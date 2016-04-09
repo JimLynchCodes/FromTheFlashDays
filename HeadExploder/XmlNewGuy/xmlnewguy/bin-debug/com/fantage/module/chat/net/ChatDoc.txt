@@ -1,0 +1,6 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestChatComm(protocolName:String, receiver:String, value:String, valueAux:String) : void
+        Server Replies:
+         Server Event Name: CHAT_COMM_OK
+         Method signature :  onChatCommOk(, String protocolName, String sender, String value, String valueAux)
+---------------------------------------------------------------

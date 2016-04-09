@@ -1,0 +1,20 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestCmodMiniGameCheck(cmodName:String, gameId:String) : void
+        Server Replies:
+         Server Event Name: CMOD_MINI_GAME_CHECK_OK
+         Method signature :  onCmodMiniGameCheckOk(, String cmodName, List miniGameDataList)
+---------------------------------------------------------------
+   Client Method Name : requestCmodMiniGameUpdatePlay(cmodName:String, gameId:String) : void
+        Server Replies:
+         Server Event Name: CMOD_MINI_GAME_UPDATE_PLAY_OK
+         Method signature :  onCmodMiniGameUpdatePlayOk(, String cmodName, MiniGameData miniGameDataList)
+         Server Event Name: CMOD_MINI_GAME_UPDATE_PLAY_CMOD_ERROR
+         Method signature :  onCmodMiniGameUpdatePlayCmodError(, String cmodName)
+---------------------------------------------------------------
+   Client Method Name : requestCmodMiniGameSetData(cmodName:String, gameId:String, gameData:String) : void
+        Server Replies:
+         Server Event Name: CMOD_MINI_GAME_SET_DATA_OK
+         Method signature :  onCmodMiniGameSetDataOk(, String cmodName, MiniGameData miniGameDataList)
+         Server Event Name: CMOD_MINI_GAME_SET_DATA_CMOD_ERROR
+         Method signature :  onCmodMiniGameSetDataCmodError(, String cmodName)
+---------------------------------------------------------------

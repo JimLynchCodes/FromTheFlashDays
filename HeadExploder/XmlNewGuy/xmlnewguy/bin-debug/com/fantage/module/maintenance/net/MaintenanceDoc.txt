@@ -1,0 +1,16 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestMaintenanceRequest(requestText:String, optionalText:String) : void
+        Server Replies:
+         Server Event Name: MAINTENANCE_RESPONSE
+         Method signature :  onMaintenanceResponse(, String maintenaceMessage, String optionalMessage)
+---------------------------------------------------------------
+   Client Method Name : requestClearHibernateCache() : void
+        Server Replies:
+         Server Event Name: CLEAR_HIBERNATE_CACHE_OK
+         Method signature :  onClearHibernateCacheOk(, int timeTaken)
+---------------------------------------------------------------
+   Client Method Name : requestClearNamedHibernateCache(cacheName:String) : void
+        Server Replies:
+         Server Event Name: CLEAR_NAMED_HIBERNATE_CACHE_OK
+         Method signature :  onClearNamedHibernateCacheOk(, int timeTaken)
+---------------------------------------------------------------

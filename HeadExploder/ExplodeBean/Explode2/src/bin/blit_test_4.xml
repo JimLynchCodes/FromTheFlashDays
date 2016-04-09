@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:c4431e2cd3738c5574505bc1575e94ae:1/1$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+-->
+<TextureAtlas imagePath="blit_test_4.png" width="1024" height="1024">
+    <sprite n="BlitTest40001.png" x="2" y="2" w="156" h="156"/>
+    <sprite n="BlitTest40002.png" x="160" y="2" w="156" h="156"/>
+    <sprite n="BlitTest40003.png" x="318" y="2" w="156" h="156"/>
+    <sprite n="BlitTest40004.png" x="476" y="2" w="156" h="156"/>
+    <sprite n="BlitTest40005.png" x="634" y="2" w="156" h="156"/>
+    <sprite n="BlitTest40006.png" x="792" y="2" w="156" h="156"/>
+    <sprite n="BlitTest40007.png" x="2" y="160" w="156" h="156"/>
+    <sprite n="BlitTest40008.png" x="160" y="160" w="156" h="156"/>
+    <sprite n="BlitTest40009.png" x="318" y="160" w="156" h="156"/>
+    <sprite n="BlitTest40010.png" x="476" y="160" w="156" h="156"/>
+    <sprite n="BlitTest40011.png" x="634" y="160" w="156" h="156"/>
+    <sprite n="BlitTest40012.png" x="792" y="160" w="156" h="156"/>
+    <sprite n="BlitTest40013.png" x="2" y="318" w="156" h="156"/>
+    <sprite n="BlitTest40014.png" x="160" y="318" w="156" h="156"/>
+    <sprite n="BlitTest40015.png" x="318" y="318" w="156" h="156"/>
+    <sprite n="BlitTest40016.png" x="476" y="318" w="156" h="156"/>
+    <sprite n="BlitTest40017.png" x="634" y="318" w="156" h="156"/>
+    <sprite n="BlitTest40018.png" x="792" y="318" w="156" h="156"/>
+    <sprite n="BlitTest40019.png" x="2" y="476" w="156" h="156"/>
+    <sprite n="BlitTest40020.png" x="160" y="476" w="156" h="156"/>
+    <sprite n="BlitTest40021.png" x="318" y="476" w="156" h="156"/>
+    <sprite n="BlitTest40022.png" x="476" y="476" w="156" h="156"/>
+    <sprite n="BlitTest40023.png" x="634" y="476" w="156" h="156"/>
+</TextureAtlas>

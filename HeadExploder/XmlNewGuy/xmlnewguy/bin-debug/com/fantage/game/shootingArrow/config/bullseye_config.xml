@@ -1,0 +1,155 @@
+<data>
+	<level level="1">
+		<loadSpeed type="Number">0.4</loadSpeed>
+		<arrowSpeed type="Number">0.4</arrowSpeed>
+		<targetSpeed type="Number">3</targetSpeed>
+
+		<backgroundMovingSize type="Number">1600</backgroundMovingSize>
+		<missionScore type="Number">12</missionScore>
+
+		<missionKey type="Number">0</missionKey>
+
+		<backgroundType type="Number">0</backgroundType>
+		<targetInitLocates type="Array">1220,198</targetInitLocates>
+
+		<bonusStage type="Number">-1</bonusStage>
+		<bonusTargetLocate type="Array">1400,198</bonusTargetLocate>
+
+	</level>
+	<level level="2">
+		<loadSpeed type="Number">0.4</loadSpeed>
+		<arrowSpeed type="Number">0.4</arrowSpeed>
+		<targetSpeed type="Number">2.6</targetSpeed>
+
+		<backgroundMovingSize type="Number">1600</backgroundMovingSize>
+		<missionScore type="Number">16</missionScore>
+
+		<missionKey type="Number">1</missionKey>
+
+		<backgroundType type="Number">0</backgroundType>
+		<targetInitLocates type="Array">1220,198</targetInitLocates>
+
+
+		<bonusStage type="Number">-1</bonusStage>
+		<bonusTargetLocate type="Array">1400,198</bonusTargetLocate>
+	</level>
+	<level level="3">
+		<loadSpeed type="Number">0.4</loadSpeed>
+		<arrowSpeed type="Number">0.4</arrowSpeed>
+		<targetSpeed type="Number">2.2</targetSpeed>
+
+		<backgroundMovingSize type="Number">1600</backgroundMovingSize>
+		<missionScore type="Number">20</missionScore>
+
+		<missionKey type="Number">2</missionKey>
+
+
+		<backgroundType type="Number">0</backgroundType>
+		<targetInitLocates type="Array">1220,198</targetInitLocates>
+
+
+		<bonusStage type="Number">-1</bonusStage>
+		<bonusTargetLocate type="Array">1400,198</bonusTargetLocate>
+	</level>
+	<level level="4">
+		<loadSpeed type="Number">0.4</loadSpeed>
+		<arrowSpeed type="Number">0.4</arrowSpeed>
+		<targetSpeed type="Number">1.8</targetSpeed>
+
+		<backgroundMovingSize type="Number">1600</backgroundMovingSize>
+		<missionScore type="Number">24</missionScore>
+
+		<missionKey type="Number">3</missionKey>
+
+		<backgroundType type="Number">1</backgroundType>
+		<targetInitLocates type="Array">1320,198</targetInitLocates>
+
+		<bonusStage type="Number">-1</bonusStage>
+		<bonusTargetLocate type="Array">1400,198</bonusTargetLocate>
+	</level>
+	<level level="5">
+		<loadSpeed type="Number">0.4</loadSpeed>
+		<arrowSpeed type="Number">0.4</arrowSpeed>
+		<targetSpeed type="Number">1.6</targetSpeed>
+
+		<backgroundMovingSize type="Number">1600</backgroundMovingSize>
+		<missionScore type="Number">28</missionScore>
+		<missionKey type="Number">-1</missionKey>
+
+		<backgroundType type="Number">1</backgroundType>
+		<targetInitLocates type="Array">1320,198</targetInitLocates>
+
+		<bonusStage type="Number">-1</bonusStage>
+		<bonusTargetLocate type="Array">1500,198</bonusTargetLocate>
+	</level>
+	<level level="6">
+		<loadSpeed type="Number">0.4</loadSpeed>
+		<arrowSpeed type="Number">0.4</arrowSpeed>
+		<targetSpeed type="Number">1.4</targetSpeed>
+		<backgroundMovingSize type="Number">1600</backgroundMovingSize>
+		<missionScore type="Number">36</missionScore>
+		<missionKey type="Number">-1</missionKey>
+
+		<backgroundType type="Number">1</backgroundType>
+		<targetInitLocates type="Array">1320,198</targetInitLocates>
+
+		<bonusStage type="Number">0</bonusStage>
+		<bonusTargetLocate type="Array">1500,198</bonusTargetLocate>
+	</level>
+	<level level="7">
+		<loadSpeed type="Number">0.4</loadSpeed>
+		<arrowSpeed type="Number">0.4</arrowSpeed>
+		<targetSpeed type="Number">1.2</targetSpeed>
+		<backgroundMovingSize type="Number">1600</backgroundMovingSize>
+		<missionScore type="Number">42</missionScore>
+		<missionKey type="Number">-1</missionKey>
+
+		<backgroundType type="Number">2</backgroundType>
+		<targetInitLocates type="Array">1320,198</targetInitLocates>
+
+		<bonusStage type="Number">1</bonusStage>
+		<bonusTargetLocate type="Array">1500,198</bonusTargetLocate>
+	</level>
+	<level level="8">
+		<loadSpeed type="Number">0.4</loadSpeed>
+		<arrowSpeed type="Number">0.4</arrowSpeed>
+		<targetSpeed type="Number">1.2</targetSpeed>
+		<backgroundMovingSize type="Number">1600</backgroundMovingSize>
+		<missionScore type="Number">48</missionScore>
+		<missionKey type="Number">-1</missionKey>
+
+		<backgroundType type="Number">2</backgroundType>
+		<targetInitLocates type="Array">1320,198</targetInitLocates>
+
+		<bonusStage type="Number">2</bonusStage>
+		<bonusTargetLocate type="Array">1500,198</bonusTargetLocate>
+	</level>
+	<level level="9">
+		<loadSpeed type="Number">0.4</loadSpeed>
+		<arrowSpeed type="Number">0.4</arrowSpeed>
+		<targetSpeed type="Number">1.1</targetSpeed>
+		<backgroundMovingSize type="Number">1600</backgroundMovingSize>
+		<missionScore type="Number">54</missionScore>
+		<missionKey type="Number">-1</missionKey>
+
+		<backgroundType type="Number">2</backgroundType>
+		<targetInitLocates type="Array">1320,198</targetInitLocates>
+
+		<bonusStage type="Number">3</bonusStage>
+		<bonusTargetLocate type="Array">1500,198</bonusTargetLocate>
+	</level>
+	<level level="10">
+		<loadSpeed type="Number">0.4</loadSpeed>
+		<arrowSpeed type="Number">0.4</arrowSpeed>
+		<targetSpeed type="Number">0.9</targetSpeed>
+		<backgroundMovingSize type="Number">1600</backgroundMovingSize>
+		<missionScore type="Number">60</missionScore>
+		<missionKey type="Number">-1</missionKey>
+
+		<backgroundType type="Number">2</backgroundType>
+		<targetInitLocates type="Array">1320,198</targetInitLocates>
+
+		<bonusStage type="Number">4</bonusStage>
+		<bonusTargetLocate type="Array">1500,198</bonusTargetLocate>
+	</level>
+</data>

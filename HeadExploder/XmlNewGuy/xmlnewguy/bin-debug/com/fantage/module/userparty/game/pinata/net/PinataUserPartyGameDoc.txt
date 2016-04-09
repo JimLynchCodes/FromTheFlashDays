@@ -1,0 +1,19 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestPinataUserPartyGameHit(unitDamage:int, numHit:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestPinataUserPartyGameSetOrder(order:String) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestPinataUserPartyGameStatus() : void
+        Server Replies:
+         Server Event Name: PINATA_USER_PARTY_GAME_STATE_UPDATE
+         Method signature :  onStateUpdate(, int stage, int stageMax, int health, int healthMax, int status)
+         Server Event Name: PINATA_USER_PARTY_GAME_USER_STATUS_UPDATE
+         Method signature :  onUserStatusUpdate()
+---------------------------------------------------------------
+   Client Method Name : requestPinataUserPartyGameGetClickableItem(itemId:int) : void
+        Server Replies:
+         Server Event Name: USER_PARTY_GAME_GET_CLICKABLE_ITEM_OK
+         Method signature :  onGetItem(, String getClickableItem, int getExtraNumber)
+---------------------------------------------------------------

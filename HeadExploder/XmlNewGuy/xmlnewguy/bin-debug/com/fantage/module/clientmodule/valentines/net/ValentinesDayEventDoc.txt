@@ -1,0 +1,22 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestGetFreeStickerAction(stickerName:String) : void
+        Server Replies:
+         Server Event Name: GET_FREE_STICKER_OK
+         Method signature :  onGetFreeStickerOk(, Asset asset)
+         Server Event Name: GET_FREE_STICKER_ALREADY_HAVE_IT
+         Method signature :  onGetFreeStickerAlreadyHaveIt(, Asset asset)
+---------------------------------------------------------------
+   Client Method Name : requestCheckStickerStatus() : void
+        Server Replies:
+         Server Event Name: VALENTINES_STICKER_STATUS
+         Method signature :  onValentinesStickerStatus(, int currentCount, int required)
+---------------------------------------------------------------
+   Client Method Name : requestReceivedMedalAction() : void
+        Server Replies:
+         Server Event Name: RECEIVED_MEDAL_OK
+         Method signature :  onReceivedMedalOk(, UserMedal userMedal)
+         Server Event Name: MEDAL_UPGRADED_OK
+         Method signature :  onMedalUpgradedOk(, int amount, UserMedal userMedal)
+         Server Event Name: MEDAL_MAX_LEVEL_REACHED
+         Method signature :  onMedalMaxedOut(, int max, UserMedal userMedal)
+---------------------------------------------------------------

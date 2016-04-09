@@ -1,0 +1,10 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestGetFreeRareItem(gameName:String, assetName:String, optionValue1:String, optionValue2:String) : void
+        Server Replies:
+         Server Event Name: GET_FREE_RARE_ITEM_OK
+         Method signature :  onGetFreeRareItemOk(, Asset asset)
+         Server Event Name: GET_FREE_RARE_ITEM_ALREADY_HAVE_IT
+         Method signature :  onGetFreeRareItemAlreadyHaveIt(, Asset asset)
+         Server Event Name: GET_FREE_RARE_ITEM_FAIL
+         Method signature :  onGetFreeRareItemFail()
+---------------------------------------------------------------

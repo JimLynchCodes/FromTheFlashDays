@@ -1,0 +1,69 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestIDFone(userId:String, page:int) : void
+        Server Replies:
+         Server Event Name: RECEIVED_STICKER
+         Method signature :  onReceivedStickerOk(, String fromUser, String stickerName)
+---------------------------------------------------------------
+   Client Method Name : requestGetIDFone(userId:String) : void
+        Server Replies:
+         Server Event Name: GET_ID_FONE_OK
+         Method signature :  onGetIdFoneOk(, IdCard idCard)
+---------------------------------------------------------------
+   Client Method Name : requestGetNextEmptyStickerPage(userId:String, page:int) : void
+        Server Replies:
+         Server Event Name: GET_NEXT_EMPTY_STICKER_PAGE_OK
+         Method signature :  onGetNextEmptyStickerPageOk(, IdCardPage idCardPage)
+         Server Event Name: GET_NEXT_EMPTY_STICKER_PAGE_FAIL
+         Method signature :  onGetNextEmptyStickerPageFail()
+---------------------------------------------------------------
+   Client Method Name : requestGetStickerPageById(id:int) : void
+        Server Replies:
+         Server Event Name: GET_STICKER_PAGE_OK
+         Method signature :  onGetStickerPageOk(, IdCardPage idCardPage)
+---------------------------------------------------------------
+   Client Method Name : requestGetStickerPage(userId:String, page:int) : void
+        Server Replies:
+         Server Event Name: GET_STICKER_PAGE_OK
+         Method signature :  onGetStickerPageOk(, IdCardPage idCardPage)
+---------------------------------------------------------------
+   Client Method Name : requestMoveStickerToInventory(stickerId:int) : void
+        Server Replies:
+         Server Event Name: MOVE_STICKER_TO_INVENTORY_OK
+         Method signature :  onMoveStickerToInventoryOk(, Asset asset)
+         Server Event Name: MOVE_STICKER_TO_INVENTORY_FAIL
+         Method signature :  onMoveStickerToInventoryFail(, int currentFundBalance)
+---------------------------------------------------------------
+   Client Method Name : requestGetUserStickerList() : void
+        Server Replies:
+         Server Event Name: GET_USER_STICKER_LIST_OK
+         Method signature :  onGetUserStickerListOk(, List userAsset)
+---------------------------------------------------------------
+   Client Method Name : requestDeleteSticker(stickerAssetId:int) : void
+        Server Replies:
+         Server Event Name: DELETE_STICKER_OK
+         Method signature :  onDeleteStickerOk(, IdCardAsset idCardAsset)
+         Server Event Name: DELETE_STICKER_FAIL
+         Method signature :  onDeleteStickerFail(, IdCardAsset idCardAsset)
+---------------------------------------------------------------
+   Client Method Name : requestGiveSticker(targetUserId:String, stickerPageId:int, userAssetId:int, x:Number, y:Number, scaleX:Number, scaleY:Number, rotation:Number) : void
+        Server Replies:
+         Server Event Name: GIVE_STICKER_OK
+         Method signature :  onGiveStickerOk(, IdCardAsset idCardAsset, IdCardPage idCardPage)
+         Server Event Name: GIVE_STICKER_PAGE_FAIL
+         Method signature :  onGiveStickerPageFail(, String reason)
+         Server Event Name: GIVE_STICKER_PAGE_FULL
+         Method signature :  onGiveStickerPageFull(, IdCard idCard)
+---------------------------------------------------------------
+   Client Method Name : requestMarkStickerPageViewed(stickerPageId:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestSaveStickerPage(idCardPageXML:Object) : void
+        Server Replies:
+         Server Event Name: SAVE_ID_CARD_PAGE_OK
+         Method signature :  onSaveIdCardPageOk(, Long pageId)
+---------------------------------------------------------------
+   Client Method Name : requestSaveIdCardAsset(idCardAsset:Object) : void
+        Server Replies:
+         Server Event Name: SAVE_ID_CARD_ASSET_OK
+         Method signature :  onSaveIdCardAssetOk(, IdCardAsset idCardAsset)
+---------------------------------------------------------------

@@ -1,0 +1,83 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestMissionPause(questName:String) : void
+        Server Replies:
+         Server Event Name: MISSION_PAUSE_OK
+         Method signature :  onMissionPauseOk(, UserMissionStatus userMissionStatus)
+         Server Event Name: MISSION_PAUSE_FAIL
+         Method signature :  onMissionPauseFail(, UserMissionStatus userMissionStatus)
+---------------------------------------------------------------
+   Client Method Name : requestCurrentMissionPause(questName:String) : void
+        Server Replies:
+         Server Event Name: MISSION_PAUSE_OK
+         Method signature :  onMissionPauseOk(, UserMissionStatus userMissionStatus)
+         Server Event Name: MISSION_PAUSE_FAIL
+         Method signature :  onMissionPauseFail(, UserMissionStatus userMissionStatus)
+---------------------------------------------------------------
+   Client Method Name : requestGetCurrentUserMission() : void
+        Server Replies:
+         Server Event Name: GET_CURRENT_USER_MISSION_OK
+         Method signature :  onGetCurrentUserMissionOk(, UserQuest userQuest)
+         Server Event Name: GET_CURRENT_USER_MISSION_FAIL
+         Method signature :  onGetCurrentUserMissionFail(, UserQuest userQuest)
+---------------------------------------------------------------
+   Client Method Name : requestGetEliteAgentList(questName:String) : void
+        Server Replies:
+         Server Event Name: GET_ELITE_AGENT_LIST_OK
+         Method signature :  onGetEliteAgentListOk(, List highScore)
+         Server Event Name: GET_ELITE_AGENT_LIST_FAIL
+         Method signature :  onGetEliteAgentListFail(, List highScore)
+---------------------------------------------------------------
+   Client Method Name : requestGetSystemMissionList(questName:String) : void
+        Server Replies:
+         Server Event Name: GET_SYSTEM_MISSION_LIST_OK
+         Method signature :  onGetSystemMissionListOk(, List userMissionStatus)
+         Server Event Name: GET_SYSTEM_MISSION_LIST_FAIL
+         Method signature :  onGetSystemMissionListFail(, List userMissionStatus)
+---------------------------------------------------------------
+   Client Method Name : requestMissionSaveUserData(questName:String, questDataNode:Object) : void
+        Server Replies:
+         Server Event Name: MISSION_USER_DATA_SAVE_OK
+         Method signature :  onMissionUserDataSaveOk(, Quest quest)
+         Server Event Name: MISSION_USER_DATA_SAVE_FAIL
+         Method signature :  onMissionUserDataSaveFail(, Quest quest)
+---------------------------------------------------------------
+   Client Method Name : requestGetMissionUserData(questName:String) : void
+        Server Replies:
+         Server Event Name: GET_MISSION_USER_DATA_OK
+         Method signature :  onMissionUserDataOk(, Quest quest, String questData)
+         Server Event Name: GET_MISSION_USER_DATA_FAIL
+         Method signature :  onMissionUserDataFail(, Quest quest, String questData)
+---------------------------------------------------------------
+   Client Method Name : requestMissionStart(questName:String) : void
+        Server Replies:
+         Server Event Name: MISSION_START_OK
+         Method signature :  onMissionStartOk(, UserMissionStatus userMissionStatus)
+         Server Event Name: MISSION_START_FAIL
+         Method signature :  onMissionStartFail(, UserMissionStatus userMissionStatus)
+---------------------------------------------------------------
+   Client Method Name : requestUserMissionList() : void
+        Server Replies:
+         Server Event Name: USER_MISSION_LIST_OK
+         Method signature :  onUserMissionListOk(, List userQuest)
+         Server Event Name: USER_MISSION_LIST_FAIL
+         Method signature :  onUserMissionListFail()
+---------------------------------------------------------------
+   Client Method Name : requestEndMission(questName:String) : void
+        Server Replies:
+         Server Event Name: END_MISSION_OK
+         Method signature :  onEndMissionOk(, Asset questMedal)
+---------------------------------------------------------------
+   Client Method Name : requestUserMissionStatusList() : void
+        Server Replies:
+         Server Event Name: USER_MISSION_STATUS_LIST_OK
+         Method signature :  onUserMissionStatusListOk(, List userMissionStatus)
+         Server Event Name: USER_MISSION_STATUS_LIST_FAIL
+         Method signature :  onUserMissionStatusListFail()
+---------------------------------------------------------------
+   Client Method Name : requestMissionList() : void
+        Server Replies:
+         Server Event Name: MISSION_LIST_OK
+         Method signature :  onMissionListOk(, List quest)
+         Server Event Name: MISSION_LIST_FAIL
+         Method signature :  onMissionListFail()
+---------------------------------------------------------------

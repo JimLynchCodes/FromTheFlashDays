@@ -1,0 +1,70 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestSimulateUserTaskDataList(userId:String, simulateFirstLoad:String) : void
+        Server Replies:
+         Server Event Name: TOOL_MESSAGE_UPDATE
+         Method signature :  onToolMessageUpdate(, String message)
+         Server Event Name: SIMULATE_USER_TASK_DATA_LIST_OK
+         Method signature :  onSimulateUserTaskDataListOk(, List userTaskSimulationResult)
+         Server Event Name: USER_TASK_RULE_RUN_OK
+         Method signature :  onUserTaskRuleRunOk(, List userTaskRule, List userTaskDataList)
+         Server Event Name: USER_ID_NOT_FOUND
+         Method signature :  onUserIdNotFound(, String userId)
+---------------------------------------------------------------
+   Client Method Name : requestSetTaskStatus(userTaskName:String, userId:String) : void
+        Server Replies:
+         Server Event Name: SET_USER_TASK_DATA_STATUS_OK
+         Method signature :  onSetUserTaskDataStatusOk(, UserTaskData userTaskData)
+---------------------------------------------------------------
+   Client Method Name : requestResetUserTaskData(userTaskName:String, userId:String) : void
+        Server Replies:
+         Server Event Name: RESET_USER_TASK_DATA_OK
+         Method signature :  onResetUserTaskDataOk()
+---------------------------------------------------------------
+   Client Method Name : requestResetAllUserTaskData(userId:String) : void
+        Server Replies:
+         Server Event Name: RESET_ALL_USER_TASK_DATA_OK
+         Method signature :  onResetAllUserTaskDataOk()
+---------------------------------------------------------------
+   Client Method Name : requestActivateUserTask(userTaskRuleName:String, userId:String) : void
+        Server Replies:
+         Server Event Name: COMPLETE_USER_TASK_OK
+         Method signature :  onCompleteUserTaskOk()
+---------------------------------------------------------------
+   Client Method Name : requestGetAllUserTaskRuleList() : void
+        Server Replies:
+         Server Event Name: GET_ALL_USER_TASK_RULE_LIST_OK
+         Method signature :  onGetAllUserTaskRuleListOk(, List userTaskRule)
+---------------------------------------------------------------
+   Client Method Name : requestExpireUserTaskData(userTaskName:String, userId:String) : void
+        Server Replies:
+         Server Event Name: EXPIRE_USER_TASK_DATA_OK
+         Method signature :  onExpireUserTaskOk(, UserTaskData userTaskData)
+---------------------------------------------------------------
+   Client Method Name : requestIncrementUserTaskDataUpdateTime(userTaskRuleName:String, userId:String) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestRefreshUserTaskCache() : void
+        Server Replies:
+         Server Event Name: REFRESH_USER_TASK_CACHE_OK
+         Method signature :  onRefreshUserTaskCacheOk(, List userTaskRule, List userTaskList)
+---------------------------------------------------------------
+   Client Method Name : requestCompleteUserTask(userTaskRuleName:String, userId:String) : void
+        Server Replies:
+         Server Event Name: COMPLETE_USER_TASK_OK
+         Method signature :  onCompleteUserTaskOk()
+---------------------------------------------------------------
+   Client Method Name : requestGetAllUserTaskDataList(userId:String) : void
+        Server Replies:
+         Server Event Name: GET_ALL_USER_TASK_DATA_LIST_OK
+         Method signature :  onGetAllUserTaskDataListOk(, List userTaskData)
+---------------------------------------------------------------
+   Client Method Name : requestFindRuleQualifyCount(ruleName:String, countId:int) : void
+        Server Replies:
+         Server Event Name: FIND_RULE_QUALIFY_COUNT
+         Method signature :  onFindRuleQualifyCountOk(, UserTaskSimulationResult userTaskSimulationResult)
+---------------------------------------------------------------
+   Client Method Name : requestFindAllRuleQualifyCount(countId:int) : void
+        Server Replies:
+         Server Event Name: FIND_RULE_QUALIFY_COUNT_LIST
+         Method signature :  onFindRuleQualifyCountListOk(, List userTaskSimulationResult)
+---------------------------------------------------------------

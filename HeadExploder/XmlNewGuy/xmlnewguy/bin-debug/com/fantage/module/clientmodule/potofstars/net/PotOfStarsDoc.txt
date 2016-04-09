@@ -1,0 +1,29 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestStartClientModule(moduleName:String) : void
+        Server Replies:
+         Server Event Name: START_MODULE_OK
+         Method signature :  onStartModuleOk(, ClientModuleUserData clientModuleUserData)
+         Server Event Name: START_MODULE_FAIL
+         Method signature :  onStartModuleFail()
+---------------------------------------------------------------
+   Client Method Name : requestGiveStars(moduleName:String, nuggetName:String, amount:int) : void
+        Server Replies:
+         Server Event Name: GIVE_STAR_OK
+         Method signature :  onGiveStarOk(, int amount, ClientModuleUserData clientModuleUserData)
+         Server Event Name: GIVE_STAR_FAIL
+         Method signature :  onGiveStarFail(, int amount)
+---------------------------------------------------------------
+   Client Method Name : requestGiveGem(moduleName:String, itemName:String, gemType:String, amount:int) : void
+        Server Replies:
+         Server Event Name: GIVE_GEM_OK
+         Method signature :  onGiveGemOk(, int amount, Asset asset, ClientModuleUserData clientModuleUserData)
+         Server Event Name: GIVE_GEM_FAIL
+         Method signature :  onGiveGemFail()
+---------------------------------------------------------------
+   Client Method Name : requestGiveStickerList(catalogName:String, itemNameList:String) : void
+        Server Replies:
+         Server Event Name: GET_FREE_STICKER_LIST_OK
+         Method signature :  onGetFreeStickerListOk(, List asset)
+         Server Event Name: GET_FREE_STICKER_FAIL
+         Method signature :  onGetFreeStickerListFail()
+---------------------------------------------------------------

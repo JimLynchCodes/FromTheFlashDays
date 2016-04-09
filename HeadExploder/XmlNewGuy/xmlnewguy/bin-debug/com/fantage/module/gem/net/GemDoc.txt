@@ -1,0 +1,16 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestListGemUserAsset(assetType:String) : void
+        Server Replies:
+         Server Event Name: LIST_GEM_USER_ASSET_OK
+         Method signature :  onListGemUserAssetOk(, List userAssetList)
+---------------------------------------------------------------
+   Client Method Name : requestListGemAsset(assetType:String) : void
+        Server Replies:
+         Server Event Name: LIST_GEM_ASSET_OK
+         Method signature :  onListGemAssetOk(, List assetList)
+---------------------------------------------------------------
+   Client Method Name : requestGemRandomBuy(gemNumber:int, price:int) : void
+        Server Replies:
+         Server Event Name: GEM_RANDOM_BUY_OK
+         Method signature :  onGemRandomBuyOk(, List assetList)
+---------------------------------------------------------------

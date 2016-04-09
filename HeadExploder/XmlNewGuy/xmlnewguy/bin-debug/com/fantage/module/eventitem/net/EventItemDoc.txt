@@ -1,0 +1,17 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestEventItemCheck(eventCode:String) : void
+        Server Replies:
+         Server Event Name: EVENT_ITEM_CHECK_OK
+         Method signature :  onEventItemCheckOk(, String eventCode, String itemTitle, String itemDesc)
+         Server Event Name: EVENT_ITEM_CHECK_ALREADY_HAVE_IT
+         Method signature :  onEventItemCheckAlreadyHaveIt(, String eventCode)
+         Server Event Name: EVENT_ITEM_CHECK_NONE
+         Method signature :  onEventItemCheckNone(, String eventCode)
+---------------------------------------------------------------
+   Client Method Name : requestEventItemInfo(eventCode:String) : void
+        Server Replies:
+         Server Event Name: EVENT_ITEM_INFO_OK
+         Method signature :  onEventItemInfoOk(, String eventCode, int ecoinAmount, int starAmount, Asset medalAsset, List itemList)
+         Server Event Name: EVENT_ITEM_CHECK_NONE
+         Method signature :  onEventItemCheckNone(, String eventCode)
+---------------------------------------------------------------

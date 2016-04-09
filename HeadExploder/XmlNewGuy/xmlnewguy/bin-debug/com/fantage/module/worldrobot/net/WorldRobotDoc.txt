@@ -1,0 +1,16 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestLoginRobotUser(username:String, password:String, targetUserId:String) : void
+        Server Replies:
+         Server Event Name: LOGIN_USER_OK
+         Method signature :  onLoginUserOk(, User user)
+         Server Event Name: LOGIN_USER_FAIL
+         Method signature :  onLoginUserFail()
+         Server Event Name: LOGIN_USER_LOCKED
+         Method signature :  onLoginUserLocked(, int deactivationHour, int deactivationMinute)
+         Server Event Name: LOGIN_USER_ALREADY_LOGGED_IN
+         Method signature :  onLoginUserAlreadyLoggedIn()
+         Server Event Name: LOGIN_USER_NOT_ACTIVATED
+         Method signature :  onLoginUserNotActivated()
+         Server Event Name: LOGIN_TOO_MANY_FAILURES
+         Method signature :  onLoginTooManyFailures()
+---------------------------------------------------------------

@@ -1,0 +1,624 @@
+package jp.com.fantage.module.shopcatalog.ottomans.ui
+{
+    import br.com.stimuli.loading.loadingtypes.LoadingItem;
+    
+    import com.fantage.client.ClientConfiguration;
+    import com.fantage.client.entity.Asset;
+    import com.fantage.client.entity.Catalog;
+    import com.fantage.loader.GroupLoaderBL;
+    import com.fantage.loader.GroupLoaderListener;
+    import com.fantage.module.world.IWorldModule;
+    import com.fantage.util.InvokeFuture;
+    import com.fantage.util.Util;
+    
+    import flash.display.Loader;
+    import flash.display.MovieClip;
+    import flash.events.Event;
+    import flash.events.HTTPStatusEvent;
+    import flash.events.IOErrorEvent;
+    import flash.events.ProgressEvent;
+    
+    import jp.com.fantage.module.shopcatalog.ui.ShopCatalogPageUI;
+    import jp.com.fantage.module.shopcatalog.ui.ShopCatalogUI;
+    import jp.com.fantage.module.shopcatalog.ui.ShopCatalogUIEvent;
+    
+    public class OttomansCatalogUI_12_2009_new extends ShopCatalogUI implements GroupLoaderListener
+    {
+        protected var _movieClip:MovieClip;
+      //  protected var _assetTypeSettings:Array = new Array();
+        
+        protected var _groupLoader:GroupLoaderBL;
+        protected var _previewImageSizeList:Array;
+        
+        protected var cover:MovieClip;
+        protected var whatsNew:MovieClip;
+        protected var backCover:MovieClip;
+        
+        protected var loadingScreen:MovieClip;
+//        protected var
+        
+        public override function set worldModule(worldModule:IWorldModule):void {
+        	super.worldModule = worldModule;
+        	
+        	_groupLoader.worldModule = worldModule;
+        } 
+        
+        public function OttomansCatalogUI_12_2009_new()
+        {
+            initTypeSettings();
+            _groupLoader = new GroupLoaderBL();
+            _groupLoader.addListener(this);
+            
+            _loadingScreen = new LoadingScreenCatalog();
+            _loadingScreen.cacheAsBitmap = true;
+            
+            _openPageTemplate = new PageOpen();
+            _openPageTemplate.cacheAsBitmap = true;
+            
+            _coverTemplate = new PageCover();
+            _coverTemplate.cacheAsBitmap = true;
+            
+            _backCoverTemplate = new BackPage();
+            _backCoverTemplate.cacheAsBitmap = true;
+            
+            cover = new PageFrontCover();
+            cover.cacheAsBitmap = true;
+            cover.x = 0.2;
+            cover.y = 574.3;
+            addChild(cover);
+            setFirst(cover, "Cover");
+            
+            whatsNew = new WhatsNew();
+            whatsNew.cacheAsBitmap = true;
+            //addChild(whatsNew);
+            //addPage(whatsNew, "NEW");
+            /*
+            _loadingScreen     = loadingScreen;
+           // _receipt           = receipt;
+            _openPageTemplate  = openPageTemplate; 
+            _coverTemplate     = coverTemplate;
+            _backCoverTemplate = backCoverTemplate;
+            */
+        	
+        	/*
+            setFirst(cover, "Cover");
+            addPage(whatsNew, "NEW");
+            */
+            		
+            addItemBuyNavigation(whatsNew.faceButton1, "ChristmasLights", "Festive lights to brighten up your home");
+            addItemBuyNavigation(whatsNew.textButton1, "ChristmasLights", "Festive lights to brighten up your home");
+            
+            addItemBuyNavigation(whatsNew.faceButton2, "ChristmasTree", "A freshly chopped pine with ornaments!");
+            addItemBuyNavigation(whatsNew.textButton2, "ChristmasTree", "A freshly chopped pine with ornaments!");
+            
+            addItemBuyNavigation(whatsNew.faceButton3, "Sconces", "For a dimly lit holiday dinner");
+            addItemBuyNavigation(whatsNew.textButton3, "Sconces", "For a dimly lit holiday dinner");
+            
+            addItemBuyNavigation(whatsNew.faceButton4, "SmallGarland", "To decorate your windows for the holidays!");
+            addItemBuyNavigation(whatsNew.textButton4, "SmallGarland", "To decorate your windows for the holidays!");
+            
+            addItemBuyNavigation(whatsNew.faceButton5, "SnowEquipment", "Everything you need for those snowy days!");
+            addItemBuyNavigation(whatsNew.textButton5, "SnowEquipment", "Everything you need for those snowy days!");
+            
+            addItemBuyNavigation(whatsNew.faceButton6, "SnowflakeGarland", "Decorate your home with snowflake garland!");
+            addItemBuyNavigation(whatsNew.textButton6, "SnowflakeGarland", "Decorate your home with snowflake garland!");
+            
+            addItemBuyNavigation(whatsNew.faceButton7, "BigGarland", "Pretty green garland with red bows!");
+            addItemBuyNavigation(whatsNew.textButton7, "BigGarland", "Pretty green garland with red bows!");
+            
+            addItemBuyNavigation(whatsNew.faceButton8, "HangingOrnaments", "These ornaments are colorful and shiny!");
+            addItemBuyNavigation(whatsNew.textButton8, "HangingOrnaments", "These ornaments are colorful and shiny!");
+            
+            addItemBuyNavigation(whatsNew.faceButton9, "Wreath", "A classic holiday wreath!");
+            addItemBuyNavigation(whatsNew.textButton9, "Wreath", "A classic holiday wreath!");
+            
+            addItemBuyNavigation(whatsNew.faceButton10, "JingleBells", "Ring these bells when you feel cheerful!");
+            addItemBuyNavigation(whatsNew.textButton10, "JingleBells", "Ring these bells when you feel cheerful!");
+            
+            addItemBuyNavigation(whatsNew.faceButton11, "Nutcracker", "These soldiers makes a great decoration!");
+            addItemBuyNavigation(whatsNew.textButton11, "Nutcracker", "These soldiers makes a great decoration!");
+            
+            addItemBuyNavigation(whatsNew.faceButton12, "Presents", "Gifts to put underneath the tree!");
+            addItemBuyNavigation(whatsNew.textButton12, "Presents", "Gifts to put underneath the tree!");
+            
+            addItemBuyNavigation(whatsNew.faceButton13, "ComfyChristmasSofa", "A comfy Christmas tree sofa!");
+            addItemBuyNavigation(whatsNew.textButton13, "ComfyChristmasSofa", "A comfy Christmas tree sofa!");
+            
+            addItemBuyNavigation(whatsNew.faceButton14, "ChairandFootRest", "Who says holiday items can't be stylish?");
+            addItemBuyNavigation(whatsNew.textButton14, "ChairandFootRest", "Who says holiday items can't be stylish?");
+            
+            addItemBuyNavigation(whatsNew.faceButton15, "ChristmasTreeRug", "A cute Christmas tree rug!");
+            addItemBuyNavigation(whatsNew.textButton15, "ChristmasTreeRug", "A cute Christmas tree rug!");
+            
+            addItemBuyNavigation(whatsNew.faceButton16, "HotChocolateBreads", "Yum! Hot cocoa and gingerbread cookies!");
+            addItemBuyNavigation(whatsNew.textButton16, "HotChocolateBreads", "Yum! Hot cocoa and gingerbread cookies!");
+            
+            addItemBuyNavigation(whatsNew.faceButton17, "SantasSleigh", "Santa is bringing you presents!");
+            addItemBuyNavigation(whatsNew.textButton17, "SantasSleigh", "Santa is bringing you presents!");
+            
+            addItemBuyNavigation(whatsNew.faceButton18, "MorePresents", "Looks like Santa dropped by!");
+            addItemBuyNavigation(whatsNew.textButton18, "MorePresents", "Looks like Santa dropped by!");
+            
+            addItemBuyNavigation(whatsNew.faceButton19, "KwanzaaCandals", "Beautiful candles for Kwanzaa!!");
+            addItemBuyNavigation(whatsNew.textButton19, "KwanzaaCandals", "Beautiful candles for Kwanzaa!!");
+            
+            addItemBuyNavigation(whatsNew.faceButton20, "HonnakahCandals", "A pretty menorah for your home!");
+            addItemBuyNavigation(whatsNew.textButton20, "HonnakahCandals", "A pretty menorah for your home!");
+
+            			
+			//addSectionNavigation(cover.whatsnewButton, "NEW", "New Furniture!");
+			//addSectionNavigation(cover.allFurnitureButton, "FURN", "All Furnture!");
+        }
+        
+        public function initTypeSettings() : void
+        {
+            _assetTypeSettings["FURN"] = { gridWidth:154, gridHeight:150, type:"FURN", itemsPerPage:8, columns:2, heading:"Furniture"};
+
+            // Small
+            // Medium
+            // Large
+            // Large
+            // Wide
+            _previewImageSizeList = new Array();
+              
+            _previewImageSizeList.push({ name:"PlantA", gridType:"small"});
+            _previewImageSizeList.push({ name:"Candle", gridType:"small" });
+            _previewImageSizeList.push({ name:"BeachBall", gridType:"small"});
+            _previewImageSizeList.push({ name:"BalloonC", gridType:"small"});
+            _previewImageSizeList.push({ name:"GreenTable", gridType:"medium"});
+            _previewImageSizeList.push({ name:"DresserGrey", gridType:"medium"});
+            _previewImageSizeList.push({ name:"ChairGreen", gridType:"medium"});
+            _previewImageSizeList.push({ name:"TvGrey", gridType:"small"});
+            _previewImageSizeList.push({ name:"StarBed", gridType:"large"});
+            _previewImageSizeList.push({ name:"Arcade", gridType:"large"});
+            _previewImageSizeList.push({ name:"Trash", gridType:"small"});
+            _previewImageSizeList.push({ name:"PlantB", gridType:"small"});
+            _previewImageSizeList.push({ name:"BasketBall", gridType:"small"});
+            _previewImageSizeList.push({ name:"StandingLamp", gridType:"long"});
+            _previewImageSizeList.push({ name:"OrangeClock", gridType:"small"});
+            _previewImageSizeList.push({ name:"PurpleClock", gridType:"small"});
+            _previewImageSizeList.push({ name:"Coffee", gridType:"small"});
+            _previewImageSizeList.push({ name:"Shampoo", gridType:"small"});
+            _previewImageSizeList.push({ name:"BalloonP", gridType:"medium"});
+            _previewImageSizeList.push({ name:"BalloonB", gridType:"medium"});
+            _previewImageSizeList.push({ name:"DresserStar", gridType:"medium"});
+            _previewImageSizeList.push({ name:"DresserMonkeyB", gridType:"medium"});
+            _previewImageSizeList.push({ name:"WallLamp", gridType:"small"});
+            _previewImageSizeList.push({ name:"DresserMonkey", gridType:"medium"});
+            _previewImageSizeList.push({ name:"PurpleLamp", gridType:"long"});
+            _previewImageSizeList.push({ name:"PinkLamp", gridType:"small"});
+            _previewImageSizeList.push({ name:"Animals", gridType:"small"});
+            _previewImageSizeList.push({ name:"PeachTable", gridType:"medium"});
+            _previewImageSizeList.push({ name:"OrangeChandelier", gridType:"large"});
+            _previewImageSizeList.push({ name:"PurpleChandelier", gridType:"large"});
+            _previewImageSizeList.push({ name:"TableLamp", gridType:"medium"});
+            _previewImageSizeList.push({ name:"TableCafe", gridType:"medium"});
+            _previewImageSizeList.push({ name:"TablePsych", gridType:"medium"});
+            _previewImageSizeList.push({ name:"ChairFace", gridType:"medium"});
+            _previewImageSizeList.push({ name:"BrownTable", gridType:"medium"});
+            _previewImageSizeList.push({ name:"CeilingFan", gridType:"medium"});
+            _previewImageSizeList.push({ name:"TableGlass", gridType:"medium"});
+            _previewImageSizeList.push({ name:"LoungeBlue", gridType:"medium"});
+            _previewImageSizeList.push({ name:"ChairMagenta", gridType:"medium"});
+            _previewImageSizeList.push({ name:"OttoLeaf", gridType:"medium"});
+            _previewImageSizeList.push({ name:"OttoGreen", gridType:"medium"});
+            _previewImageSizeList.push({ name:"OttoPurp", gridType:"medium"});
+            _previewImageSizeList.push({ name:"ChairCat", gridType:"medium"});
+            _previewImageSizeList.push({ name:"ChairDog", gridType:"medium"});
+            _previewImageSizeList.push({ name:"Speaker", gridType:"large"});
+            _previewImageSizeList.push({ name:"DeskLight", gridType:"small"});
+            _previewImageSizeList.push({ name:"ChairOrange", gridType:"medium"});
+            _previewImageSizeList.push({ name:"DresserMirror", gridType:"medium"});
+            _previewImageSizeList.push({ name:"ChairHeffer", gridType:"medium"});
+            _previewImageSizeList.push({ name:"TvGreen", gridType:"small"});
+            _previewImageSizeList.push({ name:"TvOrange", gridType:"small"});
+            _previewImageSizeList.push({ name:"LoungePurple", gridType:"medium"});
+            _previewImageSizeList.push({ name:"OttoSwirl", gridType:"medium"});
+            _previewImageSizeList.push({ name:"OttoSmiley", gridType:"medium"});
+            _previewImageSizeList.push({ name:"ChairBlue", gridType:"medium"});
+            _previewImageSizeList.push({ name:"OttoFlower", gridType:"medium"});
+            _previewImageSizeList.push({ name:"OttoFace", gridType:"medium"});
+            _previewImageSizeList.push({ name:"LoungeRedBear", gridType:"medium"});
+            _previewImageSizeList.push({ name:"LoungeBlueBear", gridType:"medium"});
+            _previewImageSizeList.push({ name:"LoungeBrownBear", gridType:"medium"});
+            _previewImageSizeList.push({ name:"LoungeBlueGorilla", gridType:"medium"});
+            _previewImageSizeList.push({ name:"LoungeBunny", gridType:"medium"});
+            _previewImageSizeList.push({ name:"LoungeMonkey", gridType:"medium"});
+            _previewImageSizeList.push({ name:"OttoMuffin", gridType:"medium"});
+            _previewImageSizeList.push({ name:"OttoGreenFace", gridType:"medium"});
+            _previewImageSizeList.push({ name:"Pyramid", gridType:"medium"});
+            _previewImageSizeList.push({ name:"Censor", gridType:"large"});
+            _previewImageSizeList.push({ name:"OttoZebra", gridType:"medium"});
+            _previewImageSizeList.push({ name:"Window", gridType:"medium"});
+            _previewImageSizeList.push({ name:"CeilingTv", gridType:"small"});
+            _previewImageSizeList.push({ name:"OttoBlue", gridType:"medium"});
+            _previewImageSizeList.push({ name:"LoungeLion", gridType:"medium"});
+            _previewImageSizeList.push({ name:"TableTeal", gridType:"medium"});
+            _previewImageSizeList.push({ name:"OttoOrange", gridType:"medium"});
+            _previewImageSizeList.push({ name:"TableStars", gridType:"medium"});
+            _previewImageSizeList.push({ name:"PolkaBed", gridType:"medium"});
+            _previewImageSizeList.push({ name:"Stereo", gridType:"large"});
+            _previewImageSizeList.push({ name:"WallTv", gridType:"large"});
+            _previewImageSizeList.push({ name:"RedAntiquePhone", gridType:"small"});
+            _previewImageSizeList.push({ name:"BlueCarpet", gridType:"large"});
+            _previewImageSizeList.push({ name:"BigScreen", gridType:"large"});
+            _previewImageSizeList.push({ name:"TriLamp", gridType:"small"});
+            _previewImageSizeList.push({ name:"BlueAntiquePhone", gridType:"small"});
+            _previewImageSizeList.push({ name:"RedCarpet", gridType:"medium"});
+            _previewImageSizeList.push({ name:"FishTank", gridType:"large"});
+            _previewImageSizeList.push({ name:"GrayLaptop", gridType:"small"});
+            _previewImageSizeList.push({ name:"ChairPanda", gridType:"medium"});
+            _previewImageSizeList.push({ name:"Piano", gridType:"large"});            
+                                     
+                            
+            _itemGroupOrdering.push("FURN");            
+        }
+
+	    public override function addLoadedAvatarAssetItem(asset:Asset) : void
+	    {
+
+	    }
+	    
+	    public override function loadItem(asset:Asset) : void
+	    {
+	        _groupLoader.addItem(ClientConfiguration.RESOURCE_BASE + asset.pathUrl + "?" + _worldModule.sessionId, asset.name);	        	        
+	    }
+	    
+        public override function itemLoaded(asset:Asset) : Boolean
+        {
+            // Just load everything..
+            return false;
+        }
+        
+        public override function startLoading() : void
+        {
+            _groupLoader.load();             
+        }
+        
+        
+        public override function set catalog(catalog:Catalog) : void
+        {
+        	
+            this._catalog = catalog;
+            var itemsToLoad:int = 0;
+            // Load the front page items first!!
+            for (var i:int = 0 ; i < catalog.assetsList.length ; i++)
+            {
+                var asset:Asset = catalog.assetsList[i];
+                
+                for (var j:int = 0 ; j < _frontPageItemNameList.length ; j++)
+                {
+                    if (asset.name == _frontPageItemNameList[j])
+                    {
+                        _frontPageAssetList.push(asset);
+                        _assetMap[asset.id] = asset;
+                        
+                        //if (_bulkLoader.hasItem(asset.pathUrl
+                        if (itemLoaded(asset)) // !_bulkLoader.hasItem(asset.id))
+                 	    {
+                            loadItem(asset);
+    				        itemsToLoad++;
+                 	    }
+
+                        break;
+                    }
+                }
+            }
+            
+            if (itemsToLoad > 0)
+            {
+                startLoadingFrontPageItems();
+                return;
+            }
+
+            var typeMap:Array = groupByType(catalog.assetsList);
+            
+            itemsToLoad = 0;
+            
+            for (var j:int = 0 ; j < _itemGroupOrdering.length ; j++) // var type:String in typeMap)
+            {
+                var type:String = _itemGroupOrdering[j];
+                var assetList:Array = typeMap[type];
+                var settings:Object = _assetTypeSettings[type];
+                var pageNum:int = 2;
+                
+                if (settings && assetList != null)
+                {    
+                    assetList.sortOn(["price"], Array.DESCENDING | Array.NUMERIC);		
+                    assetList = sortByNewItems(assetList);
+                    
+                    var shopCatalogPage:ShopCatalogPageUI = new OpenPageGirlTemplate();
+                    shopCatalogPage.cacheAsBitmap = true;
+                    shopCatalogPage.itemsPerPage = settings.itemsPerPage;
+                    shopCatalogPage.columnCount = settings.columns;
+                    shopCatalogPage.pageHeading.text = settings.heading;
+                    shopCatalogPage.setItemPreviewSize(settings.gridWidth, settings.gridHeight);
+                    
+                    for (var i:int = 0 ; i < assetList.length ; i++)
+                    {
+                        var asset:Asset = assetList[i];
+
+                        shopCatalogPage.gridHeight = settings.gridHeight;
+                        shopCatalogPage.gridWidth = settings.gridWidth;
+                        
+                        _assetMap[asset.id] = asset;
+                        
+                        // Assign the item slots back to a map for quick load later
+                        _assetSlotMap[asset.id] = shopCatalogPage.addAsset(assetList[i]);
+                        _assetSlotMap[asset.id].newItem = isNew(asset.name);
+                        _assetSlotMap[asset.id].asset = asset;
+                         
+                        //if (_bulkLoader.hasItem(asset.pathUrl
+                        if (!itemLoaded(asset)) // !_bulkLoader.hasItem(asset.id))
+             	        {
+                           loadItem(asset);
+             	           // _bulkLoader.add(ClientConfiguration.RESOURCE_BASE + asset.pathUrl, {id:asset.id}).addEventListener(Event.COMPLETE, onItemLoaded, false, 0, true);
+				           itemsToLoad++;
+             	        }
+             	        else
+             	        {
+             	            addLoadedAvatarAssetItem(asset);
+             	        }
+
+                        if (shopCatalogPage.assetList.length == settings.itemsPerPage)
+                        {
+                            shopCatalogPage.arrange();
+                            addPage(shopCatalogPage, type);
+                            
+                            shopCatalogPage = new OpenPageGirlTemplate();
+                            shopCatalogPage.cacheAsBitmap = true;
+                            shopCatalogPage.itemsPerPage = settings.itemsPerPage;
+                            shopCatalogPage.columnCount  = settings.columns;     
+                            shopCatalogPage.pageHeading.text = settings.heading;
+                            shopCatalogPage.setItemPreviewSize(settings.gridWidth, settings.gridHeight);
+                        }
+                    }
+                    
+                    if (shopCatalogPage.assetList.length > 0)
+                    {
+                        shopCatalogPage.arrange();
+                        addPage(shopCatalogPage, type);   
+                    }
+                }
+            }
+            
+            if (itemsToLoad > 0)
+            {
+                //_bulkLoader.addEventListener(BulkProgressEvent.COMPLETE, onBulkLoaderComplete);
+                //_bulkLoader.addEventListener(BulkProgressEvent.PROGRESS, onBulkLoaderProgress);
+            	// _bulkLoader.start();
+            	startLoading();
+            }
+            
+            //var backCover:MovieClip = MovieClip(getChildByName("backCover"));
+            
+            backCover = new PageBackCover();
+            backCover.cacheAsBitmap = true;
+            backCover.x = 0;
+            backCover.y = 1046.4;
+            addChild(backCover);
+
+            
+            addChild(_openPageTemplate);
+            addChild(_coverTemplate);
+            addChild(_backCoverTemplate);
+            
+            addChild(_loadingScreen);
+
+            setLast(backCover, "Back");
+            
+            var catalogSetEvent:ShopCatalogUIEvent = new ShopCatalogUIEvent(ShopCatalogUIEvent.CATALOG_SET_EVENT);
+            dispatchEvent(catalogSetEvent);
+        }           
+        
+        /*
+        public override function set catalog(catalog:Catalog) : void
+        {
+            _loadingScreen.visible = false;
+
+            // Build the pages here 
+            this._catalog = catalog;
+            var itemsToLoad:int = 0 ;
+            
+            catalog.assetList.sortOn(["accessLevel", "price"], Array.NUMERIC);		
+                    
+            for (var i:int = 0 ; i < catalog.assetsList.length ; i++)
+            {
+                var asset:Asset = catalog.assetsList[i];
+                _groupLoader.addItem(asset.pathUrl, asset.name);
+                itemsToLoad++;
+            }
+
+            if (itemsToLoad > 0)
+                _groupLoader.load();
+                            
+            setLast(backCover, "Back");
+        }   
+        */
+        
+        public function onItemLoadStart(name:String) : void {}
+        public function onHttpStatus(event:HTTPStatusEvent) : void {}
+        public function onLoaderInit(event:Event) : void {}
+        public function onLoaderError(event:IOErrorEvent) : void {}
+        public function onLoaderOpen(event:Event) : void {}
+        public function onLoaderComplete(loader:Loader) : void {}
+
+        public function onLoaderProgress(event:ProgressEvent) : void 
+        { 
+        	//trace("\t\t onLoaderProgress ", event.bytesLoaded, event.bytesTotal);
+
+        	var completed:Number = (_groupLoader.getLoadedCount() / _groupLoader.getLoadCount()) * 100.0;
+        	completed = completed + ((event.bytesLoaded / event.bytesTotal) * 100.0) / _groupLoader.getLoadCount();        	
+        	_loadingScreen.percentLoaded.text = "" + Math.round(completed) + "%";
+        	//_loadingScreen.percentLoaded.text = Math.round(event.bytesLoaded / event.bytesTotal * 100) + "%";
+        }
+
+        public function onLoaderUnload(event:Event) : void {}
+        public function onAllLoadComplete(loaderList:Array) : void 
+        {
+        	trace("@@@onAllLoadComplete called@@@", loaderList.length);  
+            // this._catalog;
+            for (var i:int = 0 ; i < _catalog.assetsList.length ; i++)
+            {
+                var asset:Asset = _catalog.assetsList[i];
+                
+                var furniture = getFurniture(asset, loaderList);
+                var preview = getFurniture(asset, loaderList);
+                
+                //var furniture:MovieClip = _groupLoader.createInstance(asset.name);
+                //var preview:MovieClip   = _groupLoader.createInstance(asset.name);
+
+                if (furniture == null)
+                	throw new Error("Asset: " + asset.name + " does not exist in furnitureset file");
+                //continue;
+                	
+                furniture.gotoAndStop(0);
+                preview.gotoAndStop(0);
+                
+                trace("Asset: " + asset.name);
+                
+                if (furniture == null)
+                {
+                    trace("Item is null: " + asset.name);
+                }
+                else
+                {
+                    Util.scaleTo(75, 75, furniture);
+    			    
+    			    //furniture.x = 100;
+    			    
+    			    _assetSlotMap[asset.id].item       = furniture;
+    			    _assetSlotMap[asset.id].preview    = preview;
+    			    _assetSlotMap[asset.id].asset      = asset;
+    			    // _assetSlotMap[asset.id].itemPreview      = asset;
+    			    
+                }
+			    // _assetSlotMap[asset.id].avatarItem = avatarItem;
+            }
+            
+             _loadingScreen.visible = false;
+        }
+        
+        private function getFurniture(asset:Asset, arr:Array):* {
+        	
+        	trace("\t\t", asset.name);
+        	
+        	for each(var item in arr) {
+        		
+        		trace("getFurniture", item);
+        		
+        		var flag:Boolean;
+        		
+        		try {
+        			flag = item.content.containsFurniture(asset.name);
+        		} catch(error:Error) {
+        			flag = false;
+        		}
+        		
+        		if(flag) {
+        			return item.content.getFurniture(asset.name);
+        		}
+        	}
+        	
+        	return null;
+        }
+        
+        public override function shutDown():void {
+        	
+        	removeNavigation();
+        	
+            Util.safeRemove(_openPageTemplate);
+	        Util.safeRemove(_coverTemplate);
+            Util.safeRemove(_backCoverTemplate);
+            Util.safeRemove(cover);
+            Util.safeRemove(whatsNew);
+            Util.safeRemove(_loadingScreen);
+        	
+        	_loadingScreen = null;
+        	
+	        Util.safeRemove(cover);
+	        cover = null;
+				        
+	        Util.safeRemove(whatsNew);
+	        whatsNew = null;
+	        
+	        Util.safeRemove(backCover);
+	        backCover = null;
+        	
+            _assetTypeSettings["FURN"] = null;
+
+            _previewImageSizeList = [];
+        	_frontPageItemNameList = [];
+        	
+        	super.shutDown();
+        	
+        	_groupLoader.shutDown();
+        }
+        
+        public function removeNavigation():void {
+            removeItemBuyNavigation(whatsNew.faceButton1);
+            removeItemBuyNavigation(whatsNew.textButton1);
+            
+            removeItemBuyNavigation(whatsNew.faceButton2);
+            removeItemBuyNavigation(whatsNew.textButton2);
+            
+            removeItemBuyNavigation(whatsNew.faceButton3);
+            removeItemBuyNavigation(whatsNew.textButton3);
+            
+            removeItemBuyNavigation(whatsNew.faceButton4);
+            removeItemBuyNavigation(whatsNew.textButton4);
+            
+            removeItemBuyNavigation(whatsNew.faceButton5);
+            removeItemBuyNavigation(whatsNew.textButton5);
+            
+            removeItemBuyNavigation(whatsNew.faceButton6);
+            removeItemBuyNavigation(whatsNew.textButton6);
+            
+            removeItemBuyNavigation(whatsNew.faceButton7);
+            removeItemBuyNavigation(whatsNew.textButton7);
+            
+            removeItemBuyNavigation(whatsNew.faceButton8);
+            removeItemBuyNavigation(whatsNew.textButton8);
+            
+            removeItemBuyNavigation(whatsNew.faceButton9);
+            removeItemBuyNavigation(whatsNew.textButton9);
+            
+            removeItemBuyNavigation(whatsNew.faceButton10);
+            removeItemBuyNavigation(whatsNew.textButton10);
+            
+            removeItemBuyNavigation(whatsNew.faceButton11);
+            removeItemBuyNavigation(whatsNew.textButton11);
+            
+            removeItemBuyNavigation(whatsNew.faceButton12);
+            removeItemBuyNavigation(whatsNew.textButton12);
+            
+            removeItemBuyNavigation(whatsNew.faceButton13);
+            removeItemBuyNavigation(whatsNew.textButton13);
+            
+            removeItemBuyNavigation(whatsNew.faceButton14);
+            removeItemBuyNavigation(whatsNew.textButton14);
+            
+            removeItemBuyNavigation(whatsNew.faceButton15);
+            removeItemBuyNavigation(whatsNew.textButton15);
+            
+            removeItemBuyNavigation(whatsNew.faceButton16);
+            removeItemBuyNavigation(whatsNew.textButton16);
+            
+            removeItemBuyNavigation(whatsNew.faceButton17);
+            removeItemBuyNavigation(whatsNew.textButton17);
+            
+            removeItemBuyNavigation(whatsNew.faceButton18);
+            removeItemBuyNavigation(whatsNew.textButton18);
+            
+            removeItemBuyNavigation(whatsNew.faceButton19);
+            removeItemBuyNavigation(whatsNew.textButton19);
+            
+            removeItemBuyNavigation(whatsNew.faceButton20);
+            removeItemBuyNavigation(whatsNew.textButton20);
+
+            			
+			removeSectionNavigation(cover.whatsnewButton);
+			removeSectionNavigation(cover.allFurnitureButton);
+        }
+    }
+}

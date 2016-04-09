@@ -1,0 +1,22 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestCheckCosmeticsItemMain() : void
+        Server Replies:
+         Server Event Name: CHECK_COSMETICS_ITEM_NONE
+         Method signature :  onCheckCosmeticsItemNone()
+         Server Event Name: CHECK_COSMETICS_ITEM_EXPIRED
+         Method signature :  onCheckCosmeticsItemExpired(, List cosmeticsItemInfoList)
+         Server Event Name: CHECK_COSMETICS_ITEM_EXIST
+         Method signature :  onCheckCosmeticsItemExist(, List cosmeticsItemInfoListPlus)
+---------------------------------------------------------------
+   Client Method Name : requestCheckCosmeticsItemExpired() : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestCheckCosmeticsItemExist() : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestSetCosmeticsItem(userAssetId:String) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestResetCosmeticsItem(userAssetId:String) : void
+        Server Replies:
+---------------------------------------------------------------

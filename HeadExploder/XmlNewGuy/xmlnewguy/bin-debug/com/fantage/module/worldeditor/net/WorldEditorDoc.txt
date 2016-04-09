@@ -1,0 +1,6 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestSaveItemPosition(moduleName:String, itemName:String, roomName:String, x:int, y:int) : void
+        Server Replies:
+         Server Event Name: SAVE_ITEM_POSITION_OK
+         Method signature :  onSaveItemPositionOk(, String moduleName, String itemName)
+---------------------------------------------------------------

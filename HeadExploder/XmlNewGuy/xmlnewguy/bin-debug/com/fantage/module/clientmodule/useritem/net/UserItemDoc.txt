@@ -1,0 +1,46 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestGetFreeItemFromSet(clientModuleName:String, freeItemSetName:String, freeItemNameList:String) : void
+        Server Replies:
+         Server Event Name: GET_FREE_ITEM_SET_OK
+         Method signature :  onGetFreeItemSetOk(, List asset)
+         Server Event Name: GET_FREE_ITEM_SET_HAVE_ALL
+         Method signature :  onGetFreeItemSetHaveAll(, int max)
+---------------------------------------------------------------
+   Client Method Name : requestGetRandomItemFromSet(clientModuleName:String, freeItemSetName:String, freeItemNameList:String) : void
+        Server Replies:
+         Server Event Name: GET_RANDOM_ITEM_FROM_SET_OK
+         Method signature :  onGetRandomItemFromSetOk(, List asset)
+         Server Event Name: GET_RANDOM_ITEM_FROM_SET_HAVE_ALL
+         Method signature :  onGetRandomItemFromSetHaveAll(, int max)
+---------------------------------------------------------------
+   Client Method Name : requestGetAvailableCountFromUserItemSet(clientModuleName:String, freeItemSetName:String) : void
+        Server Replies:
+         Server Event Name: GET_AVAILABLE_COUNT_FROM_USER_ITEM_SET_OK
+         Method signature :  onGetAvailableCountFromUserItemSetOk(, int available)
+---------------------------------------------------------------
+   Client Method Name : requestGetFreeItem(assetName:String) : void
+        Server Replies:
+         Server Event Name: GET_FREE_ITEM_OK
+         Method signature :  onGetFreeItemOk(, Asset asset)
+         Server Event Name: GET_FREE_ITEM_ALREADY_HAVE_IT
+         Method signature :  onGetFreeItemAlreadyHaveIt(, Asset asset)
+---------------------------------------------------------------
+   Client Method Name : requestGetFreeItemSticker(assetName:String) : void
+        Server Replies:
+         Server Event Name: GET_FREE_STICKER_OK
+         Method signature :  onGetFreeStickerOk(, UserAsset userAsset)
+         Server Event Name: GET_FREE_STICKER_FAIL
+         Method signature :  onGetFreeStickerFail(, int failType)
+---------------------------------------------------------------
+   Client Method Name : requestCheckUserAssetList(assetNameList:String) : void
+        Server Replies:
+         Server Event Name: CHECK_USER_ASSET_LIST_OK
+         Method signature :  onCheckUserAssetListOk(, List userAsset)
+---------------------------------------------------------------
+   Client Method Name : requestGetFreeRoomUpgrade(roomName:String) : void
+        Server Replies:
+         Server Event Name: GET_FREE_ROOM_UPGRADE_OK
+         Method signature :  onGetFreeRoomUpgradeOk(, Asset asset)
+         Server Event Name: GET_FREE_ROOM_UPGRADE_ALREADY_HAVE_IT
+         Method signature :  onGetFreeRoomUpgradeAlreadyHaveIt(, Asset asset)
+---------------------------------------------------------------

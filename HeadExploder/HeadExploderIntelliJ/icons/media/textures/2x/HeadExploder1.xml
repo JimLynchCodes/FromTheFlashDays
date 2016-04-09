@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:a7d78d782bd89b6f351501a6973e81a7:9537782e88575edec5249ef68b1c0abe:c2226201c25fc8959486a86aaefd62ba$ -->
+<TextureAtlas imagePath="HeadExploderSpritesheetSecond.png">
+    <SubTexture name="OpenMenuButton_0002" x="2" y="2" width="124" height="62"/>
+    <SubTexture name="OpenMenuButton_0001" x="128" y="2" width="124" height="62"/>
+    <SubTexture name="GoldCoinsLabel" x="254" y="2" width="215" height="68"/>
+    <SubTexture name="BrainsLabel" x="2" y="72" width="211" height="90"/>
+    <SubTexture name="ExplodeBtn_0001" x="215" y="72" width="311" height="121"/>
+    <SubTexture name="ExplodeBtn_0002" x="2" y="195" width="311" height="121"/>
+    <SubTexture name="HeaderBackground" x="2" y="318" width="610" height="127"/>
+    <SubTexture name="CharHead1_0001" x="2" y="447" width="198" height="224"/>
+    <SubTexture name="CharBody1_0001" x="202" y="447" width="278" height="384"/>
+</TextureAtlas>

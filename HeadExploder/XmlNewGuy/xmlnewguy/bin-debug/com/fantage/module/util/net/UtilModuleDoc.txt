@@ -1,0 +1,6 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestGetServerTime() : void
+        Server Replies:
+         Server Event Name: GET_SERVER_TIME_OK
+         Method signature :  onGetServerTimeOk(, int year, int day, int month, int hour, int minute, int second)
+---------------------------------------------------------------

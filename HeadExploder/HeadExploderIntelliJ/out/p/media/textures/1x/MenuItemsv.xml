@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:a643e49683efcda9da38366e5ebbb727:d10ff787ab6da31a8afe13a39325ff9a:abb7f70ab9232dac7d0a652e2b9fdfa6$ -->
+<TextureAtlas imagePath="MenuItems.png">
+    <SubTexture name="upgradeMarker1on" x="2" y="2" width="26" height="26"/>
+    <SubTexture name="upgradeMarker1off" x="30" y="2" width="27" height="27"/>
+    <SubTexture name="upgradeMarker2on" x="59" y="2" width="26" height="29"/>
+    <SubTexture name="popup yes btn" x="87" y="2" width="82" height="30"/>
+    <SubTexture name="upgradeMarker2off" x="171" y="2" width="27" height="31"/>
+    <SubTexture name="upgradeMarker3on" x="200" y="2" width="26" height="32"/>
+    <SubTexture name="upgradeMarker3off" x="228" y="2" width="27" height="33"/>
+    <SubTexture name="upgradeMarker4off" x="257" y="2" width="27" height="36"/>
+    <SubTexture name="upgradeMarker4on" x="286" y="2" width="27" height="36"/>
+    <SubTexture name="upgradeMarker5off" x="315" y="2" width="27" height="38"/>
+    <SubTexture name="upgradeMarker5on" x="344" y="2" width="27" height="38"/>
+    <SubTexture name="upgradeMarker6off" x="373" y="2" width="27" height="41"/>
+    <SubTexture name="upgradeMarker6on" x="402" y="2" width="27" height="41"/>
+    <SubTexture name="upgradeMarker7off" x="431" y="2" width="27" height="43"/>
+    <SubTexture name="upgradeMarker7on" x="460" y="2" width="27" height="43"/>
+    <SubTexture name="upgradePlusBtn" x="489" y="2" width="46" height="46"/>
+    <SubTexture name="upgradeMinusBtn" x="537" y="2" width="46" height="46"/>
+    <SubTexture name="upgradeMarker8off" x="585" y="2" width="27" height="46"/>
+    <SubTexture name="upgradeMarker8on" x="614" y="2" width="27" height="46"/>
+    <SubTexture name="upgradeMarker9on" x="643" y="2" width="27" height="48"/>
+    <SubTexture name="upgradeMarker9off" x="672" y="2" width="27" height="48"/>
+    <SubTexture name="maxBtn" x="701" y="2" width="83" height="51"/>
+    <SubTexture name="menuScrollArrowRight" x="786" y="2" width="62" height="52"/>
+    <SubTexture name="menuScrollArrowLeft" x="850" y="2" width="62" height="52"/>
+    <SubTexture name="charInfoBtn" x="914" y="2" width="53" height="53"/>
+    <SubTexture name="BrainsLabel" x="969" y="2" width="179" height="57"/>
+    <SubTexture name="OpenMenuButton" x="1150" y="2" width="124" height="62"/>
+    <SubTexture name="GoldCoinsLabel" x="1276" y="2" width="189" height="63"/>
+    <SubTexture name="HeaderTitle" x="2" y="67" width="665" height="65"/>
+    <SubTexture name="xBtn" x="669" y="67" width="77" height="77"/>
+    <SubTexture name="SpecialButtonUp" x="748" y="67" width="166" height="83"/>
+    <SubTexture name="SpecialButtonDown" x="916" y="67" width="168" height="84"/>
+    <SubTexture name="MenuCharChoiceBtn" x="1086" y="67" width="95" height="95"/>
+    <SubTexture name="HeadearButtonsContainer" x="2" y="164" width="617" height="97"/>
+    <SubTexture name="Char1ShopBtn" x="621" y="164" width="102" height="102"/>
+    <SubTexture name="Char2ShopBtn" x="725" y="164" width="102" height="102"/>
+    <SubTexture name="ShopBtn0001" x="829" y="164" width="343" height="103"/>
+    <SubTexture name="HelpBtn" x="1174" y="164" width="343" height="103"/>
+    <SubTexture name="Char2ShopBtnSelected" x="2" y="269" width="105" height="105"/>
+    <SubTexture name="menuUpgradeContainer" x="109" y="269" width="464" height="105"/>
+    <SubTexture name="Char1ShopBtnSelected" x="575" y="269" width="105" height="105"/>
+    <SubTexture name="menuCharChoiceContainer" x="682" y="269" width="338" height="120"/>
+    <SubTexture name="explode btn small 1x" x="1022" y="269" width="311" height="121"/>
+    <SubTexture name="mainArrowRight" x="1335" y="269" width="68" height="143"/>
+    <SubTexture name="mainArrowLeft" x="1405" y="269" width="68" height="143"/>
+    <SubTexture name="rightArrow" x="2" y="414" width="71" height="150"/>
+    <SubTexture name="Char2Head" x="75" y="414" width="191" height="206"/>
+    <SubTexture name="char1Head" x="268" y="414" width="198" height="224"/>
+    <SubTexture name="Char2Body" x="468" y="414" width="224" height="311"/>
+    <SubTexture name="small popup bg" x="694" y="414" width="570" height="351"/>
+    <SubTexture name="char1Body" x="1266" y="414" width="278" height="384"/>
+</TextureAtlas>

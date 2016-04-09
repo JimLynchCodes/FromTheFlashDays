@@ -1,0 +1,8 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestUserAssetCheck(userId:String, assetName:String, assetRequest:String) : void
+        Server Replies:
+         Server Event Name: USER_ASSET_CHECK_OK
+         Method signature :  onUserAssetCheckOk(, String userId, String assetName, String assetExist, int assetPurchaseType)
+         Server Event Name: USER_ASSET_CHECK_USER_ASSET
+         Method signature :  onUserAssetCheckUserAsset(, String userId, String assetName, UserAsset userAsset)
+---------------------------------------------------------------

@@ -1,0 +1,21 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestHofTrendSetterHomeInventoryUpdate() : void
+        Server Replies:
+         Server Event Name: HOF_TREND_SETTER_HOME_INVENTORY_UPDATE_OK
+         Method signature :  onHofTrendSetterHomeInventoryUpdateOk()
+---------------------------------------------------------------
+   Client Method Name : requestHofTrendSetterHomeInventoryList(type:String) : void
+        Server Replies:
+         Server Event Name: HOF_TREND_SETTER_HOME_INVENTORY_LIST_OK
+         Method signature :  onHofTrendSetterHomeInventoryListOk(, String type, List hofTrendSetterDataHomeInventoryList)
+---------------------------------------------------------------
+   Client Method Name : requestHofTrendSetterHomeInventoryMedal(type:String) : void
+        Server Replies:
+         Server Event Name: HOF_TREND_SETTER_HOME_INVENTORY_MEDAL_OK
+         Method signature :  onHofTrendSetterHomeInventoryMedalOk(, String type, UserMedal prizeMedal)
+         Server Event Name: HOF_TREND_SETTER_HOME_INVENTORY_MEDAL_NONE
+         Method signature :  onHofTrendSetterHomeInventoryMedalNone(, String type)
+---------------------------------------------------------------
+   Client Method Name : requestHofTrendSetterHomeInventoryMedalUpdate() : void
+        Server Replies:
+---------------------------------------------------------------

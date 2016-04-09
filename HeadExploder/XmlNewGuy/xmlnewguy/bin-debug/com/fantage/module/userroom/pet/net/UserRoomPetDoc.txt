@@ -1,0 +1,16 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestUserRoomPetMain() : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestUserRoomPetEnter() : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestUserRoomPetOut() : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestUserRoomPetClick(userPetId:String) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestUserRoomPetFeed(userPetId:String, userAssetId:String, foodPositionX:int, foodPositionY:int) : void
+        Server Replies:
+---------------------------------------------------------------

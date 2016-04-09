@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:ad824f5f3a25cd2081532e9d73abccbb:0daf5627b6fdda1d895381a1c23adc4c:610acdf07e9178b460967e89fbbeb6c8$ -->
+<TextureAtlas imagePath="MenuItemsG.png">
+    <SubTexture name="Bomberoni" x="643" y="182" width="191" height="90" frameX="0" frameY="-1" frameWidth="177" frameHeight="91"/>
+    <SubTexture name="BrainsLabel" x="856" y="47" width="191" height="58" frameX="0" frameY="-1" frameWidth="181" frameHeight="59"/>
+    <SubTexture name="Char1ShopBtn" x="742" y="371" width="107" height="104" frameX="0" frameY="0" frameWidth="104" frameHeight="104"/>
+    <SubTexture name="Char1ShopBtnSelected" x="487" y="479" width="107" height="107"/>
+    <SubTexture name="Char2Body" x="1108" y="899" width="233" height="313" frameX="0" frameY="0" frameWidth="226" frameHeight="313"/>
+    <SubTexture name="Char2Head" x="256" y="899" width="212" height="208" frameX="0" frameY="0" frameWidth="193" frameHeight="208"/>
+    <SubTexture name="Char2ShopBtn" x="958" y="371" width="107" height="104" frameX="0" frameY="0" frameWidth="104" frameHeight="104"/>
+    <SubTexture name="Char2ShopBtnSelected" x="595" y="479" width="107" height="107"/>
+    <SubTexture name="CodesBtn" x="1" y="591" width="317" height="111" frameX="0" frameY="0" frameWidth="313" frameHeight="111"/>
+    <SubTexture name="ExplodeBtn0003" x="361" y="704" width="317" height="124" frameX="0" frameY="0" frameWidth="313" frameHeight="124"/>
+    <SubTexture name="ExplodeBtn01" x="955" y="591" width="317" height="112" frameX="0" frameY="0" frameWidth="313" frameHeight="124"/>
+    <SubTexture name="FitnessGirlShopBtn" x="850" y="371" width="107" height="104" frameX="0" frameY="0" frameWidth="104" frameHeight="104"/>
+    <SubTexture name="FitnessGirlShopBtnSelected" x="1066" y="371" width="107" height="107"/>
+    <SubTexture name="FrancescaBody" x="1" y="1213" width="233" height="325" frameX="0" frameY="0" frameWidth="219" frameHeight="325"/>
+    <SubTexture name="FrancescaHead" x="469" y="899" width="170" height="216" frameX="0" frameY="0" frameWidth="162" frameHeight="216"/>
+    <SubTexture name="GoldCoinsLabel" x="1" y="112" width="191" height="65"/>
+    <SubTexture name="HeadExploderLogoCodys-01" x="46" y="1" width="191" height="29" frameX="0" frameY="-1" frameWidth="173" frameHeight="31"/>
+    <SubTexture name="HeadearButtonsContainer" x="1" y="371" width="632" height="99" frameX="0" frameY="0" frameWidth="619" frameHeight="99"/>
+    <SubTexture name="HeaderBackground smaller" x="1" y="273" width="632" height="94" frameX="0" frameY="0" frameWidth="614" frameHeight="94"/>
+    <SubTexture name="HeaderTitle" x="193" y="112" width="674" height="67" frameX="0" frameY="0" frameWidth="667" frameHeight="67"/>
+    <SubTexture name="HelpBtn" x="319" y="591" width="317" height="111" frameX="0" frameY="0" frameWidth="313" frameHeight="111"/>
+    <SubTexture name="LittleBrain" x="283" y="1" width="44" height="30" frameX="0" frameY="-1" frameWidth="35" frameHeight="35"/>
+    <SubTexture name="LittleCoin" x="550" y="1" width="44" height="34" frameX="0" frameY="0" frameWidth="36" frameHeight="34"/>
+    <SubTexture name="MenuCharChoiceBtn" x="634" y="273" width="107" height="97" frameX="0" frameY="0" frameWidth="97" frameHeight="97"/>
+    <SubTexture name="NoBtn" x="1" y="182" width="212" height="69" frameX="0" frameY="0" frameWidth="192" frameHeight="69"/>
+    <SubTexture name="OkBtn" x="1081" y="112" width="212" height="69" frameX="0" frameY="0" frameWidth="192" frameHeight="69"/>
+    <SubTexture name="OpenMenuButton" x="1048" y="47" width="128" height="64" frameX="0" frameY="0" frameWidth="126" frameHeight="64"/>
+    <SubTexture name="ShopBtn" x="811" y="479" width="317" height="111" frameX="0" frameY="0" frameWidth="313" frameHeight="111"/>
+    <SubTexture name="ShopLock" x="895" y="899" width="212" height="261" frameX="0" frameY="0" frameWidth="201" frameHeight="261"/>
+    <SubTexture name="SpecialButtonDown" x="472" y="182" width="170" height="86"/>
+    <SubTexture name="SpecialButtonUp" x="301" y="182" width="170" height="85" frameX="0" frameY="0" frameWidth="168" frameHeight="85"/>
+    <SubTexture name="SpeechBubble" x="853" y="704" width="233" height="150" frameX="0" frameY="0" frameWidth="222" frameHeight="150"/>
+    <SubTexture name="ThoughtBubble" x="1" y="899" width="254" height="201" frameX="0" frameY="0" frameWidth="243" frameHeight="201"/>
+    <SubTexture name="TonyBody" x="469" y="1213" width="317" height="488" frameX="0" frameY="-1" frameWidth="307" frameHeight="489"/>
+    <SubTexture name="TonyHead" x="640" y="899" width="254" height="256" frameX="0" frameY="0" frameWidth="236" frameHeight="256"/>
+    <SubTexture name="TonyShopBtn" x="634" y="371" width="107" height="104" frameX="0" frameY="0" frameWidth="104" frameHeight="104"/>
+    <SubTexture name="TonyShopBtnSelected" x="703" y="479" width="107" height="107"/>
+    <SubTexture name="YesBtn" x="868" y="112" width="212" height="69" frameX="0" frameY="0" frameWidth="192" frameHeight="69"/>
+    <SubTexture name="char1Body" x="235" y="1213" width="233" height="369" frameX="0" frameY="0" frameWidth="280" frameHeight="386"/>
+    <SubTexture name="char1Head" x="1174" y="704" width="149" height="194" frameX="-42" frameY="0" frameWidth="200" frameHeight="226"/>
+    <SubTexture name="charInfoBtn" x="790" y="47" width="65" height="55" frameX="0" frameY="0" frameWidth="55" frameHeight="55"/>
+    <SubTexture name="explode btn small 1x" x="637" y="591" width="317" height="111" frameX="0" frameY="0" frameWidth="313" frameHeight="123"/>
+    <SubTexture name="littleBuyBtn" x="1081" y="1" width="170" height="44" frameX="0" frameY="0" frameWidth="156" frameHeight="52"/>
+    <SubTexture name="littleSellBtn" x="910" y="1" width="170" height="44" frameX="0" frameY="0" frameWidth="156" frameHeight="45"/>
+    <SubTexture name="mainArrowLeft" x="679" y="704" width="86" height="145" frameX="0" frameY="0" frameWidth="70" frameHeight="145"/>
+    <SubTexture name="mainArrowRight" x="766" y="704" width="86" height="145" frameX="0" frameY="0" frameWidth="70" frameHeight="145"/>
+    <SubTexture name="maxBtn" x="400" y="47" width="86" height="53" frameX="0" frameY="0" frameWidth="85" frameHeight="53"/>
+    <SubTexture name="menuCharChoiceContainer" x="1" y="704" width="359" height="122" frameX="0" frameY="0" frameWidth="340" frameHeight="122"/>
+    <SubTexture name="menuScrollArrowLeft" x="658" y="47" width="65" height="54" frameX="0" frameY="0" frameWidth="64" frameHeight="54"/>
+    <SubTexture name="menuScrollArrowRight" x="724" y="47" width="65" height="54" frameX="0" frameY="0" frameWidth="64" frameHeight="54"/>
+    <SubTexture name="menuUpgradeContainer" x="1" y="479" width="485" height="107" frameX="0" frameY="0" frameWidth="466" frameHeight="107"/>
+    <SubTexture name="pieceofcake" x="313" y="47" width="86" height="53" frameX="0" frameY="-1" frameWidth="69" frameHeight="56"/>
+    <SubTexture name="popup yes btn" x="373" y="1" width="86" height="32" frameX="0" frameY="0" frameWidth="84" frameHeight="32"/>
+    <SubTexture name="rightArrow" x="1087" y="704" width="86" height="152" frameX="0" frameY="0" frameWidth="73" frameHeight="152"/>
+    <SubTexture name="smallPopupBg" x="787" y="1213" width="548" height="714" frameX="0" frameY="0" frameWidth="533" frameHeight="714"/>
+    <SubTexture name="sunglasses" x="487" y="47" width="170" height="53" frameX="0" frameY="0" frameWidth="164" frameHeight="54"/>
+    <SubTexture name="upgradeMarker1off" x="238" y="1" width="44" height="29" frameX="0" frameY="0" frameWidth="29" frameHeight="29"/>
+    <SubTexture name="upgradeMarker1on" x="1" y="1" width="44" height="28" frameX="0" frameY="0" frameWidth="28" frameHeight="28"/>
+    <SubTexture name="upgradeMarker2off" x="460" y="1" width="44" height="33" frameX="0" frameY="0" frameWidth="29" frameHeight="33"/>
+    <SubTexture name="upgradeMarker2on" x="328" y="1" width="44" height="31" frameX="0" frameY="0" frameWidth="28" frameHeight="31"/>
+    <SubTexture name="upgradeMarker3off" x="595" y="1" width="44" height="35" frameX="0" frameY="0" frameWidth="29" frameHeight="35"/>
+    <SubTexture name="upgradeMarker3on" x="505" y="1" width="44" height="34" frameX="0" frameY="0" frameWidth="28" frameHeight="34"/>
+    <SubTexture name="upgradeMarker4off" x="640" y="1" width="44" height="38" frameX="0" frameY="0" frameWidth="29" frameHeight="38"/>
+    <SubTexture name="upgradeMarker4on" x="685" y="1" width="44" height="38" frameX="0" frameY="0" frameWidth="29" frameHeight="38"/>
+    <SubTexture name="upgradeMarker5off" x="775" y="1" width="44" height="40" frameX="0" frameY="0" frameWidth="29" frameHeight="40"/>
+    <SubTexture name="upgradeMarker5on" x="730" y="1" width="44" height="40" frameX="0" frameY="0" frameWidth="29" frameHeight="40"/>
+    <SubTexture name="upgradeMarker6off" x="865" y="1" width="44" height="43" frameX="0" frameY="0" frameWidth="29" frameHeight="43"/>
+    <SubTexture name="upgradeMarker6on" x="820" y="1" width="44" height="43" frameX="0" frameY="0" frameWidth="29" frameHeight="43"/>
+    <SubTexture name="upgradeMarker7off" x="1297" y="1" width="44" height="45" frameX="0" frameY="0" frameWidth="29" frameHeight="45"/>
+    <SubTexture name="upgradeMarker7on" x="1252" y="1" width="44" height="45" frameX="0" frameY="0" frameWidth="29" frameHeight="45"/>
+    <SubTexture name="upgradeMarker8off" x="178" y="47" width="44" height="48" frameX="0" frameY="0" frameWidth="29" frameHeight="48"/>
+    <SubTexture name="upgradeMarker8on" x="1" y="47" width="44" height="48" frameX="0" frameY="0" frameWidth="29" frameHeight="48"/>
+    <SubTexture name="upgradeMarker9off" x="223" y="47" width="44" height="50" frameX="0" frameY="0" frameWidth="29" frameHeight="50"/>
+    <SubTexture name="upgradeMarker9on" x="268" y="47" width="44" height="50" frameX="0" frameY="0" frameWidth="29" frameHeight="50"/>
+    <SubTexture name="upgradeMarkeron.png" x="685" y="1" width="44" height="38" frameX="0" frameY="0" frameWidth="29" frameHeight="38"/>
+    <SubTexture name="upgradeMinusBtn" x="46" y="47" width="65" height="48" frameX="0" frameY="0" frameWidth="48" frameHeight="48"/>
+    <SubTexture name="upgradePlusBtn" x="112" y="47" width="65" height="48" frameX="0" frameY="0" frameWidth="48" frameHeight="48"/>
+    <SubTexture name="xBtn" x="214" y="182" width="86" height="79" frameX="0" frameY="0" frameWidth="79" frameHeight="79"/>
+</TextureAtlas>

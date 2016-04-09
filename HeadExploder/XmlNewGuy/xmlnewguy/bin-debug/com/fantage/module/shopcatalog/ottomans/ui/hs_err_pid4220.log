@@ -1,0 +1,230 @@
+#
+# An unexpected error has been detected by HotSpot Virtual Machine:
+#
+#  EXCEPTION_GUARD_PAGE (0x80000001) at pc=0x00ea7f71, pid=4220, tid=5080
+#
+# Java VM: Java HotSpot(TM) Client VM (1.5.0_09-b01 mixed mode)
+# Problematic frame:
+# C  [Flash.exe+0xaa7f71]
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x02adf8f0):  JavaThread "main" [_thread_in_native, id=5080]
+
+siginfo: ExceptionCode=0x80000001, ExceptionInformation=0x00000000 0x0f71a01a 
+
+Registers:
+EAX=0x0017d580, EBX=0x0017d678, ECX=0x0f71a01a, EDX=0x1d58e3d0
+ESP=0x0017d550, EBP=0x0017d640, ESI=0x0f71a012, EDI=0x3c4a41ac
+EIP=0x00ea7f71, EFLAGS=0x00210202
+
+Top of Stack: (sp=0x0017d550)
+0x0017d550:   00543a36 0f71a01a 0017d580 0000002c
+0x0017d560:   64ea685d 0de715f8 3c4a41ac 0017d558
+0x0017d570:   0017d594 0112a3e8 00000000 00546399
+0x0017d580:   1d58e3d0 0017d590 64ea68b5 1e0d7588
+0x0017d590:   006934ab 0017d614 0112a818 00000000
+0x0017d5a0:   0054d315 1d58e3d0 0017d5c4 64ea6889
+0x0017d5b0:   0017d678 0de715f8 0017d654 2a48a348
+0x0017d5c0:   0152befc 00000000 0017d5dc 77ebf26c 
+
+Instructions: (pc=0x00ea7f71)
+0x00ea7f61:   7c 24 0c 00 8b 44 24 08 8b 4c 24 04 74 41 8b 10
+0x00ea7f71:   8b 09 66 8b 01 66 3b 02 75 26 66 85 c0 74 15 66 
+
+
+Stack: [0x00080000,0x00180000),  sp=0x0017d550,  free space=1013k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [Flash.exe+0xaa7f71]
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+J  adobe.asc.authoring.AuthCompilerHandler.nativeFindDefinition(Ljava/lang/String;)V
+J  adobe.asc.authoring.AuthBatchCompiler.searchClasspath(Ljava/lang/String;Z)Ladobe/asc/authoring/AuthCompilerPlug;
+J  adobe.asc.authoring.AuthBatchCompiler.findClass(Ljava/lang/String;Ladobe/asc/authoring/AuthCompilerPlug;)Ladobe/asc/authoring/AuthCompilerPlug;
+j  adobe.asc.authoring.AuthBatchCompiler.getInfoForClass(Ladobe/asc/authoring/AuthCompilerPlug;Ljava/lang/String;)Ljava/lang/String;+89
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x2a4627c8 JavaThread "Low Memory Detector" daemon [_thread_blocked, id=888]
+  0x2a461238 JavaThread "CompilerThread0" daemon [_thread_blocked, id=2920]
+  0x2a4607f0 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=5188]
+  0x2a4543d8 JavaThread "Finalizer" daemon [_thread_blocked, id=5356]
+  0x0427f900 JavaThread "Reference Handler" daemon [_thread_blocked, id=5984]
+=>0x02adf8f0 JavaThread "main" [_thread_in_native, id=5080]
+
+Other Threads:
+  0x0427e390 VMThread [id=5144]
+  0x0422c240 WatcherThread [id=2348]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ def new generation   total 4544K, used 3210K [0x22450000, 0x22930000, 0x22930000)
+  eden space 4096K,  78% used [0x22450000, 0x22772a80, 0x22850000)
+  from space 448K,   0% used [0x22850000, 0x22850000, 0x228c0000)
+  to   space 448K,   0% used [0x228c0000, 0x228c0000, 0x22930000)
+ tenured generation   total 60544K, used 36462K [0x22930000, 0x26450000, 0x26450000)
+   the space 60544K,  60% used [0x22930000, 0x24ccbbe8, 0x24ccbc00, 0x26450000)
+ compacting perm gen  total 11008K, used 10857K [0x26450000, 0x26f10000, 0x2a450000)
+   the space 11008K,  98% used [0x26450000, 0x26eea760, 0x26eea800, 0x26f10000)
+No shared spaces configured.
+
+Dynamic libraries:
+0x00400000 - 0x0188c000 	C:\PROGRA~2\Adobe\ADOBEF~1\Flash.exe
+0x77e90000 - 0x77ff0000 	C:\Windows\SysWOW64\ntdll.dll
+0x77870000 - 0x77980000 	C:\Windows\syswow64\kernel32.dll
+0x10000000 - 0x10309000 	C:\PROGRA~2\Adobe\ADOBEF~1\amtlib.dll
+0x763a0000 - 0x763f8000 	C:\Windows\syswow64\SHLWAPI.dll
+0x76070000 - 0x76100000 	C:\Windows\syswow64\GDI32.dll
+0x76400000 - 0x764d0000 	C:\Windows\syswow64\USER32.dll
+0x764d0000 - 0x76596000 	C:\Windows\syswow64\ADVAPI32.dll
+0x77390000 - 0x77480000 	C:\Windows\syswow64\RPCRT4.dll
+0x75e70000 - 0x75ed0000 	C:\Windows\syswow64\Secur32.dll
+0x77680000 - 0x7772a000 	C:\Windows\syswow64\msvcrt.dll
+0x722b0000 - 0x72325000 	C:\Windows\system32\NETAPI32.dll
+0x75ed0000 - 0x75ed7000 	C:\Windows\syswow64\PSAPI.DLL
+0x77a30000 - 0x77a5d000 	C:\Windows\syswow64\WS2_32.dll
+0x77300000 - 0x77306000 	C:\Windows\syswow64\NSI.dll
+0x75160000 - 0x752fe000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.6001.18000_none_5cdbaa5a083979cc\COMCTL32.dll
+0x721b0000 - 0x72210000 	C:\Windows\system32\WINHTTP.dll
+0x77310000 - 0x77383000 	C:\Windows\syswow64\comdlg32.dll
+0x76690000 - 0x771a0000 	C:\Windows\syswow64\SHELL32.dll
+0x75dd0000 - 0x75dd8000 	C:\Windows\system32\VERSION.dll
+0x71fb0000 - 0x71fe2000 	C:\Windows\system32\WINMM.dll
+0x76250000 - 0x76394000 	C:\Windows\syswow64\ole32.dll
+0x771a0000 - 0x7722d000 	C:\Windows\syswow64\OLEAUT32.dll
+0x75750000 - 0x75789000 	C:\Windows\system32\OLEACC.dll
+0x75da0000 - 0x75db9000 	C:\Windows\system32\AVIFIL32.dll
+0x6f430000 - 0x6f444000 	C:\Windows\system32\MSACM32.dll
+0x74ee0000 - 0x74f03000 	C:\Windows\system32\MSVFW32.dll
+0x77730000 - 0x77790000 	C:\Windows\syswow64\IMM32.dll
+0x77230000 - 0x772f8000 	C:\Windows\syswow64\MSCTF.dll
+0x12000000 - 0x121cb000 	C:\PROGRA~2\Adobe\ADOBEF~1\xerces-c_2_6.dll
+0x74b30000 - 0x74bcb000 	C:\Windows\WinSxS\x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.4053_none_d08d7da0442a985d\MSVCR80.dll
+0x32100000 - 0x321b4000 	C:\PROGRA~2\Adobe\ADOBEF~1\Workspace.dll
+0x71920000 - 0x71acb000 	C:\Windows\WinSxS\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.0.6001.18175_none_9e7bbe54c9c04bca\gdiplus.dll
+0x002a0000 - 0x003de000 	C:\PROGRA~2\Adobe\ADOBEF~1\dvacore.dll
+0x74bd0000 - 0x74c57000 	C:\Windows\WinSxS\x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.4053_none_d08d7da0442a985d\MSVCP80.dll
+0x02100000 - 0x02334000 	C:\PROGRA~2\Adobe\ADOBEF~1\dvaui.dll
+0x02340000 - 0x0247c000 	C:\PROGRA~2\Adobe\ADOBEF~1\AdobeOwl.dll
+0x69a20000 - 0x69b2f000 	C:\Windows\WinSxS\x86_microsoft.vc80.mfc_1fc8b3b9a1e18e3b_8.0.50727.762_none_0c178a139ee2a7ed\MFC80U.DLL
+0x71770000 - 0x71775000 	C:\Windows\system32\MSIMG32.dll
+0x001f0000 - 0x00203000 	C:\PROGRA~2\Adobe\ADOBEF~1\AlcidDLL.dll
+0x003e0000 - 0x003ee000 	C:\PROGRA~2\Adobe\ADOBEF~1\ahclient.dll
+0x01890000 - 0x0189d000 	C:\PROGRA~2\Adobe\ADOBEF~1\CrashReporter.dll
+0x73690000 - 0x7376c000 	C:\Windows\system32\dbghelp.dll
+0x018b0000 - 0x018bf000 	C:\PROGRA~2\Adobe\ADOBEF~1\LogUtils.dll
+0x018d0000 - 0x018e8000 	C:\PROGRA~2\Adobe\ADOBEF~1\LogTransport.dll
+0x02480000 - 0x0249a000 	C:\PROGRA~2\Adobe\ADOBEF~1\LogSession.dll
+0x024b0000 - 0x024c6000 	C:\PROGRA~2\Adobe\ADOBEF~1\LogTransport2.dll
+0x75ee0000 - 0x7606a000 	C:\Windows\syswow64\SETUPAPI.dll
+0x765a0000 - 0x76686000 	C:\Windows\syswow64\WININET.dll
+0x76240000 - 0x76243000 	C:\Windows\syswow64\Normaliz.dll
+0x76100000 - 0x76233000 	C:\Windows\syswow64\urlmon.dll
+0x77490000 - 0x77678000 	C:\Windows\syswow64\iertutil.dll
+0x74fb0000 - 0x74fce000 	C:\Windows\system32\ShimEng.dll
+0x711c0000 - 0x711ec000 	C:\Windows\system32\apphelp.dll
+0x6a9d0000 - 0x6aa58000 	C:\Windows\AppPatch\AcLayers.dll
+0x75630000 - 0x7564e000 	C:\Windows\system32\USERENV.dll
+0x75a70000 - 0x75ab2000 	C:\Windows\system32\WINSPOOL.DRV
+0x6e790000 - 0x6e7a4000 	C:\Windows\system32\MPR.dll
+0x69350000 - 0x69563000 	C:\Windows\AppPatch\AcGenral.DLL
+0x756d0000 - 0x75750000 	C:\Windows\system32\UxTheme.dll
+0x71fa0000 - 0x71fa5000 	C:\Windows\system32\sfc.dll
+0x71780000 - 0x7178d000 	C:\Windows\system32\sfc_os.dll
+0x71f60000 - 0x71f6c000 	C:\Windows\system32\dwmapi.dll
+0x75d30000 - 0x75d35000 	C:\Windows\system32\SHUNIMPL.dll
+0x77480000 - 0x77489000 	C:\Windows\syswow64\LPK.DLL
+0x77980000 - 0x779fd000 	C:\Windows\syswow64\USP10.dll
+0x74f30000 - 0x74f3e000 	C:\Windows\WinSxS\x86_microsoft.vc80.mfcloc_1fc8b3b9a1e18e3b_8.0.50727.762_none_43efccf17831d131\MFC80ENU.DLL
+0x04460000 - 0x044fd000 	C:\PROGRA~2\Adobe\ADOBEF~1\amtservices.dll
+0x04740000 - 0x04777000 	C:\PROGRA~2\Adobe\ADOBEF~1\adobe_caps.dll
+0x75a00000 - 0x75a60000 	C:\Program Files (x86)\Common Files\microsoft shared\ink\tiptsf.dll
+0x75060000 - 0x75081000 	C:\Windows\system32\NTMARTA.DLL
+0x77790000 - 0x777da000 	C:\Windows\syswow64\WLDAP32.dll
+0x75040000 - 0x75051000 	C:\Windows\system32\SAMLIB.dll
+0x047c0000 - 0x047e0000 	C:\PROGRA~2\Adobe\ADOBEF~1\asneu.dll
+0x04dc0000 - 0x06027000 	C:\PROGRA~2\Adobe\ADOBEF~1\en\Configuration\FlashResources.dll
+0x74820000 - 0x74911000 	C:\Windows\system32\CRYPT32.dll
+0x74800000 - 0x74812000 	C:\Windows\system32\MSASN1.dll
+0x77a60000 - 0x77ae4000 	C:\Windows\syswow64\CLBCatQ.DLL
+0x6c040000 - 0x6c070000 	C:\Windows\system32\mlang.dll
+0x6ffa0000 - 0x6ffcf000 	C:\Windows\system32\wdmaud.drv
+0x715c0000 - 0x715c4000 	C:\Windows\system32\ksuser.dll
+0x6f480000 - 0x6f4a7000 	C:\Windows\system32\MMDevAPI.DLL
+0x715b0000 - 0x715b7000 	C:\Windows\system32\AVRT.dll
+0x747d0000 - 0x747fd000 	C:\Windows\system32\WINTRUST.dll
+0x77a00000 - 0x77a29000 	C:\Windows\syswow64\imagehlp.dll
+0x6f450000 - 0x6f471000 	C:\Windows\system32\AUDIOSES.DLL
+0x6f320000 - 0x6f386000 	C:\Windows\system32\audioeng.dll
+0x71070000 - 0x71079000 	C:\Windows\system32\msacm32.drv
+0x712a0000 - 0x712a7000 	C:\Windows\system32\midimap.dll
+0x6f060000 - 0x6f067000 	C:\Windows\system32\credssp.dll
+0x6c300000 - 0x6c346000 	C:\Windows\SysWOW64\schannel.dll
+0x699c0000 - 0x69a16000 	C:\PROGRA~2\Adobe\ADOBEF~1\PlugPlug.dll
+0x6a980000 - 0x6a9ca000 	C:\PROGRA~2\Adobe\ADOBEF~1\BIB.dll
+0x69910000 - 0x699ba000 	C:\PROGRA~2\Adobe\ADOBEF~1\AXEDOMCore.dll
+0x08720000 - 0x08764000 	C:\Program Files (x86)\Common Files\Adobe\CS4ServiceManager\CSI-Launcher.dll
+0x6b100000 - 0x6b1bb000 	C:\Windows\system32\PROPSYS.dll
+0x698c0000 - 0x6990a000 	C:\Windows\system32\ntshrui.dll
+0x75d20000 - 0x75d2b000 	C:\Windows\system32\cscapi.dll
+0x6c270000 - 0x6c2aa000 	C:\Windows\system32\slc.dll
+0x755a0000 - 0x755db000 	C:\Windows\system32\rsaenh.dll
+0x69740000 - 0x69781000 	C:\PROGRA~2\Adobe\ADOBEF~1\BIBUtils.dll
+0x09160000 - 0x09251000 	C:\PROGRA~2\Adobe\ADOBEF~1\ACE.dll
+0x66280000 - 0x66853000 	C:\PROGRA~2\Adobe\ADOBEF~1\AGM.dll
+0x696e0000 - 0x69732000 	C:\PROGRA~2\Adobe\ADOBEF~1\ARE.dll
+0x09fe0000 - 0x0a416000 	C:\PROGRA~2\Adobe\ADOBEF~1\MPS.dll
+0x690a0000 - 0x6934e000 	C:\PROGRA~2\Adobe\ADOBEF~1\CoolType.dll
+0x695f0000 - 0x696d3000 	C:\PROGRA~2\Adobe\ADOBEF~1\FileInfo.dll
+0x69580000 - 0x695ed000 	C:\PROGRA~2\Adobe\ADOBEF~1\AdobeXMP.dll
+0x6f4b0000 - 0x6f522000 	C:\Windows\system32\Riched20.DLL
+0x68f90000 - 0x6909a000 	C:\PROGRA~2\Adobe\ADOBEF~1\PDFPort.dll
+0x65cb0000 - 0x66277000 	C:\PROGRA~2\Adobe\ADOBEF~1\AdobePDFL.dll
+0x68e60000 - 0x68f07000 	C:\PROGRA~2\Adobe\ADOBEF~1\JP2KLib.dll
+0x69c60000 - 0x69c8e000 	C:\PROGRA~2\Adobe\ADOBEF~1\AXE8SharedExpat.dll
+0x74fd0000 - 0x74fdc000 	C:\Windows\system32\ATMLIB.dll
+0x0aea0000 - 0x0aeea000 	C:\Windows\system32\Wintab32.dll
+0x0aef0000 - 0x0af58000 	C:\Windows\system32\Wacom_Tablet.dll
+0x6d190000 - 0x6d243000 	C:\Windows\system32\WindowsCodecs.dll
+0x0b250000 - 0x0b29f000 	C:\PROGRA~2\Adobe\ADOBEF~1\Common\Configuration\External Libraries\EnvBrush.dll
+0x0b2a0000 - 0x0b304000 	C:\PROGRA~2\Adobe\ADOBEF~1\Common\Configuration\External Libraries\EnvCollision.dll
+0x0b220000 - 0x0b237000 	C:\PROGRA~2\Adobe\ADOBEF~1\Common\Configuration\External Libraries\EnvPointGrid.dll
+0x0b320000 - 0x0b3d8000 	C:\PROGRA~2\Adobe\ADOBEF~1\Common\Configuration\External Libraries\FlashIK.dll
+0x0b3f0000 - 0x0b43b000 	C:\PROGRA~2\Adobe\ADOBEF~1\Common\Configuration\External Libraries\FLBridge.dll
+0x0b450000 - 0x0b467000 	C:\PROGRA~2\Adobe\ADOBEF~1\Common\Configuration\External Libraries\FLfile.dll
+0x0b480000 - 0x0b4c9000 	C:\PROGRA~2\Adobe\ADOBEF~1\en\Configuration\External Libraries\FLAir1_1.dll
+0x71ed0000 - 0x71ed6000 	C:\Windows\system32\dciman32.dll
+0x06040000 - 0x06053000 	C:\Program Files (x86)\Common Files\Adobe\Adobe Drive CS4\AdobeDriveCS4_NP.dll
+0x6e680000 - 0x6e693000 	C:\Windows\System32\ntlanman.dll
+0x74f10000 - 0x74f18000 	C:\Windows\System32\drprov.dll
+
+VM Arguments:
+jvm_args: -Djava.library.path=C:\PROGRA~2\Adobe\ADOBEF~1\JVM\bin -Djava.Home=C:\PROGRA~2\Adobe\ADOBEF~1\JVM -Xbootclasspath/a:;.;C:\Program Files (x86)\QuickTime\QTSystem\QTJava.zip -Djava.awt.headless=true
+java_command: <unknown>
+Launcher Type: generic
+
+Environment Variables:
+CLASSPATH=.;C:\Program Files (x86)\QuickTime\QTSystem\QTJava.zip
+PATH=C:\Program Files (x86)\Common Files\Apple\Apple Application Support\;C:\Program Files (x86)\Common Files\Apple\Apple Application Support\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\QuickTime\QTSystem\
+USERNAME=Fatage
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 26 Stepping 5, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows XP Build 2600 Service Pack 2
+
+CPU:total 8 (cores per cpu 8, threads per core 2) family 6 model 10 stepping 5, cmov, cx8, fxsr, mmx, sse, sse2, ht
+
+Memory: 4k page, physical 1048575k(1048575k free), swap 2097151k(1048575k free)
+
+vm_info: Java HotSpot(TM) Client VM (1.5.0_09-b01) for windows-x86, built on Sep  7 2006 13:59:31 by "java_re" with MS VC++ 6.0
+

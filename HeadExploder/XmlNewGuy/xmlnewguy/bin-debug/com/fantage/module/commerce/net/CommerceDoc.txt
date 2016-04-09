@@ -1,0 +1,26 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestBuyLocalGameItem(amount:int) : void
+        Server Replies:
+         Server Event Name: BUY_LOCAL_ITEM_OK
+         Method signature :  onBuyLocalItemOk(, int userFunds)
+         Server Event Name: BUY_LOCAL_ITEM_NOT_ENOUGH_FUNDS
+         Method signature :  onBuyLocalItemNotEnoughFunds(, int userFunds)
+---------------------------------------------------------------
+   Client Method Name : requestGetLimitedItemQuantity(assetName:String) : void
+        Server Replies:
+         Server Event Name: GET_LIMITED_ITEM_QUANTITY_OK
+         Method signature :  onGetLimitedItemQuantityOk(, int assetId, int quantityLeft)
+---------------------------------------------------------------
+   Client Method Name : requestBuyLimitedItem(assetName:String) : void
+        Server Replies:
+         Server Event Name: BUY_LIMITED_ASSET_ALREADY_IN_INVENTORY
+         Method signature :  onBuyLimitedAssetAlreadyInInventory(, String assetId)
+         Server Event Name: BUY_LIMITED_ASSET_OK
+         Method signature :  onBuyLimitedAssetOk(, String assetId, int fundBalance, int quantity)
+         Server Event Name: BUY_LIMITED_ASSET_SOLD_OUT
+         Method signature :  onBuyLimitedAssetSoldOut(, String assetId, int quantityLeft)
+         Server Event Name: BUY_LIMITED_ASSET_NOT_ENOUGH_FUNDS
+         Method signature :  onBuyLimitedAssetNotEnoughFunds(, String assetId)
+         Server Event Name: BUY_LIMITED_ASSET_NOT_ENOUGH_FUNDS_WITH_BALANCE
+         Method signature :  onBuyLimitedAssetNotEnoughFundsWithBalance(, String assetId, int balance)
+---------------------------------------------------------------

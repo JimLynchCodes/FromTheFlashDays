@@ -1,0 +1,15 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestStartHalloweenPartyModule(moduleName:String) : void
+        Server Replies:
+         Server Event Name: START_HALLOWEEN_PARTY_MODULE_OK
+         Method signature :  onStartHalloweenPartyModuleOk(, HalloweenPartyUserData halloweenPartyUserData)
+         Server Event Name: START_MODULE_FAIL
+         Method signature :  onStartModuleFail()
+---------------------------------------------------------------
+   Client Method Name : requestGetFreeItemList(moduleName:String, freeItemNameList:String) : void
+        Server Replies:
+         Server Event Name: GET_FREE_ITEM_LIST_OK
+         Method signature :  onGetFreeItemListOk(, List asset)
+         Server Event Name: GET_FREE_ITEM_LIST_ALREADY_HAVE_IT
+         Method signature :  onGetFreeItemListAlreadyHaveIt(, List asset)
+---------------------------------------------------------------

@@ -1,0 +1,21 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestInventoryUpdate() : void
+        Server Replies:
+         Server Event Name: INVENTORY_UPDATE_OK
+         Method signature :  onInventoryUpdateOk(, String resultCode)
+---------------------------------------------------------------
+   Client Method Name : requestUserCatalogSet(csvUserAssetId:String, targetUserCatalogName:String, validityCheckLevel:String) : void
+        Server Replies:
+         Server Event Name: USER_CATALOG_SET_OK
+         Method signature :  onUserCatalogSetOk(, List userCatalogMoveResultList)
+---------------------------------------------------------------
+   Client Method Name : requestMoveToCloset(csvUserAssetId:String, validityCheckLevel:String) : void
+        Server Replies:
+         Server Event Name: MOVE_TO_CLOSET_OK
+         Method signature :  onMoveToClosetOk(, List userCatalogMoveResultList)
+---------------------------------------------------------------
+   Client Method Name : requestMoveToInventory(csvUserAssetId:String, validityCheckLevel:String) : void
+        Server Replies:
+         Server Event Name: MOVE_TO_INVENTORY_OK
+         Method signature :  onMoveToInventoryOk(, List userCatalogMoveResultList)
+---------------------------------------------------------------

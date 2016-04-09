@@ -1,0 +1,88 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestWildRumbleStateMain() : void
+        Server Replies:
+         Server Event Name: WILD_RUMBLE_ALL_LOADED
+         Method signature :  onWildRumbleAllLoaded()
+         Server Event Name: WILD_RUMBLE_MOVE_ILLEGAL
+         Method signature :  onWildRumbleMoveIllegal(, int selfPetId, int feedItemId, int targetId)
+         Server Event Name: WILD_RUMBLE_MOVE_DEBUG_INFO
+         Method signature :  onWildRumbleMoveDebugInfo(, String debugText)
+         Server Event Name: WILD_RUMBLE_PLAYER_TURN
+         Method signature :  onWildRumblePlayerTurn(, String playerTurnId)
+---------------------------------------------------------------
+   Client Method Name : requestWildRumbleSelectPet(userPetIdList:String) : void
+        Server Replies:
+         Server Event Name: WILD_RUMBLE_WAITING_FOR_OTHER_PLAYER
+         Method signature :  onWildRumbleWaitingForOtherPlayer(, WildRumbleMultiplayerSession wildRumbleMultiplayerSession)
+---------------------------------------------------------------
+   Client Method Name : requestWildRumbleGetGameState() : void
+        Server Replies:
+         Server Event Name: WILD_RUMBLE_GET_GAME_STATE_OK
+         Method signature :  onWildRumbleGetGameStateOk(, WildRumbleMultiplayerSession wildRumbleMultiplayerSession)
+---------------------------------------------------------------
+   Client Method Name : requestWildRumbleTargetList(selfPetId:int, feedItemId:int) : void
+        Server Replies:
+         Server Event Name: WILD_RUMBLE_TARGET_LIST_OK
+         Method signature :  onWildRumbleTargetListOk(, String targetList)
+---------------------------------------------------------------
+   Client Method Name : requestWildRumbleIsMoveLegal(selfPetId:int, feedItemId:int, targetId:int) : void
+        Server Replies:
+         Server Event Name: WILD_RUMBLE_IS_MOVE_LEGAL_OK
+         Method signature :  onWildRumbleIsMoveLegalOk(, int selfPetId, int feedItemId, int targetId)
+         Server Event Name: WILD_RUMBLE_IS_MOVE_LEGAL_FAIL
+         Method signature :  onWildRumbleIsMoveLegalFail(, int selfPetId, int feedItemId, int targetId)
+         Server Event Name: WILD_RUMBLE_IS_MOVE_LEGAL_ERROR
+         Method signature :  onWildRumbleIsMoveLegalError(, int selfPetId, int feedItemId, int targetId, String reasonCode)
+---------------------------------------------------------------
+   Client Method Name : requestWildRumbleUseItem(selfPetId:int, feedItemId:int, targetId:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestWildRumbleAttack(selfPetId:int, opponentPetId:int, feedSlotId:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestWildRumbleSteal(selfPetId:int, feedSlotIdToSteal:int, feedSlotId:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestWildRumbleHeal(selfPetId:int, targetPetId:int, feedSlotId:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestWildRumbleCounter(selfPetId:int, targetPetId:int, feedSlotId:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestWildRumbleProtect(selfPetId:int, targetPetId:int, feedSlotId:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestWildRumbleCastSpell(selfPetId:int, targetPetId:int, feedSlotId:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestGotoNextRoundState(roundState:String) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestGotoNextGameState(gameState:String) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestGetRandomMultiplayerSession() : void
+        Server Replies:
+         Server Event Name: GET_RANDOM_OK
+         Method signature :  onGetRandomOk(, WildRumbleMultiplayerSession wildRumbleMultiplayerSession)
+---------------------------------------------------------------
+   Client Method Name : requestAddPetToArena(petId:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestWildRumbleGetPlayerList() : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestWildRumbleMakeRandomMove() : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestWildRumbleAddRandomPetToStage() : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestWildRumbleCheckLegalMoveLeft() : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestWildRumbleStartNextRound() : void
+        Server Replies:
+         Server Event Name: WILD_RUMBLE_START_NEXT_ROUND_TURN_SKIPPED
+         Method signature :  onWildRumbleStartNextRoundTurnSkipped(, String turnUser)
+---------------------------------------------------------------

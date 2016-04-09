@@ -1,0 +1,17 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestHolidaySkiMedalCheck() : void
+        Server Replies:
+         Server Event Name: HOLIDAY_SKI_MEDAL_CHECK_OK
+         Method signature :  onHolidaySkiMedalCheckOk(, UserMedal userMedal)
+         Server Event Name: HOLIDAY_SKI_MEDAL_ALREADY_HAS_IT
+         Method signature :  onHolidaySkiMedalAlreadyHasIt()
+         Server Event Name: HOLIDAY_SKI_MEDAL_NEED_PREMIUM_MEMBERSHIP
+         Method signature :  onHolidaySkiMedalNeedPremiumMembership()
+         Server Event Name: HOLIDAY_SKI_MEDAL_NONE
+         Method signature :  onHolidaySkiMedalNone()
+---------------------------------------------------------------
+   Client Method Name : requestHolidaySkiStarUpdate(starAmt:int) : void
+        Server Replies:
+         Server Event Name: HOLIDAY_SKI_START_UPDATE_OK
+         Method signature :  onHolidaySkiStartUpdateOk()
+---------------------------------------------------------------

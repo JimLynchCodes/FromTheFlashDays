@@ -1,0 +1,11 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestGetUserPetUsageList() : void
+        Server Replies:
+         Server Event Name: GET_USER_PET_USAGE_LIST_OK
+         Method signature :  onGetUserPetUsageList(, String usedPetListString)
+---------------------------------------------------------------
+   Client Method Name : requestMarkUserPetUsage(petName:String) : void
+        Server Replies:
+         Server Event Name: RECEIVED_REWARD
+         Method signature :  onReceivedReward(, Asset asset)
+---------------------------------------------------------------

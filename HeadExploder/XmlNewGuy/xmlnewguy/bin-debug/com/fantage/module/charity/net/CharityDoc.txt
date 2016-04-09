@@ -1,0 +1,25 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestCharityCurrentCheck() : void
+        Server Replies:
+         Server Event Name: CHARITY_CURRENT_CHECK_OK
+         Method signature :  onCharityCurrentCheckOk(, List charityStatusList)
+---------------------------------------------------------------
+   Client Method Name : requestCharityCurrentCheckUser(charityUserId:String, dataType:String) : void
+        Server Replies:
+         Server Event Name: CHARITY_CURRENT_CHECK_USER_OK
+         Method signature :  onCharityCurrentCheckUserOk(, String userId, String totalAmount, List charityStatusList)
+---------------------------------------------------------------
+   Client Method Name : requestCharityDonate(charityUserId:String, keyStr:String, donateAmount:int) : void
+        Server Replies:
+         Server Event Name: CHARITY_DONATE_MEDAL_OK
+         Method signature :  onCharityDonateMedalOk(, UserMedal charityMedal)
+         Server Event Name: CHARITY_DONATE_MEDAL_ALREADY_HAS_IT
+         Method signature :  onCharityDonateMedalAlreadyHasIt()
+         Server Event Name: CHARITY_DONATE_MEDAL_NONE
+         Method signature :  onCharityDonateMedalNone()
+---------------------------------------------------------------
+   Client Method Name : requestCharityHofList() : void
+        Server Replies:
+         Server Event Name: CHARITY_HOF_LIST_OK
+         Method signature :  onCharityHofListOk(, String totalAmount, List charityStatusList)
+---------------------------------------------------------------

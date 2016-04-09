@@ -1,0 +1,21 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestStartClientModule(moduleName:String) : void
+        Server Replies:
+         Server Event Name: START_CLIENT_MODULE_RESPONSE
+         Method signature :  onStartClientModule(, String startClientModule)
+---------------------------------------------------------------
+   Client Method Name : requestCheckState(moduleName:String) : void
+        Server Replies:
+         Server Event Name: CHECK_STATE_RESULT
+         Method signature :  onCheckStateResult(, EasterBunnyData checkStateResult)
+---------------------------------------------------------------
+   Client Method Name : requestUpdateClientModule(moduleName:String) : void
+        Server Replies:
+         Server Event Name: UPDATE_CLIENT_MODULE_RESPONSE
+         Method signature :  onUpdateClientModule(, EasterBunnyData updateClientModule)
+---------------------------------------------------------------
+   Client Method Name : requestItemRequest(moduleName:String) : void
+        Server Replies:
+         Server Event Name: ITEM_REQUEST
+         Method signature :  onItemRequest(, List itemList)
+---------------------------------------------------------------

@@ -1,0 +1,26 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestCmodThanksGivingCheck(gameId:String) : void
+        Server Replies:
+         Server Event Name: CMOD_THANKS_GIVING_CHECK_OK
+         Method signature :  onCmodThanksGivingCheckOk(, List tgGameDataList)
+---------------------------------------------------------------
+   Client Method Name : requestCmodThanksGivingMedal(medalKey:String) : void
+        Server Replies:
+         Server Event Name: CMOD_THANKS_GIVING_MEDAL_OK
+         Method signature :  onCmodThanksGivingMedalOk(, UserMedal tgGameMedal)
+         Server Event Name: CMOD_THANKS_GIVING_MEDAL_ALREADY_HAS_IT
+         Method signature :  onCmodThanksGivingMedalAlreadyHasIt(, String medalKey)
+         Server Event Name: CMOD_THANKS_GIVING_MEDAL_NON_PREMIUM_MEMBER
+         Method signature :  onCmodThanksGivingMedalNonPremiumMember(, String medalKey)
+         Server Event Name: CMOD_THANKS_GIVING_MEDAL_NONE
+         Method signature :  onCmodThanksGivingMedalNone(, String medalKey)
+---------------------------------------------------------------
+   Client Method Name : requestCmodThanksGivingFruitPickingMedal(medalKey:String, gameId1:String, gameId2:String, gameId3:String) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestCmodThanksGivingUpdateAttendance(gameId:String) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestCmodThanksGivingUpdateData(gameId:String, gameData:String) : void
+        Server Replies:
+---------------------------------------------------------------

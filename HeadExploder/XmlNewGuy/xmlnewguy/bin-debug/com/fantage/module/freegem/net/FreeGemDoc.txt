@@ -1,0 +1,8 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestFreeGem(itemName:String, quantity:int, type:int, authKey:String) : void
+        Server Replies:
+         Server Event Name: FREE_GEM_OK
+         Method signature :  onFreeGemOk(, String itemName, int quantity, int type)
+         Server Event Name: FREE_GEM_FAIL
+         Method signature :  onFreeGemFail(, String itemName, String resultCode)
+---------------------------------------------------------------

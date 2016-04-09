@@ -1,0 +1,113 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestBuyBulkStickerByNameList(stickerNames:String) : void
+        Server Replies:
+         Server Event Name: BUY_STICKER_OK
+         Method signature :  onBuyStickerOk(, List asset)
+         Server Event Name: BUY_STICKER_FAIL
+         Method signature :  onBuyStickerFail()
+         Server Event Name: BUY_STICKER_NOT_ENOUGH_FUNDS
+         Method signature :  onBuyStickerNotEnoughFunds(, int userFunds)
+---------------------------------------------------------------
+   Client Method Name : requestBuyStickerSet(sticketSetName:String) : void
+        Server Replies:
+         Server Event Name: BUY_STICKER_SET_OK
+         Method signature :  onBuyStickerSetOk()
+         Server Event Name: BUY_STICKER_SET_FAIL
+         Method signature :  onBuyStickerSetFail(, Asset asset)
+         Server Event Name: BUY_STICKER_SET_NOT_ENOUGH_FUNDS
+         Method signature :  onBuyStickerSetNotEnoughFunds(, int currentFunds, int fundsRequired)
+---------------------------------------------------------------
+   Client Method Name : requestBuyRareSticker() : void
+        Server Replies:
+         Server Event Name: BUY_RARE_STICKER_OK
+         Method signature :  onBuyRareStickerOk(, List assetList, List rareAssetList)
+         Server Event Name: BUY_RARE_STICKER_FAIL
+         Method signature :  onBuyRareStickerFail(, Asset asset)
+         Server Event Name: BUY_RARE_STICKER_NOT_ENOUGH_FUNDS
+         Method signature :  onBuyRareStickerNotEnoughFunds(, int currentFunds)
+---------------------------------------------------------------
+   Client Method Name : requestBuyIDFoneStickerPageBackground(assetName:String) : void
+        Server Replies:
+         Server Event Name: BUY_IDFONE_STICKERPAGE_BACKGROUND_OK
+         Method signature :  onBuyIDFoneStickerPageBackgroundOk(, Asset asset)
+         Server Event Name: BUY_IDFONE_STICKERPAGE_BACKGROUND_FAIL
+         Method signature :  onBuyIDFoneStickerPageBackgroundFail(, Asset asset)
+         Server Event Name: BUY_IDFONE_STICKERPAGE_BACKGROUND_NOT_ENOUGH_FUNDS
+         Method signature :  onBuyIDFoneStickerPageBackgroundNotEnoughFunds(, int currentFunds)
+         Server Event Name: BUY_IDFONE_STICKERPAGE_BACKGROUND_ALREADY_HAVE_IT
+         Method signature :  onBuyIDFoneStickerPageBackgroundAlreadyHaveIt(, int assetId)
+---------------------------------------------------------------
+   Client Method Name : requestBuyIDFoneBackground(assetId:int) : void
+        Server Replies:
+         Server Event Name: BUY_IDFONE_BACKGROUND_OK
+         Method signature :  onBuyIDFoneBackgroundOk(, Asset asset)
+         Server Event Name: BUY_IDFONE_BACKGROUND_ALREADY_HAVE_IT
+         Method signature :  onBuyIDFoneBackgroundAlreadyHaveIt(, int currentFundBalance)
+         Server Event Name: BUY_IDFONE_BACKGROUND_NOT_ENOUGH_FUNDS
+         Method signature :  onBuyIDFoneBackgroundNotEnoughFunds(, int currentFunds)
+---------------------------------------------------------------
+   Client Method Name : requestBuyIDFoneSkin(assetId:int) : void
+        Server Replies:
+         Server Event Name: BUY_IDFONE_SKIN_OK
+         Method signature :  onBuyIDFoneSkinOk(, int assetId)
+         Server Event Name: BUY_IDFONE_SKIN_ALREADY_HAVE_THAT_SKIN
+         Method signature :  onBuyIdFoneSkinAlreadyHaveIt(, int assetId)
+         Server Event Name: BUY_IDFONE_SKIN_NOT_ENOUGH_FUNDS
+         Method signature :  onBuyIDFoneSkinNotEnoughFunds(, int currentFunds)
+---------------------------------------------------------------
+   Client Method Name : requestGreenStarBuyBulkStickerByNameList(stickerNames:String) : void
+        Server Replies:
+         Server Event Name: GREEN_STAR_BUY_STICKER_OK
+         Method signature :  onGreenStarBuyStickerOk(, List asset)
+         Server Event Name: GREEN_STAR_BUY_STICKER_FAIL
+         Method signature :  onGreenStarBuyStickerFail()
+         Server Event Name: GREEN_STAR_BUY_STICKER_NOT_ENOUGH_FUNDS
+         Method signature :  onGreenStarBuyStickerNotEnoughFunds(, int userFunds)
+---------------------------------------------------------------
+   Client Method Name : requestGreenStarBuyStickerSet(sticketSetName:String) : void
+        Server Replies:
+         Server Event Name: GREEN_STAR_BUY_STICKER_SET_OK
+         Method signature :  onGreenStarBuyStickerSetOk()
+         Server Event Name: GREEN_STAR_BUY_STICKER_SET_FAIL
+         Method signature :  onGreenStarBuyStickerSetFail(, Asset asset)
+         Server Event Name: GREEN_STAR_BUY_STICKER_SET_NOT_ENOUGH_FUNDS
+         Method signature :  onGreenStarBuyStickerSetNotEnoughFunds(, int currentFunds, int fundsRequired)
+---------------------------------------------------------------
+   Client Method Name : requestGreenStarBuyRareSticker() : void
+        Server Replies:
+         Server Event Name: GREEN_STAR_BUY_RARE_STICKER_OK
+         Method signature :  onGreenStarBuyRareStickerOk(, List assetList, List rareAssetList)
+         Server Event Name: GREEN_STAR_BUY_RARE_STICKER_FAIL
+         Method signature :  onGreenStarBuyRareStickerFail(, Asset asset)
+         Server Event Name: GREEN_STAR_BUY_RARE_STICKER_NOT_ENOUGH_FUNDS
+         Method signature :  onGreenStarBuyRareStickerNotEnoughFunds(, int currentFunds)
+---------------------------------------------------------------
+   Client Method Name : requestGreenStarBuyIDFoneStickerPageBackground(assetName:String) : void
+        Server Replies:
+         Server Event Name: GREEN_STAR_BUY_IDFONE_STICKERPAGE_BACKGROUND_OK
+         Method signature :  onGreenStarBuyIDFoneStickerPageBackgroundOk(, Asset asset)
+         Server Event Name: GREEN_STAR_BUY_IDFONE_STICKERPAGE_BACKGROUND_FAIL
+         Method signature :  onGreenStarBuyIDFoneStickerPageBackgroundFail(, Asset asset)
+         Server Event Name: GREEN_STAR_BUY_IDFONE_STICKERPAGE_BACKGROUND_NOT_ENOUGH_FUNDS
+         Method signature :  onGreenStarBuyIDFoneStickerPageBackgroundNotEnoughFunds(, int currentFunds)
+         Server Event Name: GREEN_STAR_BUY_IDFONE_STICKERPAGE_BACKGROUND_ALREADY_HAVE_IT
+         Method signature :  onGreenStarBuyIDFoneStickerPageBackgroundAlreadyHaveIt(, int assetId)
+---------------------------------------------------------------
+   Client Method Name : requestGreenStarBuyIDFoneBackground(assetId:int) : void
+        Server Replies:
+         Server Event Name: GREEN_STAR_BUY_IDFONE_BACKGROUND_OK
+         Method signature :  onGreenStarBuyIDFoneBackgroundOk(, Asset asset)
+         Server Event Name: GREEN_STAR_BUY_IDFONE_BACKGROUND_ALREADY_HAVE_IT
+         Method signature :  onGreenStarBuyIDFoneBackgroundAlreadyHaveIt(, int currentFundBalance)
+         Server Event Name: GREEN_STAR_BUY_IDFONE_BACKGROUND_NOT_ENOUGH_FUNDS
+         Method signature :  onGreenStarBuyIDFoneBackgroundNotEnoughFunds(, int currentFunds)
+---------------------------------------------------------------
+   Client Method Name : requestGreenStarBuyIDFoneSkin(assetId:int) : void
+        Server Replies:
+         Server Event Name: GREEN_STAR_BUY_IDFONE_SKIN_OK
+         Method signature :  onGreenStarBuyIDFoneSkinOk(, int assetId)
+         Server Event Name: GREEN_STAR_BUY_IDFONE_SKIN_ALREADY_HAVE_THAT_SKIN
+         Method signature :  onGreenStarBuyIdFoneSkinAlreadyHaveIt(, int assetId)
+         Server Event Name: GREEN_STAR_BUY_IDFONE_SKIN_NOT_ENOUGH_FUNDS
+         Method signature :  onGreenStarBuyIDFoneSkinNotEnoughFunds(, int currentFunds)
+---------------------------------------------------------------

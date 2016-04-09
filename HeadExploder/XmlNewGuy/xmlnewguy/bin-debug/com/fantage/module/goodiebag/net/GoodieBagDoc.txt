@@ -1,0 +1,37 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestGetGoodieBagCatalogList(partyTypeName:String) : void
+        Server Replies:
+         Server Event Name: GET_GOODIE_BAG_CATALOG_LIST
+         Method signature :  onGetGoodieBagCatalogList(, List goodieBagAssetList)
+         Server Event Name: GOODIE_BAG_CATALOG_PARTY_IS_OVER
+         Method signature :  onGoodieBagCatalogPartyIsOver()
+---------------------------------------------------------------
+   Client Method Name : requestBuyGoodieBag(goodieBagName:String) : void
+        Server Replies:
+         Server Event Name: GOODIE_BAG_BUY_OK
+         Method signature :  onGoodieBagBuyOk(, GoodieBagAsset goodieBag)
+         Server Event Name: GOODIE_BAG_PURCHASE_PARTY_IS_OVER
+         Method signature :  onGoodieBagPurchasePartyIsOver()
+         Server Event Name: GOODIE_BAG_NOT_ENOUGH_FUNDS
+         Method signature :  onGoodieBagNotEnoughFunds(, int fundsRequired, int currentUserFunds)
+         Server Event Name: GOODIE_BAG_ALREADY_BOUGHT_IT
+         Method signature :  onGoodieBagAlreadyHaveIt(, GoodieBagAsset goodieBag)
+---------------------------------------------------------------
+   Client Method Name : requestGetGoodieBagList() : void
+        Server Replies:
+         Server Event Name: GET_GOODIE_BAG_LIST
+         Method signature :  onGetGoodieBagListOk(, List goodieBagAssetList)
+         Server Event Name: GET_GOODIE_BAG_LIST_PARTY_IS_OVER
+         Method signature :  onGoodieBagListPartyIsOver()
+---------------------------------------------------------------
+   Client Method Name : requestGetGoodieBagAsset(goodieBagName:String) : void
+        Server Replies:
+         Server Event Name: GET_GOODIE_BAG_ASSET_OK
+         Method signature :  onGetGoodieBagAssetOk(, GoodieBagAsset goodieBagAsset)
+         Server Event Name: GET_GOODIE_BAG_ASSSET_PARTY_IS_OVER
+         Method signature :  onGetGoodieBagAssetPartyIsOver()
+         Server Event Name: GET_GOODIE_BAG_ASSET_ALREADY_HAVE_IT
+         Method signature :  onGetGoodieBagAssetAlreadyHaveIt(, GoodieBagAsset goodieBag)
+         Server Event Name: GET_GOODIE_BAG_ASSET_FAIL
+         Method signature :  onGetGoodieBagFail()
+---------------------------------------------------------------

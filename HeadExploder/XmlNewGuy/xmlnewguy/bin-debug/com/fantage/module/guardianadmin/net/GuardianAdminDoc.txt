@@ -1,0 +1,92 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestReloadDigesterConfig(classType:String, digesterConfigType:String) : void
+        Server Replies:
+         Server Event Name: RELOAD_DIGESTER_CONFIG_STATUS
+         Method signature :  onReloadDigesterConfigStatus(, String type)
+---------------------------------------------------------------
+   Client Method Name : requestRemoveWordFromDictionary(type:String, word:String) : void
+        Server Replies:
+         Server Event Name: WORD_REMOVE_OK
+         Method signature :  onAdminRemoveWordOk(, String type, String word)
+         Server Event Name: WORD_REMOVE_FAILED
+         Method signature :  onAdminRemoveWordFailed(, String type, String word)
+---------------------------------------------------------------
+   Client Method Name : requestTagReload() : void
+        Server Replies:
+         Server Event Name: TAG_RELOADED_OK
+         Method signature :  onTagReloadedOk()
+         Server Event Name: TAG_RELOADED_FAIL
+         Method signature :  onTagReloadedFail()
+---------------------------------------------------------------
+   Client Method Name : requestAddWordToDictionary(type:String, ordering:int, word:String) : void
+        Server Replies:
+         Server Event Name: WORD_ADDED_OK
+         Method signature :  onAddWordToDictionaryOk(, String type, String word)
+         Server Event Name: WORD_ADDED_FAILED
+         Method signature :  onAddWordToDictionaryFailed(, String type, String reason, String word)
+---------------------------------------------------------------
+   Client Method Name : requestAddWordToDictionaryByObject(type:String, replacement:String, word:String) : void
+        Server Replies:
+         Server Event Name: WORD_ADDED_OK
+         Method signature :  onAddWordToDictionaryOk(, String type, String word)
+         Server Event Name: WORD_ADDED_FAILED
+         Method signature :  onAddWordToDictionaryFailed(, String type, String reason, String word)
+---------------------------------------------------------------
+   Client Method Name : requestReloadAssetObject(assetName:String) : void
+        Server Replies:
+         Server Event Name: RELOAD_ASSET_OK
+         Method signature :  onReloadAssetOk(, Asset asset)
+---------------------------------------------------------------
+   Client Method Name : requestRefreshGuardian() : void
+        Server Replies:
+         Server Event Name: REFRESH_GUARDIAN_OK
+         Method signature :  onRefreshGuardianOk(, String status)
+         Server Event Name: REFRESH_GUARDIAN_FAIL
+         Method signature :  onRefreshGuardianFail(, String stackTrace)
+---------------------------------------------------------------
+   Client Method Name : requestRefreshPreprocessor() : void
+        Server Replies:
+         Server Event Name: REFRESH_PREPROCESSOR_OK
+         Method signature :  onRefreshPreprocessorOk(, String status)
+         Server Event Name: REFRESH_PREPROCESSOR_FAIL
+         Method signature :  onRefreshPreprocessorFail(, String status)
+---------------------------------------------------------------
+   Client Method Name : requestGetWordList(type:String) : void
+        Server Replies:
+         Server Event Name: GET_WORD_LIST_OK
+         Method signature :  onGetWordListOk(, String type, List wordList)
+         Server Event Name: GET_WORD_LIST_FAILED
+         Method signature :  onGetWordListFail(, String type)
+---------------------------------------------------------------
+   Client Method Name : requestSaveWordOrdering() : void
+        Server Replies:
+         Server Event Name: SAVE_WORD_ORDERING_OK
+         Method signature :  onSaveWordOrderingOk()
+         Server Event Name: SAVE_WORD_ORDERING_FAIL
+         Method signature :  onSaveWordOrderingFail()
+---------------------------------------------------------------
+   Client Method Name : requestChangeWordOrdering(type:String, amount:int, wordValue:String) : void
+        Server Replies:
+         Server Event Name: CHANGE_WORD_ORDER_OK
+         Method signature :  onChangeWordOrderingOk()
+         Server Event Name: CHANGE_WORD_ORDER_FAIL
+         Method signature :  onChangeWordOrderingFail()
+---------------------------------------------------------------
+   Client Method Name : requestExplainFilter(sentence:String) : void
+        Server Replies:
+         Server Event Name: EVAL_RESULT_BAN
+         Method signature :  onEvaluationResultBan(, String reason, String preprocessed, String smartBlocked, String smartReplaced)
+         Server Event Name: EVAL_RESULT_BLOCKED
+         Method signature :  onEvaluationResultBlocked(, String reason, String preprocessed, String smartBlocked, String smartReplaced)
+         Server Event Name: EVAL_RESULT_BOT_BLOCKED
+         Method signature :  onEvaluationResultNotBlocked(, String preprocessed, String smartBlocked, String smartReplaced)
+---------------------------------------------------------------
+   Client Method Name : requestTestSentence(sentence:String) : void
+        Server Replies:
+         Server Event Name: EVAL_RESULT_BAN
+         Method signature :  onEvaluationResultBan(, String reason)
+         Server Event Name: EVAL_RESULT_BLOCKED
+         Method signature :  onEvaluationResultBlocked(, String reason)
+         Server Event Name: EVAL_RESULT_BOT_BLOCKED
+         Method signature :  onEvaluationResultNotBlocked()
+---------------------------------------------------------------

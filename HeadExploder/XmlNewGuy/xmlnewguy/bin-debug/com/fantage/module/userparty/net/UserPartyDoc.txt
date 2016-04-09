@@ -1,0 +1,51 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestUserPartyMain() : void
+        Server Replies:
+         Server Event Name: USER_PARTY_INVITED
+         Method signature :  onUserPartyInvited(, UserPartyInvitation userPartyInvitation)
+         Server Event Name: USER_PARTY_PLUS_INVITED
+         Method signature :  onUserPartyPlusInvited(, UserPartyInvitationPlus userPartyInvitationPlus)
+         Server Event Name: USER_PARTY_STARTED_ON_ANOTHER_SERVER
+         Method signature :  onUserPartyStartedOnAnotherServer(, UserPartyType userParty)
+---------------------------------------------------------------
+   Client Method Name : requestStartUserParty(partyName:String) : void
+        Server Replies:
+         Server Event Name: USER_PARTY_ALREADY_STARTED
+         Method signature :  onUserPartyAlreadyStarted(, UserPartyType userParty)
+         Server Event Name: USER_PARTY_NOT_ENOUGH_FUNDS
+         Method signature :  onUserPartyNotEnoughFunds(, int fundsRequired, int currentUserFunds)
+---------------------------------------------------------------
+   Client Method Name : requestInviteAllUsersInServer() : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestInviteAllUsersInServerPlus() : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestGetBestPartyList() : void
+        Server Replies:
+         Server Event Name: GET_BEST_PARTY_LIST
+         Method signature :  onGetBestPartyList(, List highScore)
+---------------------------------------------------------------
+   Client Method Name : requestInviteAllBuddies() : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestInviteAllBuddiesPlus() : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestGetUserPartyStatus(userId:String) : void
+        Server Replies:
+         Server Event Name: NO_USER_PARTY_PRESENT
+         Method signature :  onNoUserPartyPresent()
+         Server Event Name: USER_PARTY_PRESENT
+         Method signature :  onUserPartyPresent(, UserPartyType userParty)
+---------------------------------------------------------------
+   Client Method Name : requestListUserParty() : void
+        Server Replies:
+         Server Event Name: LIST_USER_PARTY_OK
+         Method signature :  onListUserPartyOk(, List userParty)
+---------------------------------------------------------------
+   Client Method Name : requestListPartyType() : void
+        Server Replies:
+         Server Event Name: LIST_PARTY_TYPE_OK
+         Method signature :  onListPartyTypeOk(, List partyType)
+---------------------------------------------------------------

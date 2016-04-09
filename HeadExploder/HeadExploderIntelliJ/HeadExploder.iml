@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="Flex" version="4">
+  <component name="FlexBuildConfigurationManager" active="HeadExploder">
+    <configurations>
+      <configuration name="HeadExploder" target-platform="Mobile" pure-as="true" main-class="HeadExploder" output-file="HeadExploderD.swf" output-folder="$MODULE_DIR$/out/p">
+        <dependencies target-player="16.0">
+          <entries>
+            <entry library-id="b68f099e-1249-47b7-a4fb-e9ee8b187b50">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="c5dd5e89-bf31-400b-bcdf-f0d357e92e6c">
+              <dependency linkage="Merged" />
+            </entry>
+          </entries>
+          <sdk name="OtherFlexHome" />
+        </dependencies>
+        <compiler-options>
+          <option name="additionalOptions" value="-define CONFIG::useFlexClasses false -debug=true" />
+        </compiler-options>
+        <packaging-air-desktop />
+        <packaging-android enabled="true" use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/HeadExploder-app.xml" package-file-name="HeadExploderDeuce">
+          <files-to-package>
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/icons/SLAYER ICONS/explodeIcon1024/slayerIcons" path-in-package="slayerIcons" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/lib" path-in-package="lib" />
+          </files-to-package>
+        </packaging-android>
+        <packaging-ios enabled="true" use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/HeadExploder-app.xml" package-file-name="HeadExploder">
+          <files-to-package>
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/icons/SLAYER ICONS/explodeIcon1024/slayerIcons" path-in-package="slayerIcons" />
+          </files-to-package>
+          <AirSigningOptions keystore-path="$MODULE_DIR$/certs/ios/HeadExploderDist.p12" provisioning-profile-path="$MODULE_DIR$/certs/ios/HeadExploderDist (1).mobileprovision" />
+        </packaging-ios>
+      </configuration>
+    </configurations>
+    <compiler-options />
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/testSrc" isTestSource="true" />
+    </content>
+    <orderEntry type="jdk" jdkName="OtherFlexHome" jdkType="Flex SDK Type (new)" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/1.7/starling.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/feathers.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/com.adobe.extensions.Vibration.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Downloads/ANE-DeviceId-master/ANE-DeviceId-master/bin/AirDeviceId.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/ima_lib_as3.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/com.distriqt.Application.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/com.distriqt.Application.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/feathers.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/1.7/starling.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$USER_HOME$/Gestouch/src" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/src/media/splash screen images/HE Startup Splash Image.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="b68f099e-1249-47b7-a4fb-e9ee8b187b50" />
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/lib" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="c5dd5e89-bf31-400b-bcdf-f0d357e92e6c" />
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/lib/1.7" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/lib/1.7" recursive="false" />
+      </library>
+    </orderEntry>
+  </component>
+</module>

@@ -1,0 +1,32 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestBuyStarDoubleCoupon() : void
+        Server Replies:
+         Server Event Name: BUY_STAR_DOUBLE_COUPON_OK
+         Method signature :  onBuyStarDoubleCouponOk(, int count)
+         Server Event Name: BUY_STAR_DOUBLE_COUPON_NOT_ENOUGH_FUNDS
+         Method signature :  onBuyStarDoubleCouponNotEnoughFunds(, int notEnoughFunds)
+---------------------------------------------------------------
+   Client Method Name : requestUseStarDoubleCoupon() : void
+        Server Replies:
+         Server Event Name: USE_STAR_DOUBLE_COUPON_OK
+         Method signature :  onUseStarDoubleCouponOk(, int count)
+         Server Event Name: USE_STAR_DOUBLE_COUPON_NO_COUPON
+         Method signature :  onUseStarDoubleCouponNoCoupon()
+---------------------------------------------------------------
+   Client Method Name : requestUseStarDoubleCouponOnGame(gameName:String) : void
+        Server Replies:
+         Server Event Name: USE_STAR_DOUBLE_COUPON_MULTIPLIER_OK
+         Method signature :  onUseStarDoubleCouponMultiplierOk(, int count, int multiplier)
+         Server Event Name: USE_STAR_DOUBLE_COUPON_NO_COUPON
+         Method signature :  onUseStarDoubleCouponNoCoupon()
+---------------------------------------------------------------
+   Client Method Name : requestGetCurrentGameStarMultiplier(gameName:String) : void
+        Server Replies:
+         Server Event Name: GET_CURRENT_STAR_MULTIPLIER_OK
+         Method signature :  onGetCurrentStarMultiplierOk(, int multiplier)
+---------------------------------------------------------------
+   Client Method Name : requestGetStarDoubleCouponCount() : void
+        Server Replies:
+         Server Event Name: GET_STAR_DOUBLE_COUPON_COUNT_OK
+         Method signature :  onGetStarDoubleCouponCountOk(, int count)
+---------------------------------------------------------------

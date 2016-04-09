@@ -1,0 +1,29 @@
+
+----color trance form-------
+|Red 40/100
+|Green -15/100
+|Blue -120/100
+----------------------------
+
+
+
+------adjust Color----------
+|Brightness   |  12/100
+|Contrast     |  2/100
+|Saturation   |  -100/100
+|Hue          |  0
+---------------------------
+
+
+
+----------Bevel------------
+|BlurX      | 19
+|BlurY      | 12
+|Strength 	| 150%
+|Quality 	| High
+|Shadow     | 0xF5db40
+|Highlight  | 0xD08D07
+|Angle      | 31
+|Distance   | -5
+|Type       | Inner
+---------------------------

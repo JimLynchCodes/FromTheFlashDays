@@ -1,0 +1,95 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestLoginStart() : void
+        Server Replies:
+         Server Event Name: LOGIN_START_OK
+         Method signature :  onLoginStartOk(, String hashKey)
+         Server Event Name: LOGIN_START_FAILED
+         Method signature :  onLoginStartFailed(, String reason)
+---------------------------------------------------------------
+   Client Method Name : requestLoginUser(username:String, password:String) : void
+        Server Replies:
+         Server Event Name: LOGIN_USER_OK
+         Method signature :  onLoginUserOk(, User user)
+         Server Event Name: LOGIN_USER_FAIL
+         Method signature :  onLoginUserFail()
+         Server Event Name: LOGIN_USER_LOCKED
+         Method signature :  onLoginUserLocked(, int deactivationHour, int deactivationMinute)
+         Server Event Name: LOGIN_USER_ALREADY_LOGGED_IN
+         Method signature :  onLoginUserAlreadyLoggedIn()
+         Server Event Name: LOGIN_USER_NOT_ACTIVATED
+         Method signature :  onLoginUserNotActivated()
+         Server Event Name: LOGIN_TOO_MANY_FAILURES
+         Method signature :  onLoginTooManyFailures()
+---------------------------------------------------------------
+   Client Method Name : requestGetUserLoginKey() : void
+        Server Replies:
+         Server Event Name: GET_USER_LOGIN_KEY_OK
+         Method signature :  onGetUserLoginKeyOk(, String userLoginKey)
+         Server Event Name: GET_USER_LOGIN_KEY_FAIL
+         Method signature :  onGetUserLoginKeyFail()
+---------------------------------------------------------------
+   Client Method Name : requestGetEntryList(voteContestId:int) : void
+        Server Replies:
+         Server Event Name: GET_ENTRY_LIST_OK
+         Method signature :  onGetEntryListOk(, List voteItem)
+         Server Event Name: GET_ENTRY_LIST_FAIL
+         Method signature :  onGetEntryListFail(, String contestName)
+---------------------------------------------------------------
+   Client Method Name : requestGetCurrentVoteContest(voteContestName:String) : void
+        Server Replies:
+         Server Event Name: GET_CURRENT_VOTE_CONTEST_OK
+         Method signature :  onGetCurrentVoteContestOk(, VoteContest voteContest)
+---------------------------------------------------------------
+   Client Method Name : requestGetCurrentVoteContestList() : void
+        Server Replies:
+         Server Event Name: GET_CURRENT_VOTE_CONTEST_LIST_OK
+         Method signature :  onGetCurrentVoteContestListOk(, List voteContest)
+---------------------------------------------------------------
+   Client Method Name : requestGetCommentList(voteItemEntry:int) : void
+        Server Replies:
+         Server Event Name: GET_COMMENT_LIST_OK
+         Method signature :  onGetCommentListOk(, List voteItemComment)
+---------------------------------------------------------------
+   Client Method Name : requestSearchEntryList(voteContestId:int, searchTerm:String) : void
+        Server Replies:
+         Server Event Name: GET_SEARCH_ENTRY_LIST_OK
+         Method signature :  onGetSearchEntryListOk(, List voteItem)
+         Server Event Name: GET_SEARCH_ENTRY_LIST_FAIL
+         Method signature :  onGetSearchEntryListFail(, String contestName)
+---------------------------------------------------------------
+   Client Method Name : requestGetCommentEmoticonList() : void
+        Server Replies:
+         Server Event Name: COMMENT_EMOTICON_LIST_OK
+         Method signature :  onCommentEmoticonListOk(, List asset)
+         Server Event Name: COMMENT_EMOTICON_LIST_FAIL
+         Method signature :  onCommentEmoticonListFail()
+---------------------------------------------------------------
+   Client Method Name : requestCannedCommentList() : void
+        Server Replies:
+         Server Event Name: CANNED_COMMENT_LIST_OK
+         Method signature :  onCannedCommentListOk(, List CannedComment)
+         Server Event Name: CANNED_COMMENT_LIST_FAIL
+         Method signature :  onCannedCommentListFail()
+---------------------------------------------------------------
+   Client Method Name : requestVoteItemViewed(voteItemId:int) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestAddComment(assetId:int, cannedCommentId:int, voteItemID:int) : void
+        Server Replies:
+         Server Event Name: ADD_COMMENT_OK
+         Method signature :  onAddCommentOk(, VoteItemComment voteItemComment)
+         Server Event Name: ADD_COMMENT_MAX_FAIL
+         Method signature :  onAddCommentMaxFail(, int max)
+---------------------------------------------------------------
+   Client Method Name : requestGetUserVoteList(entryId:int) : void
+        Server Replies:
+         Server Event Name: GET_USER_VOTE_LIST_OK
+         Method signature :  onGetUserVoteOk(, int voteItemId, double voteAverage, int maxVote, List myVote)
+---------------------------------------------------------------
+   Client Method Name : requestVoteOnEntry(entryId:int, rating:Number) : void
+        Server Replies:
+         Server Event Name: ENTRY_VOTE_OK
+         Method signature :  onEntryVoteOk(, VoteItem voteEntry, UserVote myVote)
+         Server Event Name: ENTRY_VOTE_MAX_VOTE_REACHED
+         Method signature :  onEntryMaxVoteReached(, int maxVote)
+---------------------------------------------------------------

@@ -1,0 +1,12 @@
+==================== CLIENT REQUESTS ==========================
+   Client Method Name : requestPetworldMain() : void
+        Server Replies:
+         Server Event Name: PETWORLD_MAIN_OK
+         Method signature :  onPetworldMainOk(, String targetUserId, String petName, int petLevel, String petPosX, String petPosY)
+---------------------------------------------------------------
+   Client Method Name : requestPetworldCheckUpdate(targetUserId:String) : void
+        Server Replies:
+---------------------------------------------------------------
+   Client Method Name : requestPetworldPositionUpdate(targetPosX:String, targetPosY:String) : void
+        Server Replies:
+---------------------------------------------------------------

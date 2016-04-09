@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:5a5f9a059a985b6255eb580f2f01e1e8:e2a64ecf7fceddc75c87ec21aed90c3f:2cd67898e16a32a036144268e3628860$ -->
+<TextureAtlas imagePath="Popups.png">
+    <SubTexture name="menuPopup" x="2" y="2" width="583" height="890" frameX="-1" frameY="0" frameWidth="584" frameHeight="890"/>
+    <SubTexture name="small popup bg" x="587" y="2" width="257" height="278" frameX="0" frameY="0" frameWidth="570" frameHeight="351"/>
+</TextureAtlas>
