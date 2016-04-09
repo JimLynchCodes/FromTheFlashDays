@@ -1,0 +1,6 @@
+/Users/jlynch/Downloads/Yahoo Games Network SDK.crQWiDkMk71TT87xTg1T5A/Flash/NewGame/Serverside Code/Game Code/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/Users/jlynch/Downloads/Yahoo Games Network SDK.crQWiDkMk71TT87xTg1T5A/Flash/NewGame/Serverside Code/Game Code/bin/Debug/newGame.dll.mdb
+/Users/jlynch/Downloads/Yahoo Games Network SDK.crQWiDkMk71TT87xTg1T5A/Flash/NewGame/Serverside Code/Game Code/bin/Debug/newGame.dll
+/Users/jlynch/Downloads/Yahoo Games Network SDK.crQWiDkMk71TT87xTg1T5A/Flash/NewGame/Serverside Code/Game Code/obj/Debug/newGame.dll
+/Users/jlynch/Downloads/Yahoo Games Network SDK.crQWiDkMk71TT87xTg1T5A/Flash/NewGame/Serverside Code/Game Code/obj/Debug/newGame.dll.mdb
+/Users/jlynch/Downloads/Yahoo Games Network SDK.crQWiDkMk71TT87xTg1T5A/Flash/NewGame/Serverside Code/Game Code/bin/Debug/Player.IO GameLibrary.dll

@@ -1,0 +1,153 @@
+{
+    "InventoryBar":
+	[
+ 		{
+ 		"Title": "Meteor",
+ 		"VarName": "juggler",
+ 		"AssetTexUpName":"JugglerResource"
+ 		"AssetTexDownName":"JugglerResource"
+ 		"levelVar": 0;
+         
+ 		"Attributes": 
+         {
+             "Damage":true,
+             "Radius":true,
+             "Speed":false,
+             "Duration":true
+         }
+ 		},
+ 		
+ 		{
+ 		"Title": "Power Poke",
+ 		"VarName": "juggler",
+ 		"AssetTexUpName":"JugglerResource"
+ 		"AssetTexDownName":"JugglerResource"
+ 		"levelVar": 0;
+         
+ 		"Attributes": 
+         {
+             "Damage":true,
+             "Radius":false,
+             "Speed":false,
+             "Duration":true
+         }
+ 		},
+ 		
+ 		{
+ 		"Title": "Slow",
+ 		"VarName": "juggler",
+ 		"AssetTexUpName":"JugglerResource"
+ 		"AssetTexDownName":"JugglerResource"
+ 		"levelVar": 0;
+         
+ 		"Attributes": 
+         {
+             "Damage":true,
+             "Radius":true,
+             "Speed":false,
+             "Duration":true
+         }
+ 		},
+ 		
+ 		{
+ 		"Title": "Poison",
+ 		"VarName": "juggler",
+ 		"AssetTexUpName":"JugglerResource"
+ 		"AssetTexDownName":"JugglerResource"
+ 		"levelVar": 0;
+         
+ 		"Attributes": 
+         {
+             "Damage":true,
+             "Radius":true,
+             "Speed":false,
+             "Duration":true
+         }
+ 		},
+ 		
+ 		{
+ 		"Title": "Barrier",
+ 		"VarName": "juggler",
+ 		"AssetTexUpName":"JugglerResource"
+ 		"AssetTexDownName":"JugglerResource"
+ 		"levelVar": 0;
+         
+ 		"Attributes": 
+         {
+             "Damage":true,
+             "Radius":true,
+             "Speed":false,
+             "Duration":true
+         }
+ 		},
+ 		
+ 		{
+ 		"Title": "Heal",
+ 		"VarName": "juggler",
+ 		"AssetTexUpName":"JugglerResource"
+ 		"AssetTexDownName":"JugglerResource"
+ 		"levelVar": 0;
+         
+ 		"Attributes": 
+         {
+             "Damage":true,
+             "Radius":true,
+             "Speed":false,
+             "Duration":true
+         }
+ 		},
+ 		
+ 		{
+ 		"Title": "Hardworking citizens",
+ 		"VarName": "juggler",
+ 		"AssetTexUpName":"JugglerResource"
+ 		"AssetTexDownName":"JugglerResource"
+ 		"levelVar": 0;
+         
+ 		"Attributes": 
+         {
+             "Damage":true,
+             "Radius":true,
+             "Speed":false,
+             "Duration":true
+         }
+ 		},
+ 		
+ 		{
+ 		"Title": "Gold Rush",
+ 		"VarName": "juggler",
+ 		"AssetTexUpName":"JugglerResource"
+ 		"AssetTexDownName":"JugglerResource"
+ 		"levelVar": 0;
+         
+ 		"Attributes": 
+         {
+             "Damage":true,
+             "Radius":true,
+             "Speed":false,
+             "Duration":true
+         }
+ 		},
+ 		
+ 		{
+ 		"Title": "Lightening",
+ 		"VarName": "juggler",
+ 		"AssetTexUpName":"JugglerResource"
+ 		"AssetTexDownName":"JugglerResource"
+ 		"levelVar": 0;
+         
+ 		"Attributes": 
+         {
+             "Damage":true,
+             "Radius":true,
+             "Speed":false,
+             "Duration":true
+         }
+ 		},
+ 		
+ 		
+ 			
+		
+		
+	]	
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>DefendYourCastle</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>com.adobe.flexbuilder.project.flexbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.adobe.flexbuilder.project.apollobuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>com.adobe.flexide.project.multiplatform.multiplatformasnature</nature>
+		<nature>com.adobe.flexide.project.multiplatform.multiplatformnature</nature>
+		<nature>com.adobe.flexbuilder.project.apollonature</nature>
+		<nature>com.adobe.flexbuilder.project.actionscriptnature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>[source path] DragonBonesLibraryAS-src</name>
+			<type>2</type>
+			<location>/Users/bobolicious3000/Downloads/DragonBones_v2.4/DragonBonesLibraryAS/src</location>
+		</link>
+		<link>
+			<name>[source path] source</name>
+			<type>2</type>
+			<location>/Users/bobolicious3000/Downloads/fpminesweeper/trunk/feathers-1.1.1/source</location>
+		</link>
+		<link>
+			<name>[source path] starling-src</name>
+			<type>2</type>
+			<location>/Users/bobolicious3000/Downloads/fpminesweeper/trunk/PrimaryFeather-Starling-Framework-1a50854/starling/src</location>
+		</link>
+	</linkedResources>
+</projectDescription>

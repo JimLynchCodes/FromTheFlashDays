@@ -1,0 +1,20 @@
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\inner_game\server_real_nice\Serverside Code\Player.IO Test Server Project\bin\Release\Test Server.exe
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\inner_game\server_real_nice\Serverside Code\Player.IO Test Server Project\bin\Release\Test Server.pdb
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\inner_game\server_real_nice\Serverside Code\Player.IO Test Server Project\bin\Release\Player.IO Development Server.exe
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\inner_game\server_real_nice\Serverside Code\Player.IO Test Server Project\bin\Release\Player.IO GameLibrary.dll
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\inner_game\server_real_nice\Serverside Code\Player.IO Test Server Project\bin\Release\TicTacToe.dll
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\inner_game\server_real_nice\Serverside Code\Player.IO Test Server Project\bin\Release\TicTacToe.pdb
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\inner_game\server_real_nice\Serverside Code\Player.IO Test Server Project\bin\Release\Player.IO GameLibrary.xml
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\inner_game\server_real_nice\Serverside Code\Player.IO Test Server Project\obj\Release\Player.IO Test Server.VS2010.csprojResolveAssemblyReference.cache
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\inner_game\server_real_nice\Serverside Code\Player.IO Test Server Project\obj\Release\Test Server.exe
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\inner_game\server_real_nice\Serverside Code\Player.IO Test Server Project\obj\Release\Test Server.pdb
+C:\Users\James Lynch\rep\trunk\dev\top\src\inner_game\server_real_nice\Serverside Code\Player.IO Test Server Project\bin\Release\Test Server.exe
+C:\Users\James Lynch\rep\trunk\dev\top\src\inner_game\server_real_nice\Serverside Code\Player.IO Test Server Project\bin\Release\Test Server.pdb
+C:\Users\James Lynch\rep\trunk\dev\top\src\inner_game\server_real_nice\Serverside Code\Player.IO Test Server Project\bin\Release\Player.IO Development Server.exe
+C:\Users\James Lynch\rep\trunk\dev\top\src\inner_game\server_real_nice\Serverside Code\Player.IO Test Server Project\bin\Release\Player.IO GameLibrary.dll
+C:\Users\James Lynch\rep\trunk\dev\top\src\inner_game\server_real_nice\Serverside Code\Player.IO Test Server Project\bin\Release\TicTacToe.dll
+C:\Users\James Lynch\rep\trunk\dev\top\src\inner_game\server_real_nice\Serverside Code\Player.IO Test Server Project\bin\Release\TicTacToe.pdb
+C:\Users\James Lynch\rep\trunk\dev\top\src\inner_game\server_real_nice\Serverside Code\Player.IO Test Server Project\bin\Release\Player.IO GameLibrary.xml
+C:\Users\James Lynch\rep\trunk\dev\top\src\inner_game\server_real_nice\Serverside Code\Player.IO Test Server Project\obj\Release\Player.IO Test Server.VS2010.csprojResolveAssemblyReference.cache
+C:\Users\James Lynch\rep\trunk\dev\top\src\inner_game\server_real_nice\Serverside Code\Player.IO Test Server Project\obj\Release\Test Server.exe
+C:\Users\James Lynch\rep\trunk\dev\top\src\inner_game\server_real_nice\Serverside Code\Player.IO Test Server Project\obj\Release\Test Server.pdb

@@ -1,0 +1,14 @@
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\pre_game\Generic_ServProj_Copy_DO_NOT_MODIFY\Serverside Code\Game Code\bin\Release\Player.IO GameLibrary.dll
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\pre_game\Generic_ServProj_Copy_DO_NOT_MODIFY\Serverside Code\Game Code\bin\Release\Player.IO GameLibrary.xml
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\pre_game\Generic_ServProj_Copy_DO_NOT_MODIFY\Serverside Code\Game Code\obj\Release\Game Code.VS2010.csprojResolveAssemblyReference.cache
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\pre_game\Generic_ServProj_Copy_DO_NOT_MODIFY\Serverside Code\Game Code\bin\Release\PreGameRealsOut.dll
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\pre_game\Generic_ServProj_Copy_DO_NOT_MODIFY\Serverside Code\Game Code\bin\Release\PreGameRealsOut.pdb
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\pre_game\Generic_ServProj_Copy_DO_NOT_MODIFY\Serverside Code\Game Code\obj\Release\PreGameRealsOut.dll
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\pre_game\Generic_ServProj_Copy_DO_NOT_MODIFY\Serverside Code\Game Code\obj\Release\PreGameRealsOut.pdb
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\pre_game\server\Serverside Code\Game Code\bin\Release\PreGameRealsOut.dll
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\pre_game\server\Serverside Code\Game Code\bin\Release\PreGameRealsOut.pdb
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\pre_game\server\Serverside Code\Game Code\bin\Release\Player.IO GameLibrary.dll
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\pre_game\server\Serverside Code\Game Code\bin\Release\Player.IO GameLibrary.xml
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\pre_game\server\Serverside Code\Game Code\obj\Release\Game Code.VS2010.csprojResolveAssemblyReference.cache
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\pre_game\server\Serverside Code\Game Code\obj\Release\PreGameRealsOut.dll
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\pre_game\server\Serverside Code\Game Code\obj\Release\PreGameRealsOut.pdb

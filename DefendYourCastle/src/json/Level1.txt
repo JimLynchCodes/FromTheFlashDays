@@ -1,0 +1,67 @@
+{
+	"LevelInfo":
+	[
+ 		{
+ 		"TimeLength": 90,
+ 		"WinRewardGold": 100
+ 		}
+	],
+	
+	"Enemies":
+	[
+		{	
+		"Type": "Peasant",
+		"Speed": 2.3,
+		"GoldRewardOnDeath": 2,
+		"FloorY": 300,
+		"TimeSent": 1.2,
+		"Health": 200,
+		"Damage": 2.6,	
+		"Weight": 5,
+		"StopX":700
+		},
+		
+		{	
+		"Type": "Peasant",
+		"Speed": 1.3,
+		"GoldRewardOnDeath": 2,
+		"FloorY": 310,
+		"TimeSent": 4,
+		"Health": 200,
+		"Damage": 2.6,
+		"Weight": 5,
+		"StopX":700	
+		},
+		
+		{	
+		"Type": "Archer",
+		"Speed": 1.3,
+		"GoldRewardOnDeath": 2,
+		"FloorY": 420,
+		"TimeSent": 0,
+		"Health": 200,
+		"Damage": 2.6,
+		"Weight": 5	
+		},
+		
+		{	
+		"Type": "Archer",
+		"Speed": 1.3,
+		"GoldRewardOnDeath": 2,
+		"FloorY": 420,
+		"TimeSent": 20,
+		"Health": 200,
+		"Damage": 2.6,
+		"Weight": 5,
+		"StopX":700	
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+	]	
+}

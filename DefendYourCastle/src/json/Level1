@@ -1,0 +1,46 @@
+{
+	"LevelInfo":
+	[
+ 		{
+ 		"TimeLength":5400000,
+ 		"WinRewardGold":100
+ 		}
+	]
+	
+	"Enemies":
+	[
+		{	
+		"Type":"Peasant",
+		"Speed":2.3,
+		"GoldRewardOnDeath":2,
+		"FloorY":400;
+		"TimeSent":200,
+		"Health":200,
+		"Damage":2.6	
+		}
+		
+		{	
+		"Type":"Peasant",
+		"Speed":2.3,
+		"GoldRewardOnDeath":2,
+		"FloorY":500;
+		"TimeSent":1000,
+		"Health":200,
+		"Damage":2.6	
+		}
+		
+		{	
+		"Type":"Peasant",
+		"Speed":2.3,
+		"GoldRewardOnDeath":2,
+		"FloorY":420;
+		"TimeSent":2300,
+		"Health":200,
+		"Damage":2.6	
+		}
+		
+		
+		
+		
+	]	
+}

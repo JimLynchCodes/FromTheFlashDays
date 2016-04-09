@@ -1,0 +1,34 @@
+{
+    "PowerUpLevelData":
+	[
+ 		
+ 		"Meteor":
+         {
+            "Damage":
+            {
+                "Lev1":10;
+                "Lev2":15;
+                "Lev3":20;
+                "Lev4":25;
+                "Lev5":30;
+            }
+            
+            "Radius":
+            {
+                 "Lev1":10;
+                "Lev2":15;
+                "Lev3":20;
+                "Lev4":25;
+                "Lev5":30;
+            }
+                        
+             
+         }
+            
+ 	
+ 		
+ 			
+		
+		
+	]	
+}

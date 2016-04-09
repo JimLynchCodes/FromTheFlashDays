@@ -1,0 +1,250 @@
+{
+    "First18":
+	[
+ 		{
+ 		"Title": "Juggler",
+ 		"Explanation": "Keep an enemy in the air for 30 seconds",
+ 		"VarName": "juggler",
+ 		"AssetTexName":"JugglerResource"
+ 		},
+ 		
+ 		{
+ 		"Title": "Juggler Pro",
+ 		"Explanation": "Keep an enemy in the air for 60 seconds",
+ 		"VarName": "juggler",
+             "AssetTexName":"JugglerResource"
+ 		},
+ 		
+ 		{
+ 		"Title": "Double Juggler",
+ 		"Explanation": "Keep two enemies from hitting the ground for 30 seconds",
+ 		"VarName": "juggler",
+             "AssetTexName":"JugglerResource"
+ 		},
+ 		
+ 		{
+ 		"Title": "Archer Time",
+ 		"Explanation": "Win a level by only killing enemies with archers",
+ 		"VarName": "juggler",
+             "AssetTexName":"JugglerResource"
+ 		},
+ 		
+ 		{
+ 		"Title": "You're Popular",
+ 		"Explanation": "Have 100 enemies attacking the castle at one time.",
+ 		"VarName": "juggler",
+             "AssetTexName":"JugglerResource"
+ 		},
+ 		
+ 		{
+ 		"Title": "Hitting Clouds",
+ 		"Explanation": "Send an enemy to a height of at least 1000 meters.",
+ 		"VarName": "juggler",
+             "AssetTexName":"JugglerResource"
+ 		},
+ 		
+ 		{
+ 		"Title": "Merciless",
+ 		"Explanation": "Smash 5000 guys total.",
+ 		"VarName": "juggler",
+             "AssetTexName":"JugglerResource"
+ 		},
+ 		
+ 		{
+ 		"Title": "Extinction",
+ 		"Explanation": "Smash 10,000 total guys",
+ 		"VarName": "juggler",
+             "AssetTexName":"JugglerResource"
+ 		},
+ 		
+ 		{
+ 		"Title": "Tippy Top",
+ 		"Explanation": "Upgrade Castle to the maximum level",
+ 		"VarName": "juggler",
+             "AssetTexName":"JugglerResource"
+ 		},
+ 		
+ 		{
+ 		"Title": "Dragon Slayer",
+ 		"Explanation": "Beat the last level",
+ 		"VarName": "juggler",
+             "AssetTexName":"JugglerResource"
+ 		},
+ 		
+ 		{
+ 		"Title": "Magic Mogul",
+ 		"Explanation": "Upgrade all powerups to the max",
+ 		"VarName": "juggler",
+             "AssetTexName":"JugglerResource"
+ 		},
+ 		
+ 		{
+ 		"Title": "Varietist",
+ 		"Explanation": "Use 9 different powerups in 3 back to back games",
+ 		"VarName": "juggler",
+             "AssetTexName":"JugglerResource"
+ 		},
+ 		
+ 		{
+ 		"Title": "Commercial",
+ 		"Explanation": "Get over 500 Commercial Watching currency",
+ 		"VarName": "juggler",
+             "AssetTexName":"JugglerResource"
+         
+ 		},
+ 		
+ 		{
+ 		"Title": "Commercial 2",
+ 		"Explanation": "Get over 1000 Commercial Watching currency",
+ 		"VarName": "juggler",
+             "AssetTexName":"JugglerResource"
+ 		},
+ 		
+ 		{
+ 		"Title": "Wrong Way",
+ 		"Explanation": "Beat a level while throwing every enemy to the right",
+ 		"VarName": "juggler",
+             "AssetTexName":"JugglerResource"
+ 		},
+ 		
+ 		{
+ 		"Title": "Stalker",
+ 		"Explanation": "Watch the credits 20 times.",
+ 		"VarName": "juggler",
+             "AssetTexName":"JugglerResource"
+ 		},
+ 		
+ 		{
+ 		"Title": "Turtule Turtle",
+ 		"Explanation": "Beat level x without killing any turtles.",
+ 		"VarName": "juggler",
+             "AssetTexName":"JugglerResource"
+ 		},
+ 		
+ 		{
+ 		"Title": "I can't Decide",
+ 		"Explanation": "look at purchase currency page for ten minutes total",
+ 		"VarName": "juggler",
+             "AssetTexName":"JugglerResource"
+ 		}
+ 		 		
+ 		
+	],
+	
+	"Second18":
+	[
+			
+		{
+ 		"Title": "Santa Something",
+ 		"Explanation": "make santa do something",
+ 		"VarName": "juggler"
+ 		},
+ 		
+ 		{
+ 		"Title": "No Life",
+ 		"Explanation": "Play for x hours",
+ 		"VarName": "juggler"
+ 		},
+ 		
+ 		{
+ 		"Title": "Me Likey",
+ 		"Explanation": "click the facebook like button",
+ 		"VarName": "juggler"
+ 		},
+ 		
+ 		{
+ 		"Title": "Heart to Heart",
+ 		"Explanation": "Get the Heart award for all levels",
+ 		"VarName": "juggler"
+ 		},
+ 		
+ 		
+ 		{
+ 		"Title": "Finger fighter",
+ 		"Explanation": "Get the Heart award for all levels",
+ 		"VarName": "juggler"
+ 		},
+ 		
+ 		{
+ 		"Title": "Circus Tricks",
+ 		"Explanation": "Get the Heart award for all levels",
+ 		"VarName": "juggler"
+ 		},
+ 		
+ 		{
+ 		"Title": "One Fun Week",
+ 		"Explanation": "Play 7 consecutive days in a row",
+ 		"VarName": "juggler"
+ 		},
+ 		
+ 		{
+ 		"Title": "Upgrade maximum mana",
+ 		"Explanation": "Upgrade maximum mana",
+ 		"VarName": "juggler"
+ 		},
+ 		{
+ 		"Title": "Torturer",
+ 		"Explanation": "Throw an enemy 20 times without them dieing",
+ 		"VarName": "juggler"
+ 		},
+ 		
+ 		{
+ 		"Title": "Meteor",
+ 		"Explanation": "Kill x enemies with a meteor",
+ 		"VarName": "juggler"
+ 		},
+ 		
+ 		{
+ 		"Title": "Magic Mogul",
+ 		"Explanation": "Upgrade all powerups to the max",
+ 		"VarName": "juggler"
+ 		},
+ 		
+ 		{
+ 		"Title": "Varietist",
+ 		"Explanation": "Use 9 different powerups in 3 back to back games",
+ 		"VarName": "juggler"
+ 		},
+ 		
+ 		{
+ 		"Title": "Commercial",
+ 		"Explanation": "Get over 500 Commercial Watching currency",
+ 		"VarName": "juggler"
+ 		},
+ 		
+ 		{
+ 		"Title": "Commercial 2",
+ 		"Explanation": "Get over 1000 Commercial Watching currency",
+ 		"VarName": "juggler"
+ 		},
+ 		
+ 		{
+ 		"Title": "Wrong Way",
+ 		"Explanation": "Beat a level while throwing every enemy to the right",
+ 		"VarName": "juggler"
+ 		},
+ 		
+ 		{
+ 		"Title": "Stalker",
+ 		"Explanation": "Watch the credits 20 times.",
+ 		"VarName": "juggler"
+ 		},
+ 		
+ 		{
+ 		"Title": "Turtule Turtle",
+ 		"Explanation": "Beat level x without killing any turtles.",
+ 		"VarName": "juggler"
+ 		},
+ 		
+ 		{
+ 		"Title": "I can't Decide",
+ 		"Explanation": "look at purchase currency page for ten minutes total",
+ 		"VarName": "juggler"
+ 		}
+		
+		
+		
+		
+		
+	]	
+}

@@ -1,0 +1,20 @@
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\pre_game\Generic_ServProj_Copy_DO_NOT_MODIFY\Serverside Code\Player.IO Test Server Project\bin\Release\Test Server.exe
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\pre_game\Generic_ServProj_Copy_DO_NOT_MODIFY\Serverside Code\Player.IO Test Server Project\bin\Release\Test Server.pdb
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\pre_game\Generic_ServProj_Copy_DO_NOT_MODIFY\Serverside Code\Player.IO Test Server Project\bin\Release\Player.IO Development Server.exe
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\pre_game\Generic_ServProj_Copy_DO_NOT_MODIFY\Serverside Code\Player.IO Test Server Project\bin\Release\Player.IO GameLibrary.dll
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\pre_game\Generic_ServProj_Copy_DO_NOT_MODIFY\Serverside Code\Player.IO Test Server Project\bin\Release\Player.IO GameLibrary.xml
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\pre_game\Generic_ServProj_Copy_DO_NOT_MODIFY\Serverside Code\Player.IO Test Server Project\obj\Release\Player.IO Test Server.VS2010.csprojResolveAssemblyReference.cache
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\pre_game\Generic_ServProj_Copy_DO_NOT_MODIFY\Serverside Code\Player.IO Test Server Project\obj\Release\Test Server.exe
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\pre_game\Generic_ServProj_Copy_DO_NOT_MODIFY\Serverside Code\Player.IO Test Server Project\obj\Release\Test Server.pdb
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\pre_game\Generic_ServProj_Copy_DO_NOT_MODIFY\Serverside Code\Player.IO Test Server Project\bin\Release\PreGameRealsOut.dll
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\pre_game\Generic_ServProj_Copy_DO_NOT_MODIFY\Serverside Code\Player.IO Test Server Project\bin\Release\PreGameRealsOut.pdb
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\pre_game\server\Serverside Code\Player.IO Test Server Project\obj\Release\Test Server.exe
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\pre_game\server\Serverside Code\Player.IO Test Server Project\obj\Release\Test Server.pdb
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\pre_game\server\Serverside Code\Player.IO Test Server Project\bin\Release\Test Server.exe
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\pre_game\server\Serverside Code\Player.IO Test Server Project\bin\Release\Test Server.pdb
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\pre_game\server\Serverside Code\Player.IO Test Server Project\bin\Release\Player.IO Development Server.exe
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\pre_game\server\Serverside Code\Player.IO Test Server Project\bin\Release\Player.IO GameLibrary.dll
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\pre_game\server\Serverside Code\Player.IO Test Server Project\bin\Release\PreGameRealsOut.dll
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\pre_game\server\Serverside Code\Player.IO Test Server Project\bin\Release\PreGameRealsOut.pdb
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\pre_game\server\Serverside Code\Player.IO Test Server Project\bin\Release\Player.IO GameLibrary.xml
+C:\Users\James Lynch\mJackRepo\trunk\dev\top\src\pre_game\server\Serverside Code\Player.IO Test Server Project\obj\Release\Player.IO Test Server.VS2010.csprojResolveAssemblyReference.cache

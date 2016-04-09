@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:571972938f982aba06a852bc6ba9d480$ -->
+<TextureAtlas imagePath="DefendCastleAtlas2.png">
+    <SubTexture name="Bomb" x="547" y="1962" width="72" height="76"/>
+    <SubTexture name="DaFuck2" x="621" y="1960" width="74" height="74"/>
+    <SubTexture name="FullPopupBg" x="2" y="2" width="962" height="640"/>
+    <SubTexture name="GameBg" x="966" y="2" width="960" height="643"/>
+    <SubTexture name="GenericPopup" x="964" y="735" width="522" height="409"/>
+    <SubTexture name="GreenBtn" x="1928" y="198" width="100" height="50"/>
+    <SubTexture name="GreenBtnDown" x="1928" y="146" width="100" height="50"/>
+    <SubTexture name="HeartLevelBox" x="1928" y="547" width="97" height="97"/>
+    <SubTexture name="LevelBox" x="1928" y="40" width="104" height="104"/>
+    <SubTexture name="MoneyBox" x="657" y="1718" width="41" height="87"/>
+    <SubTexture name="OpenSlot" x="621" y="1960" width="74" height="74"/>
+    <SubTexture name="RedBtn" x="592" y="1839" width="119" height="119"/>
+    <SubTexture name="RedBtnDown" x="536" y="1718" width="119" height="119"/>
+    <SubTexture name="Santa" x="713" y="1718" width="251" height="262"/>
+    <SubTexture name="Scroller" x="1928" y="2" width="110" height="36"/>
+    <SubTexture name="ShopPreviewArea" x="966" y="1718" width="287" height="235"/>
+    <SubTexture name="ShopUpgradeArea" x="152" y="1839" width="172" height="141"/>
+    <SubTexture name="SkyBg" x="2" y="644" width="960" height="640"/>
+    <SubTexture name="SlotTest" x="2" y="1286" width="532" height="551"/>
+    <SubTexture name="SmallPopupBgTest" x="536" y="1286" width="561" height="430"/>
+    <SubTexture name="Ssss" x="2034" y="40" width="12" height="12"/>
+    <SubTexture name="addMoneyBtn" x="469" y="1962" width="76" height="76"/>
+    <SubTexture name="coinShop" x="1488" y="647" width="203" height="208"/>
+    <SubTexture name="elfGuy" x="2" y="1839" width="148" height="156"/>
+    <SubTexture name="gamePowUpBtn" x="1928" y="646" width="87" height="87"/>
+    <SubTexture name="impossibleModeBox" x="1928" y="448" width="97" height="97"/>
+    <SubTexture name="magicOnlyBox" x="1928" y="349" width="97" height="97"/>
+    <SubTexture name="palaX" x="152" y="1982" width="62" height="58"/>
+    <SubTexture name="slotty" x="469" y="1839" width="121" height="121"/>
+    <SubTexture name="slottySelect" x="326" y="1839" width="141" height="141" frameX="-4" frameY="-4" frameWidth="153" frameHeight="153"/>
+    <SubTexture name="throwOnlyBox" x="1928" y="250" width="97" height="97"/>
+</TextureAtlas>

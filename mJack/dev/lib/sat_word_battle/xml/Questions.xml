@@ -1,0 +1,288 @@
+<?xml version="1.0"?>
+<Root>
+  <Category>Jim Questions</Category>
+  
+  <TheQuestions>
+  
+  		<unQuestion>
+  			<qText>bacchanal</qText>
+			<aAns>A Drunken Party</aAns>
+			<bAns>A Bandit</bAns>
+			<cAns>Callous</cAns>
+			<dAns>Group of Conspirators</dAns>
+			<correctAns>A</correctAns>
+  		</unQuestion>
+		
+  		<unQuestion>
+  			<qText>Badger</qText>
+			<aAns>To Punish</aAns>
+			<bAns>To Tease or Annoy</bAns>
+			<cAns>To Introduce</cAns>
+			<dAns>Amphibious Creature</dAns>
+			<correctAns>B</correctAns>
+  		</unQuestion>
+		
+		<unQuestion>
+  			<qText>Badinage</qText>
+			<aAns>Slander</aAns>
+			<bAns>Playful Talk</bAns>
+			<cAns>A Dictator</cAns>
+			<dAns>Dressing for Wounds</dAns>
+			<correctAns>B</correctAns>
+  		</unQuestion>
+		
+		<unQuestion>
+  			<qText>Baffle</qText>
+			<aAns>Scold</aAns>
+			<bAns>Surprise</bAns>
+			<cAns>Perplex</cAns>
+			<dAns>Uncertain</dAns>
+			<correctAns>C</correctAns>
+  		</unQuestion>
+		
+		<unQuestion>
+  			<qText>Baleful</qText>
+			<aAns>Heavy</aAns>
+			<bAns>Distraught</bAns>
+			<cAns>Harmful</cAns>
+			<dAns>Unwilling</dAns>
+			<correctAns>C</correctAns>
+  		</unQuestion>
+		
+		<unQuestion>
+  			<qText>Balm - Something That:</qText>
+			<aAns>Nurishes</aAns>
+			<bAns>Grows</bAns>
+			<cAns>Teaches</cAns>
+			<dAns>Soothes</dAns>
+			<correctAns>D</correctAns>
+  		</unQuestion>
+		
+		<unQuestion>
+  			<qText>Banal</qText>
+			<aAns>Commonplace</aAns>
+			<bAns>Meticulous</bAns>
+			<cAns>Thin Body of Water</cAns>
+			<dAns>Hideout</dAns>
+			<correctAns>A</correctAns>
+  		</unQuestion>
+		
+		<unQuestion>
+  			<qText>Bandy</qText>
+			<aAns>Happy</aAns>
+			<bAns>Exchange</bAns>
+			<cAns>Angry</cAns>
+			<dAns>Timid</dAns>
+			<correctAns>B</correctAns>
+  		</unQuestion>
+		
+		<unQuestion>
+  			<qText>Baneful</qText>
+			<aAns>Jelous</aAns>
+			<bAns>Deadly</bAns>
+			<cAns>Sarcastic</cAns>
+			<dAns>Egotistical</dAns>
+			<correctAns>B</correctAns>
+  		</unQuestion>
+		
+		<unQuestion>
+  			<qText>Baroque</qText>
+			<aAns>Blissful</aAns>
+			<bAns>A Type of Wood</bAns>
+			<cAns>Very Ornate</cAns>
+			<dAns>Historic</dAns>
+			<correctAns>C</correctAns>
+  		</unQuestion>
+		
+		<unQuestion>
+  			<qText>Barrage</qText>
+			<aAns>Very Ornate</aAns>
+			<bAns>Short Scuffle</bAns>
+			<cAns>Vacant Space</cAns>
+			<dAns>Prolonged attack</dAns>
+			<correctAns>D</correctAns>
+  		</unQuestion>
+		
+		<unQuestion>
+  			<qText>Barrister - a person of</qText>
+			<aAns>High Status</aAns>
+			<bAns>Legal Profession</bAns>
+			<cAns>Retail Occupation</cAns>
+			<dAns>Political Influence</dAns>
+			<correctAns>B</correctAns>
+  		</unQuestion>
+		
+		<unQuestion>
+  			<qText>Bastion</qText>
+			<aAns>To Direct</aAns>
+			<bAns>Defense</bAns>
+			<cAns>Lake</cAns>
+			<dAns>Empty Space</dAns>
+			<correctAns>B</correctAns>
+  		</unQuestion>
+		
+		<unQuestion>
+  			<qText>Batten</qText>
+			<aAns>To Flatten</aAns>
+			<bAns>To Thrive</bAns>
+			<cAns>To Force</cAns>
+			<dAns>To Destroy</dAns>
+			<correctAns>B</correctAns>
+  		</unQuestion>
+		
+		<unQuestion>
+  			<qText>Bayou</qText>
+			<aAns>Very Small Island</aAns>
+			<bAns>Body of water</bAns>
+			<cAns>A Hobby</cAns>
+			<dAns>Of Little Importance</dAns>
+			<correctAns>B</correctAns>
+  		</unQuestion>
+		
+		<unQuestion>
+  			<qText>Beautific</qText>
+			<aAns>Accomplished</aAns>
+			<bAns>Well Groomed</bAns>
+			<cAns>Blissful</cAns>
+			<dAns>Extravagant</dAns>
+			<correctAns>C</correctAns>
+  		</unQuestion>
+		
+		<unQuestion>
+  			<qText>Caitiff</qText>
+			<aAns>A Mean Person</aAns>
+			<bAns>A Defense</bAns>
+			<cAns>To Hide</cAns>
+			<dAns>A Type of Dance</dAns>
+			<correctAns>A</correctAns>
+  		</unQuestion>
+		
+		<unQuestion>
+  			<qText>Carp</qText>
+			<aAns>Brief</aAns>
+			<bAns>A Marine Algae</bAns>
+			<cAns>A Warning</cAns>
+			<dAns>Petty Complaints</dAns>
+			<correctAns>D</correctAns>
+  		</unQuestion>
+		
+		<unQuestion>
+  			<qText>Caveat</qText>
+			<aAns>Slice</aAns>
+			<bAns>Warning</bAns>
+			<cAns>Addition</cAns>
+			<dAns>Nuisance</dAns>
+			<correctAns>B</correctAns>
+  		</unQuestion>
+		
+		<unQuestion>
+  			<qText>Concordat</qText>
+			<aAns>An Agreement</aAns>
+			<bAns>An Honored Person</bAns>
+			<cAns>Meeting Place</cAns>
+			<dAns>A Hero</dAns>
+			<correctAns>A</correctAns>
+  		</unQuestion>
+		
+		<unQuestion>
+  			<qText>Defile</qText>
+			<aAns>Discontent</aAns>
+			<bAns>Dishonor</bAns>
+			<cAns>Discipline</cAns>
+			<dAns>Dismiss</dAns>
+			<correctAns>B</correctAns>
+  		</unQuestion>
+		
+		<unQuestion>
+  			<qText>Desist</qText>
+			<aAns>To Aid</aAns>
+			<bAns>To React Against</bAns>
+			<cAns>To Torture</cAns>
+			<dAns>To Stop</dAns>
+			<correctAns></correctAns>
+  		</unQuestion>
+		
+		<unQuestion>
+  			<qText>Ephemeral</qText>
+			<aAns>Mystical</aAns>
+			<bAns>Short-lived</bAns>
+			<cAns>Smokey</cAns>
+			<dAns>Religious</dAns>
+			<correctAns>B</correctAns>
+  		</unQuestion>
+		
+		<unQuestion>
+  			<qText>Expedite</qText>
+			<aAns>Make Faster</aAns>
+			<bAns>Transport</bAns>
+			<cAns>Explain</cAns>
+			<dAns>Excluded Person</dAns>
+			<correctAns>A</correctAns>
+  		</unQuestion>
+		
+		<unQuestion>
+  			<qText>Facetious</qText>
+			<aAns>Polite</aAns>
+			<bAns>Handsome</bAns>
+			<cAns>Flirty</cAns>
+			<dAns>Humorous</dAns>
+			<correctAns>D</correctAns>
+  		</unQuestion>
+		
+		<unQuestion>
+  			<qText>Garnish</qText>
+			<aAns>Flavor</aAns>
+			<bAns>To Paint</bAns>
+			<cAns>Distribute</cAns>
+			<dAns>Decoration</dAns>
+			<correctAns>D</correctAns>
+  		</unQuestion>
+		
+		<unQuestion>
+  			<qText>Hector</qText>
+			<aAns>To Bully</aAns>
+			<bAns>To Solve</bAns>
+			<cAns>To Question</cAns>
+			<dAns>To Surrender</dAns>
+			<correctAns>A</correctAns>
+  		</unQuestion>
+		
+		<unQuestion>
+  			<qText>Impugn</qText>
+			<aAns>Insult</aAns>
+			<bAns>Imprison</bAns>
+			<cAns>Challenge</cAns>
+			<dAns>To Begin a Journey</dAns>
+			<correctAns>C</correctAns>
+  		</unQuestion>
+		
+		<unQuestion>
+  			<qText>Pommel</qText>
+			<aAns>A Knob</aAns>
+			<bAns>Ground Corn</bAns>
+			<cAns>To Beat</cAns>
+			<dAns>To Quarrel</dAns>
+			<correctAns>A</correctAns>
+  		</unQuestion>
+		
+		<unQuestion>
+  			<qText>Zephyr</qText>
+			<aAns>A Bird</aAns>
+			<bAns>A Breeze</bAns>
+			<cAns>A Flying Machine</cAns>
+			<dAns>Cloudy Thoughts</dAns>
+			<correctAns>B</correctAns>
+  		</unQuestion>
+		
+		<unQuestion>
+  			<qText>Obsequious</qText>
+			<aAns>Obedient</aAns>
+			<bAns>Stubborn</bAns>
+			<cAns>Mature</cAns>
+			<dAns>Happy</dAns>
+			<correctAns>A</correctAns>
+  		</unQuestion>
+		
+  </TheQuestions>
+  
+</Root>

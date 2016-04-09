@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:0faf6b850d178aeded8f0033b808ec18$ -->
+<TextureAtlas imagePath="DefendCastleAtlas.png">
+    <SubTexture name="Bomb" x="1928" y="350" width="72" height="76"/>
+    <SubTexture name="DaFuck2" x="1928" y="274" width="74" height="74"/>
+    <SubTexture name="FullPopupBg" x="2" y="2" width="962" height="640"/>
+    <SubTexture name="GameBg" x="966" y="2" width="960" height="643"/>
+    <SubTexture name="GenericPopup" x="964" y="647" width="522" height="409"/>
+    <SubTexture name="GreenBtn" x="1928" y="54" width="100" height="50"/>
+    <SubTexture name="GreenBtnDown" x="1928" y="2" width="100" height="50"/>
+    <SubTexture name="MoneyBox" x="244" y="1839" width="140" height="96"/>
+    <SubTexture name="OpenSlot" x="1928" y="274" width="74" height="74"/>
+    <SubTexture name="RedBtn" x="123" y="1839" width="119" height="119"/>
+    <SubTexture name="RedBtnDown" x="2" y="1839" width="119" height="119"/>
+    <SubTexture name="Santa" x="536" y="1718" width="251" height="262"/>
+    <SubTexture name="SkyBg" x="2" y="644" width="960" height="640"/>
+    <SubTexture name="SlotTest" x="2" y="1286" width="532" height="551"/>
+    <SubTexture name="SmallPopupBgTest" x="536" y="1286" width="561" height="430"/>
+    <SubTexture name="Ssss" x="2030" y="2" width="12" height="12"/>
+    <SubTexture name="addMoneyBtn" x="1928" y="196" width="76" height="76"/>
+    <SubTexture name="palaX" x="1928" y="428" width="62" height="58"/>
+    <SubTexture name="slotty" x="1928" y="106" width="88" height="88"/>
+</TextureAtlas>

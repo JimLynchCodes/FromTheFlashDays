@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:b1642129e8664abc639be1abcee0698c$ -->
+<TextureAtlas imagePath="FpMineSweeperAtlas_2.png">
+    <SubTexture name="YouLosePanel" x="2" y="364" width="459" height="360"/>
+    <SubTexture name="YouWinPanel" x="2" y="2" width="459" height="360"/>
+    <SubTexture name="guy_walking_brime/9" x="463" y="2" width="38" height="48" frameX="0" frameY="0" frameWidth="38" frameHeight="50"/>
+    <SubTexture name="guy_walking_brime/GuyWalking0001" x="56" y="868" width="76" height="136" frameX="-4" frameY="0" frameWidth="90" frameHeight="140"/>
+    <SubTexture name="guy_walking_brime/GuyWalking0002" x="2" y="868" width="52" height="140" frameX="-18" frameY="0" frameWidth="90" frameHeight="140"/>
+    <SubTexture name="guy_walking_brime/GuyWalking0003" x="58" y="726" width="76" height="134" frameX="-4" frameY="-3" frameWidth="90" frameHeight="140"/>
+    <SubTexture name="guy_walking_brime/GuyWalking0004" x="2" y="726" width="54" height="140" frameX="-16" frameY="0" frameWidth="90" frameHeight="140"/>
+</TextureAtlas>
