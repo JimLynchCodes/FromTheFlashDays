@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" creationComplete="onCreationComplete();">
+	
+	<mx:Script>
+		<![CDATA[
+			
+			//ElectroServer imports
+			import com.electrotank.electroserver5.api.EsObject;
+			import com.electrotank.electroserver5.api.EsObjectRO;
+			import com.electrotank.electroserver5.api.PluginRequest;
+			import com.electrotank.electroserver5.api.PluginMessageEvent;
+			import com.electrotank.electroserver5.ElectroServer;
+			
+			//ElectroServer message objects
+			import com.electrotank.electroserver5.api.CreateRoomRequest;
+			import com.electrotank.electroserver5.api.ConnectionResponse;
+			import com.electrotank.electroserver5.api.LoginRequest;
+			import com.electrotank.electroserver5.api.LoginResponse;
+			import com.electrotank.electroserver5.api.MessageType;
+			
+			//Logger imports
+			import com.electrotank.electroserver5.util.ES5TraceAdapter;
+			import com.electrotank.logging.adapter.Log;
+			import com.electrotank.logging.adapter.ILogger;
+			
+			//Flash imports
+			import flash.events.Event;
+			import flash.events.KeyboardEvent;
+			import flash.ui.Keyboard;
+		
+			//add this so we can see the logs get traced
+			Log.setLogAdapter(new ES5TraceAdapter());
+			
+			private var _es:ElectroServer = new ElectroServer();
+			
+			private function onCreationComplete():void {
+				
+				//remove the visual pieces we don't need yet
+				removeChild(addAndShowRankPanel);
+				removeChild(loginPanel);
+				
+				//load the connection settings, and connect
+				_es.loadAndConnect("https://s3.amazonaws.com/LobbySystem/xml/settings.xml");
+				
+				//listen for certain events to allow the application to flow, and to support chatting and user list updates
+				_es.engine.addEventListener(MessageType.ConnectionResponse.name, onConnectionResponse);
+				_es.engine.addEventListener(MessageType.LoginResponse.name, onLoginResponse);
+				_es.engine.addEventListener(MessageType.PluginMessageEvent.name, onPluginMessageEvent);
+			}
+			
+			private function onPluginMessageEvent(e:PluginMessageEvent):void {
+				var esob:EsObject = e.parameters;
+				var action:String = esob.getString(PluginConstants.ACTION);
+				
+				switch (action) {
+					case PluginConstants.TAG_ADD_TO_RANK:
+					case PluginConstants.TAG_GET_RANK:
+						var rank:int = esob.getInteger(PluginConstants.TAG_GET_RANK);
+						rankValueField.text = rank.toString();
+						break;
+					case PluginConstants.TAG_ERROR:
+						var err:String = esob.getString(PluginConstants.TAG_ERROR);
+						trace(err);
+						break;
+				}
+			}
+			
+			/**
+			 * Increases your rank by the amount specified by sending a properly formatted message to the plugin.
+			 */
+			private function addToRankClicked():void {
+				var ipr:PluginRequest = new PluginRequest();
+				ipr.pluginName = "DatabasePlugin";
+				
+				var esob:EsObject = new EsObject();
+				esob.setString(PluginConstants.ACTION, PluginConstants.TAG_ADD_TO_RANK);
+				esob.setInteger(PluginConstants.TAG_ADD_TO_RANK, rankDeltaStepper.value);
+				ipr.parameters = esob;
+				_es.engine.send(ipr)
+				
+			}
+			
+			/**
+			 * Loads your rank from the database by asking the plugin for it.
+			 */
+			private function getRank():void {
+				var ipr:PluginRequest = new PluginRequest();
+				ipr.pluginName = "DatabasePlugin";
+				ipr.zoneId = -1;
+				ipr.roomId = -1;
+				
+				var esob:EsObject = new EsObject();
+				esob.setString(PluginConstants.ACTION, PluginConstants.TAG_GET_RANK);
+				ipr.parameters = esob;
+				_es.engine.send(ipr)
+			}
+			
+			/**
+			 * Fired when a connection to the server has either succeeded or failed.
+			 */
+			private function onConnectionResponse(e:ConnectionResponse):void {
+				if (e.successful) {
+					//add the login panel so the user can login
+					removeChild(waitingPanel);
+					addChild(loginPanel);
+				} else {
+					waitingField.text = "Connection failed!";
+				}
+			}
+			
+			/**
+			 * Fired after the client has sent a login request, and the server has responded.
+			 */
+			private function onLoginResponse(e:LoginResponse):void {
+				if (e.successful) {
+					removeChild(waitingPanel);
+					addChild(addAndShowRankPanel);
+					
+					getRank();
+				} else {
+					var esob:EsObjectRO = e.esObject;
+					var msg:String = e.error.name;
+					if (esob != null ) {
+						var str:String = esob.getString("Status");
+						if (str != null && str.length > 0) {
+							msg = str;
+						}
+					}
+					waitingField.text = "Login failed: " + msg;
+				}
+			}
+			
+			/**
+			 * Called when the user clicks the 'submit' button on the login panel
+			 */
+			private function submitClicked():void {
+				
+				//create a LoginRequest, and send it
+				var lr:LoginRequest = new LoginRequest();
+				lr.userName = userNameField.text;
+				lr.password = passwordField.text;
+				
+				_es.engine.send(lr);
+				
+				removeChild(loginPanel);
+				addChild(waitingPanel);
+			}
+			
+			
+			
+		]]>
+	</mx:Script>
+	
+	<mx:Panel id="waitingPanel">
+		<mx:Text text="Please wait..." id="waitingField" />
+	</mx:Panel>
+	
+	<mx:Panel title="Log in" id="loginPanel">
+		<mx:Form width="100%" height="100%">
+			<mx:FormItem label="User name" width="100%">
+				<mx:TextInput id="userNameField" width="100" />
+			</mx:FormItem>
+			<mx:FormItem label="Password" width="100%">
+				<mx:TextInput id="passwordField" width="100" />
+			</mx:FormItem>
+		</mx:Form>
+		<mx:ControlBar>
+			<mx:Button label="Submit" enabled="{userNameField.text.length > 0}" click="submitClicked();" />
+		</mx:ControlBar>
+	</mx:Panel>
+	
+	<mx:Panel title="View and Change Rank" id="addAndShowRankPanel">
+		<mx:Form width="100%" height="100%">
+			<mx:FormItem width="100%">
+				<mx:Text text="The rank associated with your username is loaded from the database and shown. Increase it here." />
+			</mx:FormItem>
+			<mx:FormItem label="Increase rank:" width="100%" height="100%">
+				<mx:Button label="add to rank" id="addToRankButton" click="addToRankClicked();" />
+				<mx:NumericStepper value="1" minimum="1" maximum="5" stepSize="1" id="rankDeltaStepper" />
+			</mx:FormItem>
+			<mx:FormItem label="Your rank:" width="100%" >
+				<mx:Text id="rankValueField" />
+			</mx:FormItem>
+		</mx:Form>
+	</mx:Panel>
+	
+	
+</mx:Application>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Extension>
+    <Name>DatabaseWithJDBI</Name>
+	
+	<!-- This is used to load data at server start-up and provide it to callers as needed -->
+    <ManagedObjects>
+        <ManagedObject>
+            <Handle>ControllerFactory</Handle>
+            <Type>Java</Type>
+            <Path>com.electrotank.electroserver5.examples.databasewithjdbi.ControllerFactory</Path>
+        </ManagedObject>
+    </ManagedObjects>
+	
+	<!-- This handles the process of loading and unloading information about a user when they log in/out. -->
+    <EventHandlers>
+        <LoginHandlers>
+            <LoginHandler>
+                <Handle>LoginEventHandler</Handle>
+                <Type>Java</Type>
+                <ServerLevel>1</ServerLevel>
+                <Path>com.electrotank.electroserver5.examples.databasewithjdbi.SimpleDBLoginHandler</Path>
+            </LoginHandler>
+        </LoginHandlers>
+    </EventHandlers>
+    <Plugins>
+        <Plugin>
+            <Handle>DatabasePlugin</Handle>
+            <Type>Java</Type>
+            <ServerLevel>1</ServerLevel>
+            <Path>com.electrotank.electroserver5.examples.databasewithjdbi.DatabasePlugin</Path>
+        </Plugin>
+    </Plugins>
+</Extension>
+

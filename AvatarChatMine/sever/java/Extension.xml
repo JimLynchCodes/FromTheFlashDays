@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Extension>
+    <Name>AvatarChatExtension</Name>
+    <Plugins>
+        <Plugin>
+            <Handle>AvatarChat</Handle>
+            <Type>Java</Type>
+            <Path>com.electrotank.electroserver5.examples.avatarchat.AvatarChatPlugin</Path>
+            <Variables>
+                <Variable name="queueFrequency" type="integer">200</Variable>
+                <Variable name="sendUserEnterExitEvents" type="boolean">true</Variable>
+                <Variable name="checkChatForTriggerEvents" type="boolean">true</Variable>
+            </Variables>
+        </Plugin>
+    </Plugins>
+</Extension>
+

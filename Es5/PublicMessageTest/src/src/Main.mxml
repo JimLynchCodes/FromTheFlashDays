@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" creationComplete="onCreationComplete();">
+	
+	<mx:Script>
+		<![CDATA[
+			
+			//ElectroServer imports
+			import com.electrotank.electroserver5.api.EsObject;
+			import com.electrotank.electroserver5.api.PluginListEntry;
+			import com.electrotank.electroserver5.api.RoomVariable;
+			import com.electrotank.electroserver5.api.UserUpdateEvent;
+			import com.electrotank.electroserver5.ElectroServer;
+			import com.electrotank.electroserver5.zone.Room;
+			
+			//ElectroServer message objects
+			import com.electrotank.electroserver5.api.CreateRoomRequest;
+			import com.electrotank.electroserver5.api.JoinRoomEvent;
+			import com.electrotank.electroserver5.api.PublicMessageEvent;
+			import com.electrotank.electroserver5.api.PublicMessageRequest;
+			import com.electrotank.electroserver5.api.ConnectionResponse;
+			import com.electrotank.electroserver5.api.LoginRequest;
+			import com.electrotank.electroserver5.api.LoginResponse;
+			import com.electrotank.electroserver5.api.MessageType;
+			
+			//Logger imports
+			import mx.logging.Log;
+			import mx.logging.targets.TraceTarget;
+			
+			//Flash imports
+			import flash.events.KeyboardEvent;
+			import flash.ui.Keyboard;
+		
+			private var _es:ElectroServer = new ElectroServer();
+			private var _room:Room;
+			
+			private function onCreationComplete():void {
+				//add this so we can see the logs show up as traces
+				Log.addTarget(new TraceTarget());
+				
+				//remove the visual pieces we don't need yet
+				removeChild(chatPanel);
+				removeChild(loginPanel);
+				
+				//load the connection settings, and connect
+				_es.loadAndConnect("https://s3.amazonaws.com/LobbySystem/xml/settings.xml");
+				
+				//listen for certain events to allow the application to flow, and to support chatting and user list updates
+				_es.engine.addEventListener(MessageType.ConnectionResponse.name, onConnectionResponse);
+				_es.engine.addEventListener(MessageType.LoginResponse.name, onLoginResponse);
+				_es.engine.addEventListener(MessageType.JoinRoomEvent.name, onJoinRoomEvent);
+				_es.engine.addEventListener(MessageType.PublicMessageEvent.name, onPublicMessageEvent);
+				_es.engine.addEventListener(MessageType.UserUpdateEvent.name, onRoomUserUpdateEvent);
+			}
+			
+			/**
+			 * Fired when a user joins or leaves the room, or if a property about that user changes
+			 */
+			private function onRoomUserUpdateEvent(e:UserUpdateEvent):void {
+				showUserList();
+				trace(" " + e.action + " " + e.userName);
+			}
+			
+			/**
+			 * Used to update the user list
+			 */
+			private function showUserList():void {
+//				userList.labelField = "userName";
+//				userList.dataProvider = _room.users;
+				trace("user list " + userList);
+			}
+			
+			/**
+			 * Fired when the client receives a public chat message from the server. Add the message tot he history field.
+			 */
+			private function onPublicMessageEvent(e:PublicMessageEvent):void {
+				historyField.text += e.userName + ": " + e.message + "\n";
+				
+				historyField.verticalScrollPosition = int.MAX_VALUE;
+			}
+			
+			/**
+			 * Fired when you successfully have joined a room.
+			 */
+			private function onJoinRoomEvent(e:JoinRoomEvent):void {
+				//store the room reference
+				_room = _es.managerHelper.zoneManager.zoneById(e.zoneId).roomById(e.roomId);
+				
+				// do we have any room variables?
+				trace("number of room variables: " + _room.roomVariables.length);
+				for (var ii :int = 0; ii < _room.roomVariables.length; ii++) {
+					var rv : RoomVariable = _room.roomVariables[ii];
+					var esob: EsObject = rv.value;
+					trace("rv" + ii + ": " + esob.toString());
+				}
+				
+				
+				//update the user list
+				showUserList();
+				
+				removeChild(waitingPanel);
+				addChild(chatPanel);
+				historyField.text += "JoinRoomEvent\n";
+			}
+			
+			/**
+			 * Fired when a connection to the server has either succeeded or failed.
+			 */
+			private function onConnectionResponse(e:ConnectionResponse):void {
+				if (e.successful) {
+					trace("connected");
+					//add the login panel so the user can login
+					removeChild(waitingPanel);
+					addChild(loginPanel);
+				} else {
+					trace("connection failed");
+					waitingField.text = "Connection failed!";
+				}
+			}
+			
+			/**
+			 * Fired after the client has sent a login request, and the server has responded.
+			 */
+			private function onLoginResponse(e:LoginResponse):void {
+				if (e.successful) {
+					//successfully logged in, so join a room
+					historyField.text += "Login response ok\n";
+					joinRoom();
+				} else {
+					waitingField.text = "Login failed!";
+				}
+			}
+			
+			/**
+			 * Joins the user to a room
+			 */
+			private function joinRoom():void{
+				var crr:CreateRoomRequest = new CreateRoomRequest();
+				
+				trace("g");
+				crr.roomName = "PluginSendPublicMessage";
+				crr.zoneName = "TestZone";
+				
+				crr.usingLanguageFilter = true;
+				crr.usingFloodingFilter = true;
+				
+				/**
+				 * Create plugin associated with this room. Then as chat messages are sent they are intercepted by the server, modified, and sent back to the room
+				 */
+				var ple:PluginListEntry = new PluginListEntry();
+				ple.extensionName = "PluginSendPublicMessage";
+				ple.pluginHandle = "PluginSendPublicMessage";
+				ple.pluginName = "PluginSendPublicMessage";
+				
+				crr.plugins = [ple];
+				
+				_es.engine.send(crr);
+			}
+			
+			/**
+			 * Called when the user clicks the 'submit' button on the login panel
+			 */
+			private function submitClicked():void {
+				
+				//create a LoginRequest, and send it
+				var lr:LoginRequest = new LoginRequest();
+				lr.userName = userNameField.text;
+				
+				_es.engine.send(lr);
+				
+				removeChild(loginPanel);
+				addChild(waitingPanel);
+			}
+			
+			/**
+			 * Called when the 'send' button is clicked or the enter key is used.
+			 */
+			private function sendClicked():void {
+				//create a PublicMessageRequest, put the message on it, and send it
+				var pmr:PublicMessageRequest = new PublicMessageRequest();
+				pmr.roomId = _room.id;
+				pmr.zoneId = _room.zoneId;
+				
+				pmr.message = messageField.text;
+				messageField.text = "";
+				
+				_es.engine.send(pmr);
+			}
+			
+			/**
+			 * Fired when a key is released with the message field is in focus. If it is the ENTER key, then send the message.
+			 * @param	e
+			 */
+			private function keyUpOnMessageField(e:KeyboardEvent):void {
+				if (e.keyCode == Keyboard.ENTER && messageField.text.length > 0) {
+					sendClicked();
+				}
+			}
+			
+			
+		]]>
+	</mx:Script>
+	
+	<mx:Panel id="waitingPanel">
+		<mx:Text text="Please wait..." id="waitingField" />
+	</mx:Panel>
+	
+	<mx:Panel title="Log in" id="loginPanel">
+		<mx:Form width="100%" height="100%">
+			<mx:FormItem label="User name" width="100%">
+				<mx:TextInput id="userNameField" width="100" />
+			</mx:FormItem>
+		</mx:Form>
+		<mx:ControlBar>
+			<mx:Button label="Submit" enabled="{userNameField.text.length > 0}" click="submitClicked();" />
+		</mx:ControlBar>
+	</mx:Panel>
+	
+	<mx:Panel title="Chat" id="chatPanel" width="100%" height="100%">
+		<mx:Form width="100%" height="100%">
+			<mx:FormItem width="100%" height="100%">
+				<mx:HBox width="100%" height="100%">
+					<mx:TextArea width="100%" height="100%" selectable="false" id="historyField" />
+					<mx:List id="userList" width="150" height="100%" />
+				</mx:HBox>
+			</mx:FormItem>
+			<mx:FormItem width="100%" keyUp="keyUpOnMessageField(event);">
+				<mx:TextInput width="100%" id="messageField" />
+			</mx:FormItem>
+		</mx:Form>
+		<mx:ControlBar>
+			<mx:Button label="Send" enabled="{messageField.text.length > 0}" click="sendClicked();" />
+		</mx:ControlBar>
+	</mx:Panel>
+	
+	
+</mx:Application>

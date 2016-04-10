@@ -1,0 +1,1 @@
+Example of a simple Avatar Chat application, with clients for both Unity and AS3.

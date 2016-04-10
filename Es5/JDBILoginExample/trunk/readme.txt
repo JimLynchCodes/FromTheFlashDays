@@ -1,0 +1,1 @@
+This example shows one way to use a database, with JDBI and an embedded Derby database.  It requires two server level components: DatabasePlugin and the LoginEventHandler.
