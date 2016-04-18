@@ -7,12 +7,13 @@ Take these projects for what they are. I don't reccommend using this code or eve
 
 Each folder in this root directory represents a projects. In an effort to keep it easier to find and read, I've put a description of each project here. 
 
-### AvatarChat
-ok let's go.
+### Avatar Chat
+This is basically a fork off of the avatar chat project for the electroserver backend. Electroserver has since been bought out and privatised, but I keep this code around because it's a nice, clean example of a socket connection with a room of users. This project includes both the client side as3 code and the server side java code.
 
-AvatarChatMine/sever/java	more traditional flash	7 days ago
-DefendYourCastle	added defend your castle	8 days ago
-Electroserver_Fun	electroserver gamers	3 months ago
+### Defend Your Castle
+
+
+### Electroserver Fun	
 Es5	more traditional flash	7 days ago
 Filler_Good	Old Flash Games	11 days ago
 Flash_Pro_Files	flash pro files renamed	3 months ago
