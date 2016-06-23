@@ -11,6 +11,7 @@ Each folder in this root directory represents a projects. In an effort to keep i
 This is basically a fork off of the avatar chat project for the electroserver backend. Electroserver has since been bought out and privatised, but I keep this code around because it's a nice, clean example of a socket connection with a room of users. This project includes both the client side as3 code and the server side java code.
 
 ### Defend Your Castle
+This was a mobile clone of the desktop "defend your castle" game. It was built in Adobe Air and featured animated cahracters built with the DragonBones plugin. 
 
 
 ### Electroserver Fun	
